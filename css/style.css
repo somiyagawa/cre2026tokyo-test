@@ -1,0 +1,1062 @@
+/* ========================================
+   CRE 2026 Tokyo - Elegant Design System
+   Inspired by sophisticated Tokyo aesthetics
+   ======================================== */
+
+/* ========================================
+   1. CSS Variables - Tokyo Color Palette
+   ======================================== */
+:root {
+  /* Primary Colors - Elegant Neutrals */
+  --color-cream: #FAF8F5;
+  --color-beige: #F5F1EB;
+  --color-warm-gray: #E8E4DF;
+  --color-charcoal: #3A3A3A;
+  --color-dark-gray: #5A5A5A;
+  --color-medium-gray: #8B8B8B;
+  
+  /* Accent Colors - From Logo */
+  --color-coral: #E86C5C;
+  --color-coral-light: #F08B7D;
+  --color-coral-dark: #D45545;
+  
+  /* Supporting Colors */
+  --color-gold: #C9A961;
+  --color-gold-light: #DCC088;
+  --color-white: #FFFFFF;
+  --color-black: #1A1A1A;
+  
+  /* Typography */
+  --font-serif: 'Playfair Display', 'Noto Serif JP', serif;
+  --font-sans: 'Inter', 'Noto Sans JP', sans-serif;
+  
+  /* Spacing System */
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2.5rem;
+  --space-xl: 4rem;
+  --space-xxl: 6rem;
+  
+  /* Border Radius */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 16px;
+  
+  /* Shadows */
+  --shadow-subtle: 0 2px 8px rgba(0, 0, 0, 0.04);
+  --shadow-soft: 0 4px 16px rgba(0, 0, 0, 0.06);
+  --shadow-elegant: 0 8px 32px rgba(0, 0, 0, 0.08);
+  
+  /* Transitions */
+  --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-fast: all 0.2s ease;
+}
+
+/* ========================================
+   2. Reset & Base Styles
+   ======================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-cream);
+  color: var(--color-charcoal);
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ========================================
+   3. Typography - Elegant Hierarchy
+   ======================================== */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif);
+  font-weight: 600;
+  line-height: 1.3;
+  color: var(--color-charcoal);
+  margin-bottom: var(--space-md);
+  letter-spacing: -0.02em;
+}
+
+h1 {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 400;
+  letter-spacing: -0.03em;
+}
+
+h2 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 400;
+}
+
+h3 {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 500;
+}
+
+h4 {
+  font-size: clamp(1.25rem, 2vw, 1.5rem);
+  font-weight: 500;
+}
+
+p {
+  margin-bottom: var(--space-md);
+  font-size: clamp(1rem, 1.5vw, 1.125rem);
+  line-height: 1.8;
+}
+
+a {
+  color: var(--color-coral);
+  text-decoration: none;
+  transition: var(--transition-fast);
+}
+
+a:hover {
+  color: var(--color-coral-dark);
+}
+
+/* ========================================
+   4. Navigation - Elegant & Minimalist
+   ======================================== */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  z-index: 1000;
+  transition: var(--transition-smooth);
+}
+
+.navbar.scrolled {
+  box-shadow: var(--shadow-soft);
+}
+
+.nav-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: var(--space-md) var(--space-lg);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.nav-logo img {
+  height: 50px;
+  width: auto;
+  transition: var(--transition-smooth);
+}
+
+.nav-logo:hover img {
+  transform: translateY(-2px);
+}
+
+.nav-title {
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--color-charcoal);
+  letter-spacing: -0.01em;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  gap: var(--space-lg);
+  align-items: center;
+}
+
+.nav-item {
+  position: relative;
+}
+
+.nav-link {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--color-dark-gray);
+  padding: var(--space-xs) 0;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  position: relative;
+  transition: var(--transition-fast);
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--color-coral);
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: var(--color-coral);
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 100%;
+}
+
+/* Dropdown Menu */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-toggle::after {
+  content: '▾';
+  margin-left: 0.5rem;
+  font-size: 0.75rem;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  min-width: 220px;
+  padding: var(--space-sm);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-elegant);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: var(--transition-smooth);
+  margin-top: var(--space-sm);
+}
+
+.dropdown:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.dropdown-item {
+  display: block;
+  padding: var(--space-xs) var(--space-md);
+  color: var(--color-dark-gray);
+  border-radius: var(--radius-sm);
+  transition: var(--transition-fast);
+  font-size: 0.95rem;
+}
+
+.dropdown-item:hover {
+  background: var(--color-beige);
+  color: var(--color-coral);
+}
+
+/* Mobile Menu Toggle */
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: var(--space-xs);
+}
+
+.nav-toggle span {
+  width: 28px;
+  height: 2px;
+  background: var(--color-charcoal);
+  transition: var(--transition-fast);
+  border-radius: 2px;
+}
+
+/* ========================================
+   5. Hero Section - Elegant Introduction
+   ======================================== */
+.hero {
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--color-cream) 0%, var(--color-beige) 100%);
+  padding: var(--space-xxl) var(--space-lg);
+  margin-top: 80px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -20%;
+  width: 800px;
+  height: 800px;
+  background: radial-gradient(circle, rgba(232, 108, 92, 0.08) 0%, transparent 70%);
+  border-radius: 50%;
+}
+
+.hero-content {
+  max-width: 1200px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-logo {
+  max-width: 300px;
+  height: auto;
+  margin: 0 auto var(--space-xl);
+  animation: fadeInUp 1s ease;
+}
+
+.hero-subtitle {
+  font-family: var(--font-sans);
+  font-size: clamp(1.125rem, 2vw, 1.5rem);
+  color: var(--color-medium-gray);
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: var(--space-md);
+  animation: fadeInUp 1s ease 0.2s both;
+}
+
+.hero-title {
+  font-family: var(--font-serif);
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  color: var(--color-charcoal);
+  margin-bottom: var(--space-md);
+  font-weight: 400;
+  line-height: 1.2;
+  animation: fadeInUp 1s ease 0.4s both;
+}
+
+.hero-description {
+  font-size: clamp(1.125rem, 2vw, 1.375rem);
+  color: var(--color-dark-gray);
+  max-width: 800px;
+  margin: 0 auto var(--space-xl);
+  line-height: 1.7;
+  animation: fadeInUp 1s ease 0.6s both;
+}
+
+.hero-dates {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-md);
+  background: white;
+  padding: var(--space-md) var(--space-xl);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-soft);
+  margin-bottom: var(--space-xl);
+  animation: fadeInUp 1s ease 0.8s both;
+}
+
+.hero-date-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-date-label {
+  font-size: 0.875rem;
+  color: var(--color-medium-gray);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: var(--space-xs);
+}
+
+.hero-date-value {
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  color: var(--color-coral);
+  font-weight: 600;
+}
+
+.hero-cta {
+  display: flex;
+  gap: var(--space-md);
+  justify-content: center;
+  flex-wrap: wrap;
+  animation: fadeInUp 1s ease 1s both;
+}
+
+/* ========================================
+   6. Buttons - Elegant & Interactive
+   ======================================== */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+  padding: var(--space-md) var(--space-xl);
+  border-radius: var(--radius-md);
+  font-weight: 500;
+  font-size: 1rem;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+  border: none;
+  transition: var(--transition-smooth);
+  text-decoration: none;
+}
+
+.btn-primary {
+  background: var(--color-coral);
+  color: white;
+  box-shadow: 0 4px 16px rgba(232, 108, 92, 0.3);
+}
+
+.btn-primary:hover {
+  background: var(--color-coral-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 24px rgba(232, 108, 92, 0.4);
+}
+
+.btn-secondary {
+  background: var(--color-charcoal);
+  color: white;
+}
+
+.btn-secondary:hover {
+  background: var(--color-dark-gray);
+  transform: translateY(-2px);
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--color-coral);
+  border: 2px solid var(--color-coral);
+}
+
+.btn-outline:hover {
+  background: var(--color-coral);
+  color: white;
+}
+
+/* ========================================
+   7. Container & Layout System
+   ======================================== */
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 var(--space-lg);
+}
+
+.container-narrow {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 var(--space-lg);
+}
+
+.section {
+  padding: var(--space-xxl) 0;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: var(--space-xl);
+}
+
+.section-subtitle {
+  text-align: center;
+  font-size: 1.25rem;
+  color: var(--color-medium-gray);
+  max-width: 700px;
+  margin: 0 auto var(--space-xl);
+}
+
+/* Divider */
+.divider {
+  width: 80px;
+  height: 3px;
+  background: var(--color-coral);
+  margin: var(--space-lg) auto;
+  border-radius: 2px;
+}
+
+/* ========================================
+   8. Cards - Elegant Content Containers
+   ======================================== */
+.card {
+  background: white;
+  border-radius: var(--radius-lg);
+  padding: var(--space-xl);
+  box-shadow: var(--shadow-subtle);
+  transition: var(--transition-smooth);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-elegant);
+}
+
+.card-title {
+  font-size: 1.5rem;
+  margin-bottom: var(--space-md);
+  color: var(--color-charcoal);
+}
+
+.card-content {
+  color: var(--color-dark-gray);
+  line-height: 1.7;
+}
+
+.card-footer {
+  margin-top: var(--space-lg);
+  padding-top: var(--space-lg);
+  border-top: 1px solid var(--color-warm-gray);
+}
+
+/* ========================================
+   9. Grid System
+   ======================================== */
+.grid {
+  display: grid;
+  gap: var(--space-lg);
+}
+
+.grid-2 {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.grid-3 {
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.grid-4 {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+/* ========================================
+   10. Timeline - Elegant Progress Display
+   ======================================== */
+.timeline {
+  position: relative;
+  padding: var(--space-lg) 0;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: var(--color-warm-gray);
+  transform: translateX(-50%);
+}
+
+.timeline-item {
+  display: flex;
+  margin-bottom: var(--space-xl);
+  position: relative;
+}
+
+.timeline-item:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.timeline-content {
+  width: calc(50% - var(--space-xl));
+  background: white;
+  padding: var(--space-lg);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-soft);
+}
+
+.timeline-marker {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 20px;
+  background: var(--color-coral);
+  border: 4px solid white;
+  border-radius: 50%;
+  box-shadow: var(--shadow-soft);
+}
+
+.timeline-date {
+  font-family: var(--font-serif);
+  font-size: 1.125rem;
+  color: var(--color-coral);
+  font-weight: 600;
+  margin-bottom: var(--space-xs);
+}
+
+.timeline-title {
+  font-size: 1.25rem;
+  margin-bottom: var(--space-sm);
+}
+
+.timeline-description {
+  color: var(--color-dark-gray);
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* ========================================
+   11. Info Boxes
+   ======================================== */
+.info-box {
+  background: linear-gradient(135deg, var(--color-beige) 0%, white 100%);
+  border-left: 4px solid var(--color-coral);
+  padding: var(--space-lg);
+  border-radius: var(--radius-md);
+  margin: var(--space-lg) 0;
+}
+
+.info-box.warning {
+  border-left-color: var(--color-gold);
+  background: linear-gradient(135deg, #FFF9E6 0%, white 100%);
+}
+
+.info-box.success {
+  border-left-color: #6BA368;
+  background: linear-gradient(135deg, #F0F8F0 0%, white 100%);
+}
+
+.info-box-title {
+  font-weight: 600;
+  margin-bottom: var(--space-sm);
+  color: var(--color-charcoal);
+}
+
+/* ========================================
+   12. Tables - Clean & Readable
+   ======================================== */
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin: var(--space-lg) 0;
+  background: white;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-subtle);
+}
+
+thead {
+  background: var(--color-beige);
+}
+
+th {
+  padding: var(--space-md);
+  text-align: left;
+  font-weight: 600;
+  color: var(--color-charcoal);
+  border-bottom: 2px solid var(--color-warm-gray);
+}
+
+td {
+  padding: var(--space-md);
+  border-bottom: 1px solid var(--color-warm-gray);
+  color: var(--color-dark-gray);
+}
+
+tbody tr:last-child td {
+  border-bottom: none;
+}
+
+tbody tr:hover {
+  background: var(--color-cream);
+}
+
+/* ========================================
+   13. Footer - Elegant Closure
+   ======================================== */
+.footer {
+  background: var(--color-charcoal);
+  color: white;
+  padding: var(--space-xxl) 0 var(--space-lg);
+  margin-top: var(--space-xxl);
+}
+
+.footer-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 var(--space-lg);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--space-xl);
+  margin-bottom: var(--space-xl);
+}
+
+.footer-section h3 {
+  color: white;
+  font-size: 1.25rem;
+  margin-bottom: var(--space-md);
+}
+
+.footer-section p,
+.footer-section a {
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.8;
+}
+
+.footer-section a:hover {
+  color: var(--color-coral-light);
+}
+
+.footer-links {
+  list-style: none;
+}
+
+.footer-links li {
+  margin-bottom: var(--space-sm);
+}
+
+.footer-bottom {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: var(--space-lg) var(--space-lg) 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: center;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* ========================================
+   14. Scroll to Top Button
+   ======================================== */
+.scroll-top {
+  position: fixed;
+  bottom: var(--space-lg);
+  right: var(--space-lg);
+  width: 50px;
+  height: 50px;
+  background: var(--color-coral);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: var(--transition-smooth);
+  box-shadow: var(--shadow-elegant);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  z-index: 999;
+}
+
+.scroll-top.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.scroll-top:hover {
+  background: var(--color-coral-dark);
+  transform: translateY(-4px);
+}
+
+/* ========================================
+   15. Animations
+   ======================================== */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 1s ease;
+}
+
+.fade-in-up {
+  animation: fadeInUp 1s ease;
+}
+
+/* Scroll Reveal */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: var(--transition-smooth);
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ========================================
+   16. Responsive Design - Mobile First
+   ======================================== */
+@media (max-width: 768px) {
+  :root {
+    --space-lg: 1.5rem;
+    --space-xl: 2.5rem;
+    --space-xxl: 4rem;
+  }
+  
+  .nav-menu {
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    width: 100%;
+    height: calc(100vh - 80px);
+    background: white;
+    flex-direction: column;
+    padding: var(--space-lg);
+    gap: var(--space-md);
+    transition: var(--transition-smooth);
+    box-shadow: var(--shadow-elegant);
+    align-items: flex-start;
+    overflow-y: auto;
+  }
+  
+  .nav-menu.active {
+    left: 0;
+  }
+  
+  .nav-toggle {
+    display: flex;
+  }
+  
+  .nav-toggle.active span:nth-child(1) {
+    transform: rotate(45deg) translate(8px, 8px);
+  }
+  
+  .nav-toggle.active span:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .nav-toggle.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -7px);
+  }
+  
+  .dropdown-menu {
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    box-shadow: none;
+    background: var(--color-beige);
+    margin-top: var(--space-sm);
+    display: none;
+  }
+  
+  .dropdown.active .dropdown-menu {
+    display: block;
+  }
+  
+  .hero {
+    min-height: 70vh;
+    padding: var(--space-xl) var(--space-md);
+  }
+  
+  .hero-dates {
+    flex-direction: column;
+    gap: var(--space-sm);
+    padding: var(--space-lg);
+  }
+  
+  .hero-cta {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .btn {
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .timeline::before {
+    left: var(--space-lg);
+  }
+  
+  .timeline-item,
+  .timeline-item:nth-child(even) {
+    flex-direction: row;
+  }
+  
+  .timeline-content {
+    width: calc(100% - var(--space-xxl));
+    margin-left: auto;
+  }
+  
+  .timeline-marker {
+    left: var(--space-lg);
+  }
+  
+  .grid-2,
+  .grid-3,
+  .grid-4 {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-logo img {
+    height: 40px;
+  }
+  
+  .nav-title {
+    font-size: 1.125rem;
+  }
+  
+  table {
+    font-size: 0.875rem;
+  }
+  
+  th, td {
+    padding: var(--space-sm);
+  }
+}
+
+/* ========================================
+   17. Print Styles
+   ======================================== */
+@media print {
+  .navbar,
+  .nav-toggle,
+  .scroll-top,
+  .footer {
+    display: none;
+  }
+  
+  body {
+    background: white;
+  }
+  
+  .hero {
+    margin-top: 0;
+  }
+}
+
+/* ========================================
+   18. Tokyo Skyline Hero Backgrounds
+   ======================================== */
+.tokyo-hero {
+  position: relative;
+  min-height: 60vh;
+  background: linear-gradient(135deg, #E86C5C 0%, #F08B7D 50%, #FFB4A8 100%);
+  overflow: hidden;
+}
+
+.tokyo-hero::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 200px;
+  background: linear-gradient(to top, rgba(58, 58, 58, 0.1), transparent);
+}
+
+/* Tokyo Skyline SVG Background */
+.tokyo-skyline {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 180px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 200' preserveAspectRatio='none'%3E%3Cg fill='rgba(58, 58, 58, 0.15)'%3E%3Crect x='0' y='120' width='40' height='80'/%3E%3Crect x='50' y='100' width='50' height='100'/%3E%3Crect x='110' y='80' width='35' height='120'/%3E%3Crect x='155' y='110' width='45' height='90'/%3E%3Crect x='210' y='90' width='40' height='110'/%3E%3Crect x='260' y='70' width='55' height='130'/%3E%3Cpath d='M320 85 L335 70 L350 85 Z'/%3E%3Crect x='325' y='85' width='20' height='115'/%3E%3Crect x='360' y='95' width='45' height='105'/%3E%3Crect x='415' y='60' width='50' height='140'/%3E%3Crect x='475' y='105' width='35' height='95'/%3E%3Crect x='520' y='75' width='60' height='125'/%3E%3Crect x='590' y='50' width='45' height='150'/%3E%3Ccircle cx='612' cy='35' r='18'/%3E%3Crect x='645' y='90' width='40' height='110'/%3E%3Crect x='695' y='110' width='50' height='90'/%3E%3Crect x='755' y='85' width='35' height='115'/%3E%3Crect x='800' y='65' width='55' height='135'/%3E%3Crect x='865' y='100' width='45' height='100'/%3E%3Cpath d='M920 40 L945 15 L970 40 Z'/%3E%3Crect x='932' y='40' width='26' height='160'/%3E%3Crect x='980' y='95' width='40' height='105'/%3E%3Crect x='1030' y='115' width='50' height='85'/%3E%3Crect x='1090' y='80' width='35' height='120'/%3E%3Crect x='1135' y='105' width='45' height='95'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: repeat-x;
+  opacity: 0.8;
+}
+
+/* Mt. Fuji Silhouette */
+.fuji-silhouette {
+  position: absolute;
+  bottom: 0;
+  right: 10%;
+  width: 300px;
+  height: 150px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 150'%3E%3Cpath d='M0 150 L80 150 L150 30 L220 150 L300 150 Z' fill='rgba(58, 58, 58, 0.2)'/%3E%3Cpath d='M130 50 L150 30 L170 50 Z' fill='rgba(255, 255, 255, 0.3)'/%3E%3C/svg%3E");
+  background-size: contain;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  opacity: 0.7;
+}
+
+/* Shinkansen Silhouette */
+.shinkansen-icon {
+  position: absolute;
+  bottom: 30px;
+  left: 5%;
+  width: 120px;
+  height: 40px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 40'%3E%3Cg fill='rgba(58, 58, 58, 0.25)'%3E%3Cpath d='M10 15 Q 0 15 0 25 L 0 35 L 10 35 L 10 38 L 15 38 L 15 35 L 25 35 L 25 38 L 30 38 L 30 35 L 90 35 L 90 38 L 95 38 L 95 35 L 105 35 L 105 38 L 110 38 L 110 35 L 120 35 L 120 25 Q 120 15 110 15 Z'/%3E%3Crect x='20' y='18' width='15' height='10' rx='2' fill='rgba(255,255,255,0.3)'/%3E%3Crect x='40' y='18' width='15' height='10' rx='2' fill='rgba(255,255,255,0.3)'/%3E%3Crect x='60' y='18' width='15' height='10' rx='2' fill='rgba(255,255,255,0.3)'/%3E%3Crect x='80' y='18' width='15' height='10' rx='2' fill='rgba(255,255,255,0.3)'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.6;
+  animation: shinkansen-move 15s linear infinite;
+}
+
+@keyframes shinkansen-move {
+  0% { left: -10%; }
+  100% { left: 110%; }
+}
+
+/* ========================================
+   19. Utility Classes
+   ======================================== */
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+
+.mt-sm { margin-top: var(--space-sm); }
+.mt-md { margin-top: var(--space-md); }
+.mt-lg { margin-top: var(--space-lg); }
+.mt-xl { margin-top: var(--space-xl); }
+
+.mb-sm { margin-bottom: var(--space-sm); }
+.mb-md { margin-bottom: var(--space-md); }
+.mb-lg { margin-bottom: var(--space-lg); }
+.mb-xl { margin-bottom: var(--space-xl); }
+
+.color-coral { color: var(--color-coral); }
+.color-gold { color: var(--color-gold); }
+.color-gray { color: var(--color-medium-gray); }
+
+.bg-white { background: white; }
+.bg-cream { background: var(--color-cream); }
+.bg-beige { background: var(--color-beige); }
+
+/* Elegant Accent Line */
+.accent-line {
+  width: 60px;
+  height: 2px;
+  background: var(--color-coral);
+  margin: var(--space-md) 0;
+}
+
+.accent-line.center {
+  margin-left: auto;
+  margin-right: auto;
+}
