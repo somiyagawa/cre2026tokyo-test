@@ -959,8 +959,19 @@ tbody tr:hover {
 /* ========================================
    18. Tokyo Skyline Hero Backgrounds
    ======================================== */
+
 .tokyo-hero {
-  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.hero-content {
+  z-index: 10;
+}
+
+.tokyo-hero {
+  position: center;
   min-height: 60vh;
   background: linear-gradient(135deg, #E86C5C 0%, #F08B7D 50%, #FFB4A8 100%);
   overflow: hidden;
