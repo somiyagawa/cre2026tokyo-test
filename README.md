@@ -17,10 +17,19 @@ An elegant, Tokyo-inspired website for CRE 2026 Japan, featuring sophisticated d
 
 ### Design Features
 - **Elegant Tokyo Aesthetic**: Cream, beige, and elegant gray color palette with coral accents from official logo
+- **Tokyo Photo Backgrounds**: Real Tokyo photography (Pexels Free License)
+  - Cherry blossoms in spring (sakura)
+  - Traditional Japanese gardens
+  - Tokyo Tower night skyline
+  - Shibuya Crossing aerial view
+  - Modern Tokyo architecture
+  - Zojoji Temple with Tokyo Tower (hero background)
+- **Dynamic Navigation**: Auto-hiding navbar on scroll down, reappears on scroll up
 - **Tokyo Silhouettes**: Animated skyline, Mt. Fuji, and Shinkansen in hero sections
+- **Bilingual Support**: English and Arabic text throughout
 - **Responsive Design**: Full mobile compatibility with elegant transitions
-- **Professional Typography**: Playfair Display serif for headings, Inter sans-serif for body text
-- **Smooth Animations**: Scroll-reveal effects, fade-ins, and interactive elements
+- **Professional Typography**: Playfair Display serif for headings, Inter sans-serif for body text, Noto Naskh Arabic
+- **Smooth Animations**: Scroll-reveal effects, fade-ins, interactive elements with cubic-bezier easing
 
 ## 📁 Website Structure
 
@@ -106,16 +115,22 @@ An elegant, Tokyo-inspired website for CRE 2026 Japan, featuring sophisticated d
 
 ## 🚀 Technical Features
 
-### Responsive Navigation
-- Sticky header with scroll effects
-- Mobile-friendly hamburger menu
-- Dropdown menus for complex navigation
+### Dynamic Navigation System
+- **Auto-Hide on Scroll**: Navbar hides when scrolling down (>200px), reappears when scrolling up
+- **Smooth Transitions**: Cubic-bezier easing for professional feel
+- **Logo Scaling**: Logo shrinks slightly when scrolled for compact appearance
+- **Gradient Underline**: Animated coral gradient appears on scroll
+- **Hover Effects**: Background glow and vertical lift on link hover
+- **Dropdown Animations**: Scale and fade effects with left border accent
+- Mobile-friendly hamburger menu with smooth transitions
 
 ### Performance
 - Optimized CSS with CSS variables
+- RequestAnimationFrame for smooth scroll effects
 - Minimal JavaScript dependencies
-- CDN-hosted fonts and icons
+- CDN-hosted fonts and icons (Google Fonts, Font Awesome)
 - Lazy-loading compatible
+- Parallax backgrounds with fixed attachment (desktop only)
 
 ### Accessibility
 - Semantic HTML5 structure
@@ -183,6 +198,21 @@ Potential additions:
 **Design & Development**: Custom elegant Tokyo-inspired design system
 
 **Official Logo**: CRE 2026 Japan (used with permission)
+
+### 📸 Photo Credits (Pexels Free License)
+
+All background images are sourced from **Pexels** under the Pexels Free License, which allows free use for commercial and non-commercial purposes without attribution required (though we provide it):
+
+- **Hero Background**: Zojoji Temple with Tokyo Tower - [Pexels](https://www.pexels.com/)
+- **Cherry Blossoms**: Tokyo Skytree with spring sakura - [Pexels](https://www.pexels.com/)
+- **Japanese Garden**: Tranquil zen garden - [Pexels](https://www.pexels.com/)
+- **Tokyo Night**: Tokyo Tower illuminated skyline - [Pexels](https://www.pexels.com/)
+- **Shibuya Crossing**: Aerial view of famous crossing - [Pexels](https://www.pexels.com/)
+- **Modern Architecture**: Tokyo urban buildings - [Pexels](https://www.pexels.com/)
+
+**Pexels License**: All photos published on Pexels can be used for free for commercial and non-commercial purposes. Attribution is not required, but appreciated. [Learn more](https://www.pexels.com/license/)
+
+Photo credits are displayed discreetly at the bottom right of each background section.
 
 ---
 

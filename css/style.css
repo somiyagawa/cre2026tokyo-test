@@ -8,12 +8,12 @@
    ======================================== */
 :root {
   /* Primary Colors - Elegant Neutrals */
-  --color-cream: #FAF8F5;
-  --color-beige: #F5F1EB;
-  --color-warm-gray: #E8E4DF;
-  --color-charcoal: #3A3A3A;
-  --color-dark-gray: #5A5A5A;
-  --color-medium-gray: #8B8B8B;
+  --color-cream: #FAFAFA;
+  --color-beige: #F5F3F0;
+  --color-warm-gray: #E5E3E0;
+  --color-charcoal: #2A2A2A;
+  --color-dark-gray: #4A4A4A;
+  --color-medium-gray: #7A7A7A;
   
   /* Accent Colors - From Logo */
   --color-coral: #E86C5C;
@@ -24,33 +24,37 @@
   --color-gold: #C9A961;
   --color-gold-light: #DCC088;
   --color-white: #FFFFFF;
-  --color-black: #1A1A1A;
+  --color-black: #0A0A0A;
   
   /* Typography */
   --font-serif: 'Playfair Display', 'Noto Serif JP', serif;
   --font-sans: 'Inter', 'Noto Sans JP', sans-serif;
+  --font-arabic: 'Noto Naskh Arabic', 'Arial', sans-serif;
   
-  /* Spacing System */
+  /* Spacing System - Golden Ratio Based */
   --space-xs: 0.5rem;
-  --space-sm: 1rem;
+  --space-sm: 0.875rem;
   --space-md: 1.5rem;
   --space-lg: 2.5rem;
   --space-xl: 4rem;
-  --space-xxl: 6rem;
+  --space-xxl: 6.5rem;
   
   /* Border Radius */
-  --radius-sm: 4px;
-  --radius-md: 8px;
-  --radius-lg: 16px;
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
   
-  /* Shadows */
-  --shadow-subtle: 0 2px 8px rgba(0, 0, 0, 0.04);
-  --shadow-soft: 0 4px 16px rgba(0, 0, 0, 0.06);
-  --shadow-elegant: 0 8px 32px rgba(0, 0, 0, 0.08);
+  /* Shadows - More Sophisticated */
+  --shadow-subtle: 0 1px 3px rgba(0, 0, 0, 0.05), 0 1px 2px rgba(0, 0, 0, 0.03);
+  --shadow-soft: 0 4px 12px rgba(0, 0, 0, 0.08), 0 2px 4px rgba(0, 0, 0, 0.04);
+  --shadow-elegant: 0 12px 40px rgba(0, 0, 0, 0.1), 0 4px 12px rgba(0, 0, 0, 0.06);
+  --shadow-strong: 0 20px 60px rgba(0, 0, 0, 0.15), 0 8px 20px rgba(0, 0, 0, 0.08);
   
   /* Transitions */
-  --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  --transition-fast: all 0.2s ease;
+  --transition-smooth: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-fast: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-bounce: all 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
 /* ========================================
@@ -71,9 +75,10 @@ body {
   font-family: var(--font-sans);
   background-color: var(--color-cream);
   color: var(--color-charcoal);
-  line-height: 1.7;
+  line-height: 1.75;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: "kern" 1, "liga" 1;
 }
 
 /* ========================================
@@ -81,32 +86,36 @@ body {
    ======================================== */
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-serif);
-  font-weight: 600;
-  line-height: 1.3;
+  font-weight: 500;
+  line-height: 1.25;
   color: var(--color-charcoal);
-  margin-bottom: var(--space-md);
-  letter-spacing: -0.02em;
+  margin-bottom: var(--space-lg);
+  letter-spacing: -0.025em;
 }
 
 h1 {
-  font-size: clamp(2.5rem, 5vw, 4rem);
-  font-weight: 400;
-  letter-spacing: -0.03em;
+  font-size: clamp(2.75rem, 6vw, 5.5rem);
+  font-weight: 300;
+  letter-spacing: -0.04em;
+  line-height: 1.1;
 }
 
 h2 {
-  font-size: clamp(2rem, 4vw, 3rem);
-  font-weight: 400;
+  font-size: clamp(2.25rem, 4.5vw, 3.5rem);
+  font-weight: 300;
+  letter-spacing: -0.03em;
 }
 
 h3 {
-  font-size: clamp(1.5rem, 3vw, 2rem);
-  font-weight: 500;
+  font-size: clamp(1.75rem, 3vw, 2.25rem);
+  font-weight: 400;
+  letter-spacing: -0.02em;
 }
 
 h4 {
-  font-size: clamp(1.25rem, 2vw, 1.5rem);
-  font-weight: 500;
+  font-size: clamp(1.375rem, 2vw, 1.75rem);
+  font-weight: 400;
+  letter-spacing: -0.01em;
 }
 
 p {
@@ -126,29 +135,87 @@ a:hover {
 }
 
 /* ========================================
-   4. Navigation - Elegant & Minimalist
+   3.5. Test Version Banner
    ======================================== */
-.navbar {
+body::before {
+  content: '⚠️ TEST VERSION / テスト版 / نسخة تجريبية ⚠️';
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  background: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+  color: #2A2A2A;
+  text-align: center;
+  padding: 0.5rem;
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  z-index: 10000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  border-bottom: 2px solid #FF8C00;
+  animation: testBannerPulse 3s ease-in-out infinite;
+}
+
+@keyframes testBannerPulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.85; }
+}
+
+/* ========================================
+   4. Navigation - Elegant & Minimalist
+   ======================================== */
+.navbar {
+  position: fixed;
+  top: 42px;
+  left: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.98);
+  backdrop-filter: blur(30px) saturate(180%);
+  -webkit-backdrop-filter: blur(30px) saturate(180%);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
   z-index: 1000;
   transition: var(--transition-smooth);
 }
 
+.navbar::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, 
+    transparent 0%, 
+    var(--color-coral) 50%, 
+    transparent 100%
+  );
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
 .navbar.scrolled {
-  box-shadow: var(--shadow-soft);
+  box-shadow: var(--shadow-elegant);
+  transform: translateY(0);
+}
+
+.navbar.scrolled::after {
+  opacity: 1;
+}
+
+.navbar.scrolled .nav-logo img {
+  height: 48px;
+  transform: scale(0.95);
+}
+
+.navbar.hidden {
+  transform: translateY(-100%);
 }
 
 .nav-container {
-  max-width: 1400px;
+  max-width: 1600px;
   margin: 0 auto;
-  padding: var(--space-md) var(--space-lg);
+  padding: 1.25rem var(--space-xl);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -161,21 +228,23 @@ a:hover {
 }
 
 .nav-logo img {
-  height: 50px;
+  height: 55px;
   width: auto;
   transition: var(--transition-smooth);
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
 }
 
 .nav-logo:hover img {
-  transform: translateY(-2px);
+  transform: translateY(-2px) scale(1.02);
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.15));
 }
 
 .nav-title {
   font-family: var(--font-serif);
-  font-size: 1.5rem;
-  font-weight: 400;
+  font-size: 1.375rem;
+  font-weight: 300;
   color: var(--color-charcoal);
-  letter-spacing: -0.01em;
+  letter-spacing: -0.02em;
 }
 
 .nav-menu {
@@ -190,13 +259,12 @@ a:hover {
 }
 
 .nav-link {
-  font-size: 0.95rem;
-  font-weight: 500;
-  color: var(--color-dark-gray);
-  padding: var(--space-xs) 0;
-  letter-spacing: 0.02em;
-  text-transform: uppercase;
   font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--color-dark-gray);
+  padding: var(--space-sm) 0;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
   position: relative;
   transition: var(--transition-fast);
 }
@@ -204,22 +272,41 @@ a:hover {
 .nav-link::after {
   content: '';
   position: absolute;
-  bottom: -4px;
-  left: 0;
-  width: 0;
+  bottom: -6px;
+  left: 50%;
+  transform: translateX(-50%) scaleX(0);
+  width: 100%;
   height: 2px;
-  background: var(--color-coral);
-  transition: width 0.3s ease;
+  background: linear-gradient(90deg, var(--color-coral), var(--color-coral-light));
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 2px;
+  transform-origin: center;
 }
 
 .nav-link:hover,
 .nav-link.active {
   color: var(--color-coral);
+  transform: translateY(-2px);
 }
 
 .nav-link:hover::after,
 .nav-link.active::after {
-  width: 100%;
+  transform: translateX(-50%) scaleX(1);
+}
+
+.nav-link::before {
+  content: '';
+  position: absolute;
+  inset: -8px -12px;
+  background: linear-gradient(135deg, rgba(232, 108, 92, 0.08), rgba(240, 139, 125, 0.08));
+  border-radius: 8px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: -1;
+}
+
+.nav-link:hover::before {
+  opacity: 1;
 }
 
 /* Dropdown Menu */
@@ -244,7 +331,8 @@ a:hover {
   box-shadow: var(--shadow-elegant);
   opacity: 0;
   visibility: hidden;
-  transform: translateY(-10px);
+  transform: translateY(-10px) scale(0.95);
+  transform-origin: top center;
   transition: var(--transition-smooth);
   margin-top: var(--space-sm);
 }
@@ -252,7 +340,7 @@ a:hover {
 .dropdown:hover .dropdown-menu {
   opacity: 1;
   visibility: visible;
-  transform: translateY(0);
+  transform: translateY(0) scale(1);
 }
 
 .dropdown-item {
@@ -262,11 +350,31 @@ a:hover {
   border-radius: var(--radius-sm);
   transition: var(--transition-fast);
   font-size: 0.95rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.dropdown-item::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%) scaleX(0);
+  width: 3px;
+  height: 70%;
+  background: linear-gradient(180deg, var(--color-coral), var(--color-coral-light));
+  transition: transform 0.3s ease;
+  border-radius: 0 3px 3px 0;
 }
 
 .dropdown-item:hover {
   background: var(--color-beige);
   color: var(--color-coral);
+  padding-left: calc(var(--space-md) + 8px);
+}
+
+.dropdown-item:hover::before {
+  transform: translateY(-50%) scaleX(1);
 }
 
 /* Mobile Menu Toggle */
@@ -318,56 +426,87 @@ a:hover {
   max-width: 1200px;
   text-align: center;
   position: relative;
-  z-index: 1;
+  z-index: 10;
+  margin: 0 auto;
+  width: 100%;
 }
 
 .hero-logo {
-  max-width: 300px;
+  max-width: 420px;
   height: auto;
-  margin: 0 auto var(--space-xl);
-  animation: fadeInUp 1s ease;
+  margin: 0 auto var(--space-xxl);
+  animation: fadeInUp 1.2s cubic-bezier(0.4, 0, 0.2, 1);
+  filter: drop-shadow(0 8px 24px rgba(0, 0, 0, 0.18)) 
+          drop-shadow(0 2px 8px rgba(0, 0, 0, 0.12));
+  display: block;
+  transform: translateZ(0);
+  will-change: transform;
 }
 
 .hero-subtitle {
   font-family: var(--font-sans);
-  font-size: clamp(1.125rem, 2vw, 1.5rem);
-  color: var(--color-medium-gray);
-  font-weight: 400;
-  letter-spacing: 0.08em;
+  font-size: clamp(0.875rem, 1.5vw, 1.125rem);
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 600;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
-  margin-bottom: var(--space-md);
-  animation: fadeInUp 1s ease 0.2s both;
+  margin-bottom: var(--space-lg);
+  animation: fadeInUp 1.2s cubic-bezier(0.4, 0, 0.2, 1) 0.3s both;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
 }
 
 .hero-title {
   font-family: var(--font-serif);
-  font-size: clamp(2.5rem, 5vw, 4.5rem);
-  color: var(--color-charcoal);
-  margin-bottom: var(--space-md);
-  font-weight: 400;
-  line-height: 1.2;
-  animation: fadeInUp 1s ease 0.4s both;
+  font-size: clamp(3rem, 7vw, 6.5rem);
+  color: var(--color-white);
+  margin-bottom: var(--space-xl);
+  font-weight: 200;
+  line-height: 1.05;
+  animation: fadeInUp 1.2s cubic-bezier(0.4, 0, 0.2, 1) 0.5s both;
+  letter-spacing: -0.04em;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.25), 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
 .hero-description {
   font-size: clamp(1.125rem, 2vw, 1.375rem);
-  color: var(--color-dark-gray);
-  max-width: 800px;
-  margin: 0 auto var(--space-xl);
-  line-height: 1.7;
-  animation: fadeInUp 1s ease 0.6s both;
+  color: rgba(255, 255, 255, 0.95);
+  max-width: 900px;
+  margin: 0 auto var(--space-xxl);
+  line-height: 1.8;
+  animation: fadeInUp 1.2s cubic-bezier(0.4, 0, 0.2, 1) 0.7s both;
+  font-weight: 300;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
 }
 
 .hero-dates {
   display: inline-flex;
   align-items: center;
-  gap: var(--space-md);
-  background: white;
-  padding: var(--space-md) var(--space-xl);
-  border-radius: var(--radius-lg);
-  box-shadow: var(--shadow-soft);
-  margin-bottom: var(--space-xl);
-  animation: fadeInUp 1s ease 0.8s both;
+  gap: var(--space-xl);
+  background: rgba(255, 255, 255, 0.98);
+  backdrop-filter: blur(30px) saturate(180%);
+  -webkit-backdrop-filter: blur(30px) saturate(180%);
+  padding: var(--space-xl) 3rem;
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-strong);
+  margin-bottom: var(--space-xxl);
+  animation: fadeInUp 1.2s cubic-bezier(0.4, 0, 0.2, 1) 0.9s both;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-dates::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, 
+    transparent 0%, 
+    var(--color-coral) 50%, 
+    transparent 100%
+  );
 }
 
 .hero-date-item {
@@ -377,18 +516,21 @@ a:hover {
 }
 
 .hero-date-label {
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   color: var(--color-medium-gray);
   text-transform: uppercase;
-  letter-spacing: 0.05em;
-  margin-bottom: var(--space-xs);
+  letter-spacing: 0.12em;
+  margin-bottom: var(--space-sm);
+  font-weight: 600;
 }
 
 .hero-date-value {
   font-family: var(--font-serif);
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: var(--color-coral);
-  font-weight: 600;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  line-height: 1;
 }
 
 .hero-cta {
@@ -405,28 +547,49 @@ a:hover {
 .btn {
   display: inline-flex;
   align-items: center;
-  gap: var(--space-xs);
-  padding: var(--space-md) var(--space-xl);
-  border-radius: var(--radius-md);
-  font-weight: 500;
+  gap: var(--space-sm);
+  padding: 1.125rem 2.5rem;
+  border-radius: var(--radius-lg);
+  font-weight: 600;
   font-size: 1rem;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.03em;
   cursor: pointer;
   border: none;
   transition: var(--transition-smooth);
   text-decoration: none;
+  position: relative;
+  overflow: hidden;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+}
+
+.btn::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  transform: translate(-50%, -50%);
+  transition: width 0.6s, height 0.6s;
+}
+
+.btn:hover::before {
+  width: 300px;
+  height: 300px;
 }
 
 .btn-primary {
-  background: var(--color-coral);
+  background: linear-gradient(135deg, var(--color-coral) 0%, var(--color-coral-light) 100%);
   color: white;
-  box-shadow: 0 4px 16px rgba(232, 108, 92, 0.3);
+  box-shadow: 0 8px 24px rgba(232, 108, 92, 0.35);
 }
 
 .btn-primary:hover {
-  background: var(--color-coral-dark);
-  transform: translateY(-2px);
-  box-shadow: 0 6px 24px rgba(232, 108, 92, 0.4);
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 12px 32px rgba(232, 108, 92, 0.45);
 }
 
 .btn-secondary {
@@ -456,39 +619,73 @@ a:hover {
 .container {
   max-width: 1400px;
   margin: 0 auto;
-  padding: 0 var(--space-lg);
+  padding: 0 var(--space-xl);
 }
 
 .container-narrow {
-  max-width: 1000px;
+  max-width: 1100px;
   margin: 0 auto;
-  padding: 0 var(--space-lg);
+  padding: 0 var(--space-xl);
+}
+
+@media (max-width: 768px) {
+  .container,
+  .container-narrow {
+    padding: 0 var(--space-md);
+  }
 }
 
 .section {
   padding: var(--space-xxl) 0;
+  position: relative;
 }
 
 .section-title {
   text-align: center;
-  margin-bottom: var(--space-xl);
+  margin-bottom: var(--space-md);
+  position: relative;
+  display: inline-block;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .section-subtitle {
   text-align: center;
   font-size: 1.25rem;
   color: var(--color-medium-gray);
-  max-width: 700px;
+  max-width: 750px;
   margin: 0 auto var(--space-xl);
+  font-weight: 300;
+  line-height: 1.8;
 }
 
-/* Divider */
+/* Divider - More Elegant */
 .divider {
-  width: 80px;
-  height: 3px;
+  width: 100px;
+  height: 4px;
+  background: linear-gradient(90deg, 
+    transparent 0%, 
+    var(--color-coral) 20%,
+    var(--color-coral-light) 50%,
+    var(--color-coral) 80%,
+    transparent 100%
+  );
+  margin: var(--space-lg) auto var(--space-xl);
+  border-radius: 4px;
+  position: relative;
+}
+
+.divider::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 12px;
+  height: 12px;
   background: var(--color-coral);
-  margin: var(--space-lg) auto;
-  border-radius: 2px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 3px var(--color-cream);
 }
 
 /* ========================================
@@ -498,14 +695,32 @@ a:hover {
   background: white;
   border-radius: var(--radius-lg);
   padding: var(--space-xl);
-  box-shadow: var(--shadow-subtle);
+  box-shadow: var(--shadow-soft);
   transition: var(--transition-smooth);
-  border: 1px solid rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  position: relative;
+  overflow: hidden;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, var(--color-coral), var(--color-coral-light));
+  transform: translateX(-100%);
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .card:hover {
-  transform: translateY(-4px);
-  box-shadow: var(--shadow-elegant);
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-strong);
+}
+
+.card:hover::before {
+  transform: translateX(0);
 }
 
 .card-title {
@@ -530,19 +745,33 @@ a:hover {
    ======================================== */
 .grid {
   display: grid;
-  gap: var(--space-lg);
+  gap: var(--space-xl);
 }
 
 .grid-2 {
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 }
 
 .grid-3 {
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .grid-4 {
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+@media (min-width: 1200px) {
+  .grid-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .grid-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 /* ========================================
@@ -681,6 +910,168 @@ tbody tr:hover {
 }
 
 /* ========================================
+   12.5. Tokyo Background Sections
+   ======================================== */
+
+/* Cherry Blossom Background - Pexels Free License */
+.bg-tokyo-sakura {
+  background: 
+    linear-gradient(135deg, 
+      rgba(250, 240, 245, 0.92) 0%,
+      rgba(255, 250, 252, 0.88) 50%,
+      rgba(250, 240, 245, 0.92) 100%
+    ),
+    url('https://sspark.genspark.ai/cfimages?u1=McgAiuSm5Moe%2B5o6FvUAQF2iQsLwatNjTD0exNxUj1%2FnQYJE9UZZpZ7p8rDR8Q%2FbuO%2B0JIFgiiEU%2BGIvmYm0GIEQRorjRhHgpwukYjiwE5NTiqTo3wSwTT9fASdIuNOGMhEWVlEwIVlWtfjo4kuR99CM1cEu%2B83hKiUTKfIDOq6pb%2B2Bdtd3azoy1%2FdKAS4%3D&u2=6F2W8MlRIKaJG8tk&width=2560');
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.bg-tokyo-sakura::after {
+  content: 'Photo by Pexels';
+  position: absolute;
+  bottom: 10px;
+  right: 15px;
+  font-size: 0.7rem;
+  color: rgba(0, 0, 0, 0.4);
+  background: rgba(255, 255, 255, 0.7);
+  padding: 3px 8px;
+  border-radius: 3px;
+  font-family: var(--font-sans);
+}
+
+/* Japanese Garden Background - Pexels Free License */
+.bg-tokyo-garden {
+  background: 
+    linear-gradient(135deg, 
+      rgba(240, 248, 240, 0.9) 0%,
+      rgba(245, 252, 245, 0.85) 50%,
+      rgba(240, 248, 240, 0.9) 100%
+    ),
+    url('https://sspark.genspark.ai/cfimages?u1=8ja%2FkqxDXVrmOgZJJWudiVz57azGBIAsD2Wu4GbjCJKg4tQsln94TM1YCPdCqBsBb1jp%2BPdG0gJS5LhCk3TvhUY%2B6OUJDUlmg09DMaqFcq5ER7x0Me2ZWxOqCK68SLrhz2uICdQB38VAl8Hpi2DJbY3OMlJmk%2F9F7unUSlFcrvU%2BAhPta4HOzGC2AKO84SQ%3D&u2=wIXYHRAAOjcIizJ%2B&width=2560');
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.bg-tokyo-garden::after {
+  content: 'Photo by Pexels';
+  position: absolute;
+  bottom: 10px;
+  right: 15px;
+  font-size: 0.7rem;
+  color: rgba(0, 0, 0, 0.4);
+  background: rgba(255, 255, 255, 0.7);
+  padding: 3px 8px;
+  border-radius: 3px;
+  font-family: var(--font-sans);
+}
+
+/* Tokyo Night Skyline Background - Pexels Free License */
+.bg-tokyo-night {
+  background: 
+    linear-gradient(135deg, 
+      rgba(26, 32, 44, 0.88) 0%,
+      rgba(45, 55, 72, 0.82) 50%,
+      rgba(26, 32, 44, 0.88) 100%
+    ),
+    url('https://sspark.genspark.ai/cfimages?u1=zG5jQkbGxlDPW7nj3RdGFLvJnm8kyAMrqWTCEJ2Vj4Vq12deqMlQYrCDbIeCIPcFfiP53JsRBnqeq62GUrY35lswxJl4wu%2B00hh9PiyUijzjhj4wMwmZojKEkNOHIRvxMwsUd5IJ0maJQ9AhWz%2BMA4mL3u0GgugNA4srnew7sYrgGfhlQWhw%2FH77nTR5&u2=scWFUMr9BlaijUqi&width=2560');
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.bg-tokyo-night::after {
+  content: 'Photo by Pexels';
+  position: absolute;
+  bottom: 10px;
+  right: 15px;
+  font-size: 0.7rem;
+  color: rgba(255, 255, 255, 0.6);
+  background: rgba(0, 0, 0, 0.5);
+  padding: 3px 8px;
+  border-radius: 3px;
+  font-family: var(--font-sans);
+}
+
+.bg-tokyo-night h2,
+.bg-tokyo-night h3,
+.bg-tokyo-night p,
+.bg-tokyo-night li {
+  color: white;
+}
+
+/* Shibuya Crossing Background - Pexels Free License */
+.bg-tokyo-shibuya {
+  background: 
+    linear-gradient(135deg, 
+      rgba(250, 250, 250, 0.92) 0%,
+      rgba(255, 255, 255, 0.88) 50%,
+      rgba(250, 250, 250, 0.92) 100%
+    ),
+    url('https://sspark.genspark.ai/cfimages?u1=qLlehz1l%2BN5HVo%2FFOe%2FPpmkJVVrP3D6UeGDAnITljhyddP50CB5Qe0ErVrY1sArzStiJcnt8jt3W8j8e4LQHgwlmFiieYaZIyFw%2BLV3o8qH8LhHBOaT56NirfijpEfv%2FZo1sfJw%2F7%2BYb1bkWL5lGdL9ftagqQKpjE67ZX7BKhs964scGHSl14xWtIXxM&u2=NOnZkMioAVsle8LG&width=2560');
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.bg-tokyo-shibuya::after {
+  content: 'Photo by Pexels';
+  position: absolute;
+  bottom: 10px;
+  right: 15px;
+  font-size: 0.7rem;
+  color: rgba(0, 0, 0, 0.4);
+  background: rgba(255, 255, 255, 0.7);
+  padding: 3px 8px;
+  border-radius: 3px;
+  font-family: var(--font-sans);
+}
+
+/* Modern Architecture Background - Pexels Free License */
+.bg-tokyo-modern {
+  background: 
+    linear-gradient(135deg, 
+      rgba(248, 250, 252, 0.9) 0%,
+      rgba(250, 252, 255, 0.85) 50%,
+      rgba(248, 250, 252, 0.9) 100%
+    ),
+    url('https://sspark.genspark.ai/cfimages?u1=uiTIAyCOp7PkXDZAQM52Vt%2F8Qza2GMtyq3HKJ3izk2TNVJMAbjk3RiP306hOX7%2BcoiiEwqBlAmHda1BbzAh96IEfavuIJS0s0J19CfNPAkcP7A%3D%3D&u2=fljWmsEAcMJKRuFL&width=2560');
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.bg-tokyo-modern::after {
+  content: 'Photo by Pexels';
+  position: absolute;
+  bottom: 10px;
+  right: 15px;
+  font-size: 0.7rem;
+  color: rgba(0, 0, 0, 0.4);
+  background: rgba(255, 255, 255, 0.7);
+  padding: 3px 8px;
+  border-radius: 3px;
+  font-family: var(--font-sans);
+}
+
+/* Mobile: Switch to scroll for better performance */
+@media (max-width: 768px) {
+  .bg-tokyo-sakura,
+  .bg-tokyo-garden,
+  .bg-tokyo-night,
+  .bg-tokyo-shibuya,
+  .bg-tokyo-modern {
+    background-attachment: scroll;
+  }
+}
+
+/* ========================================
    13. Footer - Elegant Closure
    ======================================== */
 .footer {
@@ -815,6 +1206,11 @@ tbody tr:hover {
    16. Responsive Design - Mobile First
    ======================================== */
 @media (max-width: 768px) {
+  body::before {
+    font-size: 0.75rem;
+    padding: 0.4rem 0.5rem;
+  }
+  
   :root {
     --space-lg: 1.5rem;
     --space-xl: 2.5rem;
@@ -877,10 +1273,44 @@ tbody tr:hover {
     padding: var(--space-xl) var(--space-md);
   }
   
+  .tokyo-hero {
+    min-height: 65vh;
+    padding: 6rem 1.5rem 4rem;
+    background-attachment: scroll;
+  }
+  
+  .tokyo-hero::before {
+    background: linear-gradient(to bottom, 
+      rgba(232, 108, 92, 0.4) 0%, 
+      rgba(240, 139, 125, 0.35) 30%,
+      rgba(255, 180, 168, 0.25) 60%,
+      rgba(42, 42, 42, 0.5) 100%
+    );
+  }
+  
+  .hero-logo {
+    max-width: 250px;
+  }
+  
   .hero-dates {
     flex-direction: column;
-    gap: var(--space-sm);
+    gap: var(--space-md);
     padding: var(--space-lg);
+  }
+  
+  .hero-dates > div[style*="width: 2px"] {
+    display: none;
+  }
+  
+  .fuji-silhouette {
+    width: 200px;
+    height: 100px;
+    right: 5%;
+  }
+  
+  .shinkansen-icon {
+    width: 100px;
+    height: 35px;
   }
   
   .hero-cta {
@@ -957,81 +1387,183 @@ tbody tr:hover {
 }
 
 /* ========================================
-   18. Tokyo Skyline Hero Backgrounds
+   18. Tokyo Skyline Hero Backgrounds - Ultra Stylish with Real Photo
    ======================================== */
-
+/* Tokyo Hero Background - Pexels Free License (Zojoji Temple & Tokyo Tower) */
 .tokyo-hero {
+  position: relative;
+  min-height: 85vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
-}
-.hero-content {
-  z-index: 10;
+  background: 
+    linear-gradient(
+      135deg, 
+      rgba(232, 108, 92, 0.5) 0%, 
+      rgba(240, 139, 125, 0.4) 25%,
+      rgba(245, 165, 148, 0.3) 50%,
+      rgba(255, 180, 168, 0.2) 75%,
+      rgba(255, 200, 188, 0.15) 100%
+    ),
+    url('https://sspark.genspark.ai/cfimages?u1=HEAs4lUgifLEA14V3Fu2Ok%2F0ab39SuFxvjF%2BzTB3JcRjt3CTOjJPOFUHxlyfxC%2B9JxCCvfNMmPC9E5huUas6p22DsLb2xGtA23Hr9yk8BYm2Xo9oDY2GYIMQprzKHf8ulFiUYtbQ4sL5FRYx4kDLgfd5oBNEKTyTk1U6vKOUGBQt05YHzY3Eoy6fUER4QOs%3D&u2=HRZ4p%2BYlHvPNREFc&width=2560');
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  overflow: hidden;
+  padding: 10rem 2rem 8rem;
 }
 
-.tokyo-hero {
-  position: center;
-  min-height: 60vh;
-  background: linear-gradient(135deg, #E86C5C 0%, #F08B7D 50%, #FFB4A8 100%);
-  overflow: hidden;
+/* Photo Credit */
+.tokyo-hero .hero-content::after {
+  content: 'Photo: Zojoji Temple & Tokyo Tower by Pexels';
+  position: absolute;
+  bottom: -6rem;
+  right: 0;
+  font-size: 0.7rem;
+  color: rgba(255, 255, 255, 0.6);
+  background: rgba(0, 0, 0, 0.4);
+  padding: 4px 12px;
+  border-radius: 4px;
+  font-family: var(--font-sans);
+  backdrop-filter: blur(8px);
+  z-index: 100;
 }
 
 .tokyo-hero::before {
   content: '';
   position: absolute;
-  bottom: 0;
+  top: 0;
   left: 0;
   right: 0;
-  height: 200px;
-  background: linear-gradient(to top, rgba(58, 58, 58, 0.1), transparent);
+  bottom: 0;
+  background: 
+    linear-gradient(to bottom, 
+      rgba(232, 108, 92, 0.15) 0%, 
+      rgba(240, 139, 125, 0.1) 20%,
+      transparent 40%,
+      transparent 70%,
+      rgba(42, 42, 42, 0.25) 100%
+    );
+  z-index: 1;
 }
 
-/* Tokyo Skyline SVG Background */
+.tokyo-hero::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    radial-gradient(ellipse at 25% 40%, rgba(255, 255, 255, 0.15) 0%, transparent 50%),
+    radial-gradient(ellipse at 75% 60%, rgba(255, 255, 255, 0.1) 0%, transparent 45%),
+    radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.05) 0%, transparent 60%);
+  z-index: 1;
+  pointer-events: none;
+  mix-blend-mode: overlay;
+}
+
+/* Tokyo Skyline SVG Background - Very subtle overlay */
 .tokyo-skyline {
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
-  height: 180px;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 200' preserveAspectRatio='none'%3E%3Cg fill='rgba(58, 58, 58, 0.15)'%3E%3Crect x='0' y='120' width='40' height='80'/%3E%3Crect x='50' y='100' width='50' height='100'/%3E%3Crect x='110' y='80' width='35' height='120'/%3E%3Crect x='155' y='110' width='45' height='90'/%3E%3Crect x='210' y='90' width='40' height='110'/%3E%3Crect x='260' y='70' width='55' height='130'/%3E%3Cpath d='M320 85 L335 70 L350 85 Z'/%3E%3Crect x='325' y='85' width='20' height='115'/%3E%3Crect x='360' y='95' width='45' height='105'/%3E%3Crect x='415' y='60' width='50' height='140'/%3E%3Crect x='475' y='105' width='35' height='95'/%3E%3Crect x='520' y='75' width='60' height='125'/%3E%3Crect x='590' y='50' width='45' height='150'/%3E%3Ccircle cx='612' cy='35' r='18'/%3E%3Crect x='645' y='90' width='40' height='110'/%3E%3Crect x='695' y='110' width='50' height='90'/%3E%3Crect x='755' y='85' width='35' height='115'/%3E%3Crect x='800' y='65' width='55' height='135'/%3E%3Crect x='865' y='100' width='45' height='100'/%3E%3Cpath d='M920 40 L945 15 L970 40 Z'/%3E%3Crect x='932' y='40' width='26' height='160'/%3E%3Crect x='980' y='95' width='40' height='105'/%3E%3Crect x='1030' y='115' width='50' height='85'/%3E%3Crect x='1090' y='80' width='35' height='120'/%3E%3Crect x='1135' y='105' width='45' height='95'/%3E%3C/g%3E%3C/svg%3E");
+  height: 150px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 200' preserveAspectRatio='none'%3E%3Cg fill='rgba(42, 42, 42, 0.15)'%3E%3Crect x='0' y='120' width='40' height='80'/%3E%3Crect x='50' y='100' width='50' height='100'/%3E%3Crect x='110' y='80' width='35' height='120'/%3E%3Crect x='155' y='110' width='45' height='90'/%3E%3Crect x='210' y='90' width='40' height='110'/%3E%3Crect x='260' y='70' width='55' height='130'/%3E%3Crect x='325' y='85' width='20' height='115'/%3E%3Crect x='360' y='95' width='45' height='105'/%3E%3Crect x='415' y='60' width='50' height='140'/%3E%3Crect x='475' y='105' width='35' height='95'/%3E%3Crect x='520' y='75' width='60' height='125'/%3E%3Crect x='590' y='50' width='45' height='150'/%3E%3Crect x='645' y='90' width='40' height='110'/%3E%3Crect x='695' y='110' width='50' height='90'/%3E%3Crect x='755' y='85' width='35' height='115'/%3E%3Crect x='800' y='65' width='55' height='135'/%3E%3Crect x='865' y='100' width='45' height='100'/%3E%3Crect x='932' y='40' width='26' height='160'/%3E%3Crect x='980' y='95' width='40' height='105'/%3E%3Crect x='1030' y='115' width='50' height='85'/%3E%3Crect x='1090' y='80' width='35' height='120'/%3E%3Crect x='1135' y='105' width='45' height='95'/%3E%3C/g%3E%3C/svg%3E");
   background-size: cover;
   background-position: bottom;
   background-repeat: repeat-x;
-  opacity: 0.8;
+  opacity: 0.3;
+  z-index: 2;
 }
 
-/* Mt. Fuji Silhouette */
+/* Mt. Fuji Silhouette - Very subtle */
 .fuji-silhouette {
   position: absolute;
   bottom: 0;
-  right: 10%;
+  right: 8%;
   width: 300px;
   height: 150px;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 150'%3E%3Cpath d='M0 150 L80 150 L150 30 L220 150 L300 150 Z' fill='rgba(58, 58, 58, 0.2)'/%3E%3Cpath d='M130 50 L150 30 L170 50 Z' fill='rgba(255, 255, 255, 0.3)'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 150'%3E%3Cdefs%3E%3ClinearGradient id='fujiGrad' x1='0%25' y1='0%25' x2='0%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:rgba(255,255,255,0.2);stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:rgba(42,42,42,0.25);stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath d='M0 150 L80 150 L150 20 L220 150 L300 150 Z' fill='url(%23fujiGrad)'/%3E%3Cpath d='M125 45 L150 20 L175 45 Z' fill='rgba(255, 255, 255, 0.3)'/%3E%3C/svg%3E");
   background-size: contain;
   background-position: bottom;
   background-repeat: no-repeat;
-  opacity: 0.7;
+  opacity: 0.4;
+  z-index: 3;
 }
 
-/* Shinkansen Silhouette */
+/* Shinkansen Silhouette - Very subtle */
 .shinkansen-icon {
   position: absolute;
-  bottom: 30px;
+  bottom: 40px;
   left: 5%;
-  width: 120px;
-  height: 40px;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 40'%3E%3Cg fill='rgba(58, 58, 58, 0.25)'%3E%3Cpath d='M10 15 Q 0 15 0 25 L 0 35 L 10 35 L 10 38 L 15 38 L 15 35 L 25 35 L 25 38 L 30 38 L 30 35 L 90 35 L 90 38 L 95 38 L 95 35 L 105 35 L 105 38 L 110 38 L 110 35 L 120 35 L 120 25 Q 120 15 110 15 Z'/%3E%3Crect x='20' y='18' width='15' height='10' rx='2' fill='rgba(255,255,255,0.3)'/%3E%3Crect x='40' y='18' width='15' height='10' rx='2' fill='rgba(255,255,255,0.3)'/%3E%3Crect x='60' y='18' width='15' height='10' rx='2' fill='rgba(255,255,255,0.3)'/%3E%3Crect x='80' y='18' width='15' height='10' rx='2' fill='rgba(255,255,255,0.3)'/%3E%3C/g%3E%3C/svg%3E");
+  width: 130px;
+  height: 45px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 40'%3E%3Cdefs%3E%3ClinearGradient id='trainGrad' x1='0%25' y1='0%25' x2='100%25' y2='0%25'%3E%3Cstop offset='0%25' style='stop-color:rgba(255,255,255,0.25);stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:rgba(42,42,42,0.35);stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='url(%23trainGrad)'%3E%3Cpath d='M10 15 Q 0 15 0 25 L 0 35 L 10 35 L 10 38 L 15 38 L 15 35 L 25 35 L 25 38 L 30 38 L 30 35 L 90 35 L 90 38 L 95 38 L 95 35 L 105 35 L 105 38 L 110 38 L 110 35 L 120 35 L 120 25 Q 120 15 110 15 Z'/%3E%3Crect x='20' y='18' width='15' height='10' rx='2' fill='rgba(255,255,255,0.3)'/%3E%3Crect x='40' y='18' width='15' height='10' rx='2' fill='rgba(255,255,255,0.3)'/%3E%3Crect x='60' y='18' width='15' height='10' rx='2' fill='rgba(255,255,255,0.3)'/%3E%3Crect x='80' y='18' width='15' height='10' rx='2' fill='rgba(255,255,255,0.3)'/%3E%3C/g%3E%3C/svg%3E");
   background-size: contain;
   background-repeat: no-repeat;
-  opacity: 0.6;
-  animation: shinkansen-move 15s linear infinite;
+  opacity: 0.5;
+  z-index: 3;
+  animation: shinkansen-move 18s linear infinite;
 }
 
 @keyframes shinkansen-move {
-  0% { left: -10%; }
-  100% { left: 110%; }
+  0% { 
+    left: -15%; 
+    opacity: 0;
+  }
+  5% {
+    opacity: 0.75;
+  }
+  95% {
+    opacity: 0.75;
+  }
+  100% { 
+    left: 115%; 
+    opacity: 0;
+  }
+}
+
+/* Decorative Elements for Tokyo Hero */
+.tokyo-hero .hero-content::before {
+  content: '';
+  position: absolute;
+  top: -150px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.2) 0%, transparent 70%);
+  border-radius: 50%;
+  z-index: -1;
+  animation: pulse 4s ease-in-out infinite;
+  filter: blur(40px);
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: translateX(-50%) scale(1);
+    opacity: 0.4;
+  }
+  50% {
+    transform: translateX(-50%) scale(1.3);
+    opacity: 0.7;
+  }
+}
+
+/* Subtle overlay for better text readability */
+.tokyo-hero::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    radial-gradient(ellipse at 50% 50%, transparent 0%, rgba(0, 0, 0, 0.1) 100%);
+  z-index: 1;
+  pointer-events: none;
 }
 
 /* ========================================
@@ -1070,4 +1602,25 @@ tbody tr:hover {
 .accent-line.center {
   margin-left: auto;
   margin-right: auto;
+}
+
+/* Arabic Text Support */
+.arabic-text {
+  font-family: var(--font-arabic);
+  direction: rtl;
+  line-height: 1.8;
+}
+
+.bilingual-title {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.bilingual-subtitle {
+  font-family: var(--font-arabic);
+  font-size: 0.85em;
+  opacity: 0.9;
+  font-weight: 400;
 }

@@ -56,23 +56,40 @@ function initNavigation() {
 }
 
 // ========================================
-// 3. Scroll Effects - Navbar Shadow
+// 3. Scroll Effects - Dynamic Navbar with Hide/Show
 // ========================================
 function initScrollEffects() {
   let lastScroll = 0;
   const navbar = document.querySelector('.navbar');
+  let ticking = false;
   
   window.addEventListener('scroll', () => {
-    const currentScroll = window.scrollY;
-    
-    // Add shadow on scroll
-    if (currentScroll > 100) {
-      navbar.style.boxShadow = '0 4px 16px rgba(0, 0, 0, 0.08)';
-    } else {
-      navbar.style.boxShadow = 'none';
+    if (!ticking) {
+      window.requestAnimationFrame(() => {
+        const currentScroll = window.scrollY;
+        
+        // Hide navbar on scroll down, show on scroll up
+        if (currentScroll > lastScroll && currentScroll > 200) {
+          // Scrolling down & past threshold
+          navbar.classList.add('hidden');
+        } else if (currentScroll < lastScroll) {
+          // Scrolling up
+          navbar.classList.remove('hidden');
+        }
+        
+        // Add shadow and background on scroll
+        if (currentScroll > 50) {
+          navbar.classList.add('scrolled');
+        } else {
+          navbar.classList.remove('scrolled');
+        }
+        
+        lastScroll = currentScroll <= 0 ? 0 : currentScroll;
+        ticking = false;
+      });
+      
+      ticking = true;
     }
-    
-    lastScroll = currentScroll;
   });
 }
 
