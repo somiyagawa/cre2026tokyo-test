@@ -162,7 +162,7 @@ const translations = {
         "ven_btn_air": "From Haneda Airport →",
 
         // --- Support ---
-        "supp_hero_title": "Support CRE 2026",
+        "supp_hero_title": "Support CRE 26",
         "supp_hero_sub": "Help make this conference accessible to researchers worldwide",
         "supp_crowd_title": "Crowdfunding Campaign",
         "supp_crowd_p": "We are planning a crowdfunding campaign via Readyfor to support participation of Egyptian scholars.",
@@ -185,7 +185,35 @@ const translations = {
         "tok_pop_title": "Popular Neighborhoods",
         "tok_day_title": "Day Trips from Tokyo",
         "tok_get_title": "Getting Around Tokyo",
-        "tok_more_title": "Travel Essentials"
+        "tok_more_title": "Travel Essentials",
+
+        // --- Program ---
+        "prog_hero_title": "Conference Program",
+        "prog_hero_sub": "Schedule of Events and Sessions",
+
+        // --- Museums ---
+        "mus_hero_title": "Egyptian Collections",
+        "mus_hero_sub": "Discover Ancient Egypt in Japan",
+
+        // --- Hotels ---
+        "acc_hero_title": "Accommodation",
+        "acc_hero_sub": "Where to stay in Tokyo",
+
+        // --- Airport Guide ---
+        "air_hero_title": "Airport Guide",
+        "air_hero_sub": "Getting to Tokyo from Haneda & Narita",
+
+        // --- Suica Guide ---
+        "sui_hero_title": "Suica & Transport",
+        "sui_hero_sub": "Navigate Tokyo like a local",
+
+        // --- Dining ---
+        "din_hero_title": "Dining in Tokyo",
+        "din_hero_sub": "A culinary journey from sushi to street food",
+
+        // --- Practical Tips ---
+        "tip_hero_title": "Practical Tips",
+        "tip_hero_sub": "Essential information for your visit"
     },
     "ja": {
         "nav_home": "ホーム",
@@ -276,7 +304,35 @@ const translations = {
 
         "foot_conf": "会議情報",
         "foot_vis": "東京案内",
-        "foot_res": "リソース"
+        "foot_res": "リソース",
+
+        // --- Program ---
+        "prog_hero_title": "会議プログラム",
+        "prog_hero_sub": "イベントとセッションのスケジュール",
+
+        // --- Museums ---
+        "mus_hero_title": "エジプトコレクション",
+        "mus_hero_sub": "日本の古代エジプトコレクション",
+
+        // --- Hotels ---
+        "acc_hero_title": "宿泊施設",
+        "acc_hero_sub": "東京での滞在先",
+
+        // --- Airport Guide ---
+        "air_hero_title": "空港ガイド",
+        "air_hero_sub": "羽田・成田からのアクセス",
+
+        // --- Suica Guide ---
+        "sui_hero_title": "Suicaと交通",
+        "sui_hero_sub": "東京をスムーズに移動するために",
+
+        // --- Dining ---
+        "din_hero_title": "東京の食事",
+        "din_hero_sub": "寿司から屋台まで、食の旅",
+
+        // --- Practical Tips ---
+        "tip_hero_title": "実用的なヒント",
+        "tip_hero_sub": "滞在に役立つ基本情報"
     },
     "ar": {
         "nav_home": "الرئيسية",
@@ -432,7 +488,7 @@ const translations = {
         "ven_btn_air": "من مطار هانيدا ←",
 
         // --- Support ---
-        "supp_hero_title": "دعم CRE 2026",
+        "supp_hero_title": "دعم CRE 26",
         "supp_hero_sub": "ساعد في إتاحة المؤتمر للباحثين عالمياً",
         "supp_crowd_title": "حملة التمويل الجماعي",
         "supp_crowd_p": "نخطط لحملة عبر Readyfor لدعم الباحثين المصريين.",
@@ -455,6 +511,34 @@ const translations = {
         "tok_pop_title": "أحياء شهيرة",
         "tok_day_title": "رحلات يومية",
         "tok_get_title": "التنقل في طوكيو",
-        "tok_more_title": "أساسيات السفر"
+        "tok_more_title": "أساسيات السفر",
+
+        // --- Program ---
+        "prog_hero_title": "برنامج المؤتمر",
+        "prog_hero_sub": "جدول الفعاليات والجلسات",
+
+        // --- Museums ---
+        "mus_hero_title": "المجموعات المصرية",
+        "mus_hero_sub": "اكتشف مصر القديمة في اليابان",
+
+        // --- Hotels ---
+        "acc_hero_title": "الإقامة",
+        "acc_hero_sub": "أين تقيم في طوكيو",
+
+        // --- Airport Guide ---
+        "air_hero_title": "دليل المطار",
+        "air_hero_sub": "الوصول إلى طوكيو من هانيدا وناريتا",
+
+        // --- Suica Guide ---
+        "sui_hero_title": "Suica والنقل",
+        "sui_hero_sub": "تنقل في طوكيو مثل السكان المحليين",
+
+        // --- Dining ---
+        "din_hero_title": "تتناول الطعام في طوكيو",
+        "din_hero_sub": "رحلة طهي من السوشي إلى طعام الشارع",
+
+        // --- Practical Tips ---
+        "tip_hero_title": "نصائح عملية",
+        "tip_hero_sub": "معلومات أساسية لزيارتك"
     }
 };
