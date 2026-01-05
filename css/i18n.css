@@ -1,0 +1,178 @@
+/* ===================================
+   Language Specific Styles & Google Translate Override
+   =================================== */
+
+/* Japanese Font */
+html[lang="ja"] body {
+    font-family: 'Noto Sans JP', sans-serif;
+    letter-spacing: 0.03em;
+}
+
+html[lang="ja"] h1, 
+html[lang="ja"] h2, 
+html[lang="ja"] h3 {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 700;
+}
+
+/* Arabic Font & RTL Support */
+html[lang="ar"] body {
+    font-family: 'Cairo', sans-serif;
+    direction: rtl;
+    text-align: right;
+}
+
+html[lang="ar"] h1, 
+html[lang="ar"] h2, 
+html[lang="ar"] h3 {
+    font-family: 'Cairo', sans-serif;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+/* RTL Layout Adjustments */
+html[lang="ar"] .logo {
+    left: auto;
+    right: 2rem;
+}
+
+html[lang="ar"] .mobile-menu-toggle {
+    justify-self: start;
+}
+
+html[lang="ar"] nav ul li.has-dropdown > a {
+    padding-right: 1.5rem;
+    padding-left: 2rem;
+}
+
+html[lang="ar"] nav ul li.has-dropdown > a::after {
+    right: auto;
+    left: 0.8rem;
+}
+
+html[lang="ar"] nav ul li.has-dropdown > a::before {
+    right: auto;
+    left: 0.8rem; /* Arrow position fix */
+}
+
+html[lang="ar"] .hero-detail-item {
+    direction: rtl;
+}
+
+/* Timeline in RTL */
+html[lang="ar"] .timeline::before {
+    left: auto;
+    right: 20px;
+}
+
+html[lang="ar"] .timeline-item {
+    padding-left: 0;
+    padding-right: 60px;
+}
+
+html[lang="ar"] .timeline-item::before {
+    left: auto;
+    right: 11px;
+}
+
+/* Museum Card RTL */
+html[lang="ar"] .museum-highlights li {
+    padding-left: 0;
+    padding-right: 1.5rem;
+}
+
+html[lang="ar"] .museum-highlights li::before {
+    left: auto;
+    right: 0;
+}
+
+/* --- Language Switcher UI --- */
+.lang-switch {
+    position: fixed;
+    top: 100px;
+    right: 20px;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    opacity: 0.9;
+    transition: opacity 0.3s;
+}
+
+.lang-switch:hover {
+    opacity: 1;
+}
+
+.lang-btn {
+    background: var(--glass-surface);
+    border: 1px solid var(--glass-border);
+    color: var(--text-primary);
+    padding: 0.5rem 0.8rem;
+    border-radius: 50px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 0.8rem;
+    cursor: pointer;
+    box-shadow: var(--glass-shadow);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    min-width: 50px;
+    text-align: center;
+}
+
+/* Button Active State */
+.lang-btn.active {
+    background: var(--brand-primary);
+    color: white;
+    border-color: transparent;
+    box-shadow: 0 0 15px rgba(188, 0, 45, 0.5);
+}
+
+.lang-btn:hover {
+    transform: translateX(-5px);
+    background: var(--future-cyan);
+    color: var(--text-primary);
+    box-shadow: 0 0 15px var(--future-cyan);
+}
+
+/* --- HIDING GOOGLE TRANSLATE DEFAULT UI --- */
+/* Hide the top banner */
+.goog-te-banner-frame.skiptranslate {
+    display: none !important;
+}
+
+body {
+    top: 0px !important;
+}
+
+/* Hide the element itself but keep it renderable */
+#google_translate_element {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+    visibility: hidden;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+/* Hide tooltip on hover */
+.goog-text-highlight {
+    background-color: transparent !important;
+    box-shadow: none !important;
+}
+
+/* Mobile Lang Switcher adjustments */
+@media (max-width: 768px) {
+    .lang-switch {
+        top: auto;
+        bottom: 20px;
+        right: 20px;
+        flex-direction: row;
+    }
+    
+    .lang-btn:hover {
+        transform: translateY(-5px);
+    }
+}

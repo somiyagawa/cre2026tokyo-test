@@ -1,173 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>[TEST VERSION] Dining Guide | CRE 2026 Tokyo | テスト版</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dining Guide | CRE 26 Tokyo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-  <nav class="navbar">
-    <div class="nav-container">
-      <a href="index.html" class="nav-logo">
-        <img src="https://page.gensparksite.com/v1/base64_upload/0bfaf0809b57ac0199616241f75a28c2" alt="CRE 2026 Japan Logo">
-        <span class="nav-title">CRE 2026 Tokyo <span style="color: #E86C5C; font-size: 0.75em; font-weight: 600;">[TEST]</span></span>
-      </a>
-      <ul class="nav-menu">
-        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-        <li class="nav-item"><a href="call-for-papers.html" class="nav-link">Call for Papers</a></li>
-        <li class="nav-item"><a href="program.html" class="nav-link">Program</a></li>
-        <li class="nav-item"><a href="registration.html" class="nav-link">Registration</a></li>
-        <li class="nav-item dropdown">
-          <a href="#" class="nav-link dropdown-toggle">About</a>
-          <ul class="dropdown-menu">
-            <li><a href="organizing-committee.html" class="dropdown-item">Organizing Committee</a></li>
-            <li><a href="venue.html" class="dropdown-item">Venue & Access</a></li>
-            <li><a href="support.html" class="dropdown-item">Support Us</a></li>
-          </ul>
-        </li>
-        <li class="nav-item dropdown">
-          <a href="#" class="nav-link dropdown-toggle">Visitor Guide</a>
-          <ul class="dropdown-menu">
-            <li><a href="airport-guide.html" class="dropdown-item">Airport Guide</a></li>
-            <li><a href="tokyo-guide.html" class="dropdown-item">Tokyo Guide</a></li>
-            <li><a href="accommodation.html" class="dropdown-item">Accommodation</a></li>
-            <li><a href="suica-guide.html" class="dropdown-item">SUICA Card Guide</a></li>
-            <li><a href="dining.html" class="dropdown-item">Dining Guide</a></li>
-            <li><a href="practical-tips.html" class="dropdown-item">Practical Tips</a></li>
-          </ul>
-        </li>
-      </ul>
-      <button class="nav-toggle"><span></span><span></span><span></span></button>
-    </div>
-  </nav>
+<body class="bg-tokyo-day">
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <img src="images/cre-26-logo.png" alt="CRE 26 Tokyo Logo" class="logo-image">
+                <div class="logo-text">
+                    <span class="logo-title">CRE 26</span>
+                    <span class="logo-subtitle">Tokyo</span>
+                </div>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+                    <li class="has-dropdown">
+                        <a href="#" data-i18n="nav_conf">Conference</a>
+                        <ul class="dropdown">
+                            <li><a href="call-for-papers.html" data-i18n="nav_conf_sub">Submissions</a></li>
+                            <li><a href="program.html" data-i18n="nav_conf_prog">Program</a></li>
+                            <li><a href="registration.html" data-i18n="nav_conf_reg">Registration</a></li>
+                            <li><a href="committee.html" data-i18n="nav_conf_comm">Committee</a></li>
+                            <li><a href="support.html" data-i18n="nav_conf_supp">Support</a></li>
+                            <li><a href="about.html" data-i18n="nav_conf_about">About</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-dropdown">
+                        <a href="#" data-i18n="nav_tokyo">Tokyo</a>
+                        <ul class="dropdown">
+                            <li><a href="venue.html" data-i18n="nav_tokyo_ven">Venue</a></li>
+                            <li><a href="collections.html" data-i18n="nav_tokyo_mus">Museums</a></li>
+                            <li><a href="accommodation.html" data-i18n="nav_tokyo_hot">Hotels</a></li>
+                            <li><a href="tokyo-guide.html" data-i18n="nav_tokyo_gui">Guide</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
 
-  <section class="tokyo-hero">
-    <div class="tokyo-skyline"></div>
-    <div class="fuji-silhouette"></div>
-    <div class="hero-content" style="position: relative; z-index: 10; padding: 8rem 2rem 4rem;">
-      <p class="hero-subtitle" style="color: white;">Culinary Adventures</p>
-      <h1 class="hero-title" style="color: white;">Dining in Tokyo</h1>
-      <p class="hero-description" style="color: white;">From ramen to fine dining</p>
-    </div>
-  </section>
+    <section class="hero" style="min-height: 50vh;">
+        <div class="hero-content">
+            <div class="hero-glass">
+                <h1>Dining in Tokyo</h1>
+                <p class="hero-subtitle">From ramen to fine dining</p>
+            </div>
+        </div>
+    </section>
 
-  <section class="section bg-white">
-    <div class="container">
-      <div class="reveal">
-        <h2 class="section-title">Japanese Cuisine Types</h2>
-        <div class="divider"></div>
-      </div>
-      <div class="grid grid-3 reveal">
-        <div class="card">
-          <h3 class="card-title">Sushi & Sashimi</h3>
-          <p><strong>Price:</strong> ¥1,000-15,000+<br>Fresh fish on rice or served raw. Try kaiten-zushi (conveyor belt sushi) for budget-friendly options.</p>
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Japanese Cuisine Types</h2>
+            </div>
+            <div class="grid grid-3">
+                <div class="glass-card">
+                    <h3><i class="fas fa-fish" style="color: var(--brand-primary);"></i> Sushi & Sashimi</h3>
+                    <p><strong>Price:</strong> ¥1,000-15,000+</p>
+                    <p>Fresh fish on rice or served raw. Try kaiten-zushi (conveyor belt sushi) for budget-friendly options.</p>
+                </div>
+                <div class="glass-card">
+                    <h3><i class="fas fa-bowl-food" style="color: var(--brand-primary);"></i> Ramen</h3>
+                    <p><strong>Price:</strong> ¥800-1,500</p>
+                    <p>Noodle soup in various broths. Fast, filling, and delicious. Order from vending machines.</p>
+                </div>
+                <div class="glass-card">
+                    <h3><i class="fas fa-shrimp" style="color: var(--brand-primary);"></i> Tempura</h3>
+                    <p><strong>Price:</strong> ¥1,500-8,000</p>
+                    <p>Lightly battered and fried seafood and vegetables. Crispy and flavorful.</p>
+                </div>
+                <div class="glass-card">
+                    <h3><i class="fas fa-bacon" style="color: var(--brand-primary);"></i> Tonkatsu</h3>
+                    <p><strong>Price:</strong> ¥1,000-2,000</p>
+                    <p>Breaded and deep-fried pork cutlet. Served with rice, miso soup, and cabbage.</p>
+                </div>
+                <div class="glass-card">
+                    <h3><i class="fas fa-drumstick-bite" style="color: var(--brand-primary);"></i> Yakitori</h3>
+                    <p><strong>Price:</strong> ¥300-600 per skewer</p>
+                    <p>Grilled chicken skewers. Perfect with beer in izakaya (Japanese pubs).</p>
+                </div>
+                <div class="glass-card">
+                    <h3><i class="fas fa-utensils" style="color: var(--brand-primary);"></i> Udon & Soba</h3>
+                    <p><strong>Price:</strong> ¥500-1,200</p>
+                    <p>Thick wheat noodles (udon) or buckwheat noodles (soba). Hot or cold options.</p>
+                </div>
+            </div>
         </div>
-        <div class="card">
-          <h3 class="card-title">Ramen</h3>
-          <p><strong>Price:</strong> ¥800-1,500<br>Noodle soup in various broths. Fast, filling, and delicious. Order from vending machines.</p>
-        </div>
-        <div class="card">
-          <h3 class="card-title">Tempura</h3>
-          <p><strong>Price:</strong> ¥1,500-8,000<br>Lightly battered and fried seafood and vegetables. Crispy and flavorful.</p>
-        </div>
-        <div class="card">
-          <h3 class="card-title">Tonkatsu</h3>
-          <p><strong>Price:</strong> ¥1,000-2,000<br>Breaded and deep-fried pork cutlet. Served with rice, miso soup, and cabbage.</p>
-        </div>
-        <div class="card">
-          <h3 class="card-title">Yakitori</h3>
-          <p><strong>Price:</strong> ¥300-600 per skewer<br>Grilled chicken skewers. Perfect with beer in izakaya (Japanese pubs).</p>
-        </div>
-        <div class="card">
-          <h3 class="card-title">Udon & Soba</h3>
-          <p><strong>Price:</strong> ¥500-1,200<br>Thick wheat noodles (udon) or buckwheat noodles (soba). Hot or cold options.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="section bg-beige">
-    <div class="container-narrow">
-      <div class="reveal">
-        <h2 class="section-title">Budget-Friendly Options</h2>
-        <div class="divider"></div>
-      </div>
-      <div class="grid grid-2 reveal">
-        <div class="card">
-          <h4><i class="fas fa-store" style="color: var(--color-coral);"></i> Convenience Stores</h4>
-          <p><strong>Price:</strong> ¥300-800<br>7-Eleven, FamilyMart, Lawson offer fresh rice balls, bento boxes, sandwiches, and hot meals. Surprisingly good quality!</p>
+    <section class="section">
+        <div class="container">
+            <div class="glass-card">
+                <h2>Budget-Friendly Options</h2>
+                <div class="grid grid-2" style="margin-top: 2rem;">
+                    <div>
+                        <h3>Convenience Stores</h3>
+                        <p><strong>Price:</strong> ¥300-800</p>
+                        <p>7-Eleven, FamilyMart, Lawson offer fresh rice balls, bento boxes, sandwiches, and hot meals. Surprisingly good quality!</p>
+                    </div>
+                    <div>
+                        <h3>Chain Restaurants</h3>
+                        <p><strong>Price:</strong> ¥500-1,000</p>
+                        <p>Yoshinoya (beef bowls), Matsuya, Sukiya offer fast, filling meals. English picture menus available.</p>
+                    </div>
+                    <div>
+                        <h3>Supermarket Bento</h3>
+                        <p><strong>Price:</strong> ¥300-600</p>
+                        <p>Supermarkets discount bento boxes 30-50% after 8 PM. Great value for dinner!</p>
+                    </div>
+                    <div>
+                        <h3>Lunch Sets</h3>
+                        <p><strong>Price:</strong> ¥800-1,500</p>
+                        <p>Many restaurants offer special lunch sets (teishoku) at reduced prices. Best value!</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="card">
-          <h4><i class="fas fa-utensils" style="color: var(--color-coral);"></i> Chain Restaurants</h4>
-          <p><strong>Price:</strong> ¥500-1,000<br>Yoshinoya (beef bowls), Matsuya, Sukiya offer fast, filling meals. English picture menus available.</p>
-        </div>
-        <div class="card">
-          <h4><i class="fas fa-shopping-basket" style="color: var(--color-coral);"></i> Supermarket Bento</h4>
-          <p><strong>Price:</strong> ¥300-600<br>Supermarkets discount bento boxes 30-50% after 8 PM. Great value for dinner!</p>
-        </div>
-        <div class="card">
-          <h4><i class="fas fa-bowl-rice" style="color: var(--color-coral);"></i> Lunch Sets</h4>
-          <p><strong>Price:</strong> ¥800-1,500<br>Many restaurants offer special lunch sets (teishoku) at reduced prices. Best value!</p>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="section bg-white">
-    <div class="container-narrow">
-      <div class="reveal">
-        <h2 class="section-title">Dining Etiquette Tips</h2>
-        <div class="divider"></div>
-      </div>
-      <div class="card reveal">
-        <ul style="line-height: 2.5;">
-          <li><strong>Say "Itadakimasu"</strong> before eating (I humbly receive)</li>
-          <li><strong>Slurping noodles is OK</strong> and shows you're enjoying the meal</li>
-          <li><strong>No tipping</strong> - Service charge is included, tipping can be offensive</li>
-          <li><strong>Use chopstick rests</strong> - Don't stick chopsticks upright in rice</li>
-          <li><strong>Say "Gochisousama"</strong> after eating (Thank you for the meal)</li>
-          <li><strong>Pay at the register</strong> near the exit, not at the table</li>
-        </ul>
-      </div>
-    </div>
-  </section>
+    <section class="section">
+        <div class="container">
+            <div class="glass-card">
+                <h2><i class="fas fa-handshake" style="color: var(--brand-primary);"></i> Dining Etiquette Tips</h2>
+                <ul style="margin-top: 1rem; line-height: 1.8;">
+                    <li>Say "Itadakimasu" before eating (I humbly receive)</li>
+                    <li>Slurping noodles is OK and shows you're enjoying the meal</li>
+                    <li><strong>No tipping</strong> - Service charge is included, tipping can be offensive</li>
+                    <li>Use chopstick rests - Don't stick chopsticks upright in rice</li>
+                    <li>Say "Gochisousama" after eating (Thank you for the meal)</li>
+                    <li>Pay at the register near the exit, not at the table</li>
+                </ul>
+            </div>
+        </div>
+    </section>
 
-  <footer class="footer">
-    <div class="footer-content">
-      <div class="footer-section">
-        <h3>CRE 2026 Tokyo</h3>
-        <p>Current Research in Egyptology<br>July 11-15, 2026<br>University of Tsukuba Tokyo Campus</p>
-      </div>
-      <div class="footer-section">
-        <h3>Quick Links</h3>
-        <ul class="footer-links">
-          <li><a href="call-for-papers.html">Call for Papers</a></li>
-          <li><a href="program.html">Program</a></li>
-          <li><a href="registration.html">Registration</a></li>
-        </ul>
-      </div>
-      <div class="footer-section">
-        <h3>Visitor Information</h3>
-        <ul class="footer-links">
-          <li><a href="airport-guide.html">Airport Guide</a></li>
-          <li><a href="accommodation.html">Accommodation</a></li>
-          <li><a href="tokyo-guide.html">Tokyo Guide</a></li>
-        </ul>
-      </div>
-      <div class="footer-section">
-        <h3>Connect</h3>
-        <p>Email: <a href="mailto:cre2026@tsukuba.ac.jp">cre2026@tsukuba.ac.jp</a></p>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>&copy; 2025 CRE Japan Committee. All rights reserved.</p>
-    </div>
-  </footer>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>CRE 26 Tokyo</h3>
+                <p>Current Research in Egyptology<br>July 11-15, 2026<br>University of Tsukuba Tokyo Campus</p>
+            </div>
+            <div class="footer-section">
+                <h3>Conference</h3>
+                <ul>
+                    <li><a href="call-for-papers.html">Call for Papers</a></li>
+                    <li><a href="program.html">Program</a></li>
+                    <li><a href="registration.html">Registration</a></li>
+                    <li><a href="committee.html">Committee</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Visit Tokyo</h3>
+                <ul>
+                    <li><a href="venue.html">Venue & Access</a></li>
+                    <li><a href="accommodation.html">Accommodation</a></li>
+                    <li><a href="tokyo-guide.html">Tokyo Guide</a></li>
+                    <li><a href="collections.html">Egyptian Collections</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Resources</h3>
+                <ul>
+                    <li><a href="about.html">About CRE</a></li>
+                    <li><a href="support.html">Support</a></li>
+                    <li><a href="practical-tips.html">Practical Tips</a></li>
+                    <li><a href="mailto:cre2026@tsukuba.ac.jp">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 CRE Japan Committee. All rights reserved.</p>
+        </div>
+    </footer>
 
-  <button class="scroll-top"><i class="fas fa-arrow-up"></i></button>
-  <script src="js/main.js"></script>
+    <button class="scroll-to-top" aria-label="Scroll to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
