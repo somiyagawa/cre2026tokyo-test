@@ -3,7 +3,7 @@
    =================================== */
 
 /* Import Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&family=Shippori+Mincho+B1:wght@500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&family=Shippori+Mincho+B1:wght@500;600;700;800&family=Noto+Sans+JP:wght@400;500;700&display=swap');
 
 :root {
     /* Glass Effect Colors */
@@ -63,7 +63,7 @@
 }
 
 body {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inter', 'Noto Sans JP', sans-serif;
     color: var(--text-light);
     line-height: 1.6;
     min-height: 100vh;
@@ -215,6 +215,11 @@ ul {
     font-family: 'Shippori Mincho B1', serif;
     font-weight: 700;
     margin-bottom: 1.5rem; /* Increased spacing */
+}
+
+/* Override font for Contact section headers to be Sans-Serif */
+#t-home-contact .glass-card h4 {
+    font-family: 'Inter', 'Noto Sans JP', sans-serif;
 }
 
 .glass-card p, .glass-card li, .glass-card span,
