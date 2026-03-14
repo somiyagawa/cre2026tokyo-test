@@ -221,20 +221,40 @@
   border-bottom: 1px solid rgba(198, 150, 70, 0.3);
 }
  
-/* Background hieroglyph texture */
-.cre-fc-announcement::before {
-  content: "𓂀 𓆣 𓅓 𓁹 𓆑 𓃀 𓏭 𓂸 𓁶 𓇯";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 8rem;
-  letter-spacing: 2rem;
-  color: rgba(198, 150, 70, 0.04);
-  white-space: nowrap;
-  pointer-events: none;
-  user-select: none;
-  z-index: 0;
+/* グリッドを廃止して中央寄せに変更 */
+.cre-fc-inner {
+  position: relative;
+  z-index: 1;
+  max-width: 960px;
+  margin: 0 auto;
+  text-align: center;          /* ← 追加 */
+}
+
+.cre-fc-grid {
+  display: flex;               /* ← grid → flex */
+  flex-direction: column;      /* ← 縦並びに変更 */
+  align-items: center;         /* ← 中央揃え */
+  gap: 2.5rem;
+}
+
+/* カバー幅を指定 */
+.cre-fc-cover-wrap {
+  width: 280px;
+}
+
+/* テキストも中央揃え */
+.cre-fc-eyebrow,
+.cre-fc-heading,
+.cre-fc-body {
+  text-align: center;
+}
+
+.cre-fc-meta {
+  justify-content: center;
+}
+
+.cre-fc-actions {
+  justify-content: center;
 }
  
 /* Decorative corner lines */
