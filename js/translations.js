@@ -406,7 +406,100 @@ const translations = {
 
         // --- Practical Tips ---
         "tip_hero_title": "実用的なヒント",
-        "tip_hero_sub": "滞在に役立つ基本情報"
+        "tip_hero_sub": "滞在に役立つ基本情報",
+
+        // --- Venue ---
+        "ven_hero_title": "会場・アクセス",
+        "ven_hero_sub": "東京中心部（会場最終調整中）",
+        "ven_venue_title": "会議会場",
+        "ven_venue_name": "東京中心部（会場確定次第お知らせします）",
+        "ven_venue_addr": "東京都",
+        "ven_access_title": "アクセス情報",
+        "ven_access_p": "羽田空港・東京駅・主要ホテルからの詳細アクセス情報。",
+        "ven_btn_air": "羽田・成田空港からのアクセス →",
+
+        // --- Support ---
+        "supp_hero_title": "CRE 26 を支援する",
+        "supp_hero_sub": "世界中の研究者が参加できる会議を目指して",
+        "supp_crowd_title": "クラウドファンディング",
+        "supp_crowd_p": "エジプト人研究者の参加支援のため、Readyforでのクラウドファンディングを計画しています。",
+        "supp_status": "詳細は近日中にお知らせします。",
+
+        // --- About ---
+        "about_hero_title": "CREについて",
+        "about_hero_sub": "Current Research in Egyptologyの歴史と使命",
+        "about_title": "Current Research in Egyptology",
+        "about_mission_title": "ミッション",
+        "about_past_title": "過去の会議",
+        "about_btn": "最新情報（公式サイト）",
+
+        // --- Call for Papers ---
+        "cfp_hero_title": "発表募集",
+        "cfp_hero_sub": "CRE 26 東京への研究発表応募",
+        "cfp_deadline": "提出締切: 2026年1月16日",
+        "cfp_welcome_title": "ご案内",
+        "cfp_welcome_p1": "CRE 26 の発表募集を開始いたしました。",
+        "cfp_topics_title": "テーマ",
+        "cfp_topic_1": "行政と日常生活",
+        "cfp_topic_2": "考古学",
+        "cfp_topic_3": "美術史",
+        "cfp_topic_4": "神話と宗教",
+        "cfp_topic_5": "文化交流",
+        "cfp_topic_6": "古代エジプトの多様性",
+        "cfp_topic_7": "エジプト学史",
+        "cfp_topic_8": "修復と保存",
+        "cfp_topic_9": "学際的手法",
+        "cfp_topic_10": "言語と文学",
+        "cfp_topic_11": "エジプト学の理論",
+        "cfp_topic_12": "医療",
+        "cfp_topic_13": "エジプトマニア",
+        "cfp_topic_14": "博物館学",
+        "cfp_formats_title": "発表形式",
+        "cfp_fmt_1_t": "1. 通常発表",
+        "cfp_fmt_1_d": "20分の発表と質疑応答。",
+        "cfp_fmt_2_t": "2. ショート発表",
+        "cfp_fmt_2_d": "10分の発表と質疑応答。",
+        "cfp_fmt_3_t": "3. ポスター発表",
+        "cfp_fmt_3_d": "ホワイエにポスターを掲示。専用セッションあり。",
+        "cfp_guide_title": "投稿ガイドライン",
+        "cfp_guide_list_1": "要旨はGoogleフォームからご提出ください。",
+        "cfp_guide_list_2": "要旨は300語以内としてください。",
+        "cfp_guide_list_3": "提出締切: 2026年1月16日",
+        "cfp_guide_list_4": "公用語は英語です。",
+        "cfp_btn_form": "投稿フォームへ",
+        "cfp_reg_info_title": "参加登録について",
+        "cfp_reg_info_p": "東京でのCRE開催に関する情報を随時お知らせいたします。",
+
+        // --- Registration ---
+        "reg_hero_title": "参加登録",
+        "reg_hero_sub": "2026年2月に詳細発表予定",
+        "reg_status": "参加費・詳細は現在調整中です。",
+        "reg_info_title": "参加登録情報",
+        "reg_info_p": "詳細は2026年2月下旬発行予定の第一回サーキュラーにてお知らせします。",
+        "reg_sched_title": "登録スケジュール",
+        "reg_sched_1_t": "詳細発表",
+        "reg_sched_1_d": "参加費と支払い方法を公開します。",
+        "reg_sched_2_t": "早期登録",
+        "reg_sched_2_d": "割引登録期間（日程は仮）。",
+        "reg_sched_3_t": "後期登録",
+        "reg_sched_3_d": "通常登録期間。",
+
+        // --- Committee ---
+        "comm_hero_title": "組織委員会",
+        "comm_hero_sub": "CRE日本委員会",
+        "comm_alert": "以下の内容はCRE公式サイトから掲載しています。",
+        "comm_btn": "最新情報（公式サイト）",
+
+        // --- Tokyo Guide ---
+        "tok_hero_title": "東京を発見",
+        "tok_hero_sub": "伝統と革新が融合する街",
+        "tok_wel_title": "東京へようこそ",
+        "tok_map_title": "東京観光マップ",
+        "tok_must_title": "必見スポット",
+        "tok_pop_title": "人気のエリア",
+        "tok_day_title": "東京からの日帰り旅行",
+        "tok_get_title": "東京の交通",
+        "tok_more_title": "旅の基本情報"
     },
     "ar": {
         "nav_home": "الرئيسية",
