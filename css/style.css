@@ -409,6 +409,20 @@ nav ul li.has-dropdown:hover .dropdown { opacity: 1; visibility: visible; transf
 }
 
 /* ===================================
+   Crowdfunding Banner
+   =================================== */
+.crowdfunding-banner {
+    margin-top: var(--header-height);
+    position: relative;
+    z-index: 99;
+}
+.crowdfunding-banner + .hero,
+.crowdfunding-banner + .tokyo-hero,
+.crowdfunding-banner + section {
+    padding-top: 0;
+}
+
+/* ===================================
    Hero & Sections
    =================================== */
 .hero { min-height: 60vh; display: flex; align-items: center; justify-content: center; padding-top: var(--header-height); position: relative; }
