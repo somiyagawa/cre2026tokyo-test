@@ -18,6 +18,10 @@ const translations = {
         "foot_vis": "Visit Tokyo",
         "foot_res": "Resources",
         "foot_copy": "© 2025 CRE Japan Committee. All rights reserved.",
+        "foot_tips": "Practical Tips",
+        "foot_contact": "Contact",
+        "foot_org": "Organized by CRE Japan Committee",
+        "foot_photo": "BG Photographs by Szymon Shields, Sarmat Batagov, in Pixels",
 
         // --- Index (Home) ---
         "hero_title": "Current Research in Egyptology 26",
@@ -291,6 +295,10 @@ const translations = {
         "foot_vis": "東京案内",
         "foot_res": "リソース",
         "foot_copy": "© 2025 CRE日本委員会 All rights reserved.",
+        "foot_tips": "旅の基本情報",
+        "foot_contact": "お問い合わせ",
+        "foot_org": "主催：CRE日本委員会",
+        "foot_photo": "背景写真：Szymon Shields、Sarmat Batagov、in Pixels",
 
         // --- Index ---
         "hero_title": "エジプト学先端研究第26回国際会議",
@@ -568,6 +576,10 @@ const translations = {
         "foot_vis": "زيارة طوكيو",
         "foot_res": "الموارد",
         "foot_copy": "© 2025 اللجنة المنظمة اليابانية. كل الحقوق محفوظة.",
+        "foot_tips": "نصائح عملية",
+        "foot_contact": "اتصل بنا",
+        "foot_org": "تنظيم اللجنة اليابانية لمؤتمر CRE",
+        "foot_photo": "صور الخلفية: Szymon Shields، Sarmat Batagov، in Pixels",
 
         "hero_title": "آفاق البحث المعاصر في علوم المصريات 26",
         "hero_subtitle": "المؤتمر الدولي السادس والعشرون في طوكيو، اليابان",
