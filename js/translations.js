@@ -253,7 +253,11 @@ const translations = {
 
         // --- Practical Tips ---
         "tip_hero_title": "Practical Tips",
-        "tip_hero_sub": "Essential information for your visit"
+        "tip_hero_sub": "Essential information for your visit",
+
+        // --- Crowdfunding Banner ---
+        "banner_cf_text": "Now accepting donations! Support Egyptian researchers' travel to CRE 26 Tokyo",
+        "banner_cf_btn": "Donate Now →"
     },
     "ja": {
         "nav_home": "ホーム",
@@ -284,6 +288,13 @@ const translations = {
         "hero_btn_reg": "参加登録",
         "dates_title": "重要な日程",
         "dates_desc": "今後の主な予定",
+        "date_nov": "2025年11月",
+        "date_jan": "2026年1月16日",
+        "date_feb": "2026年2月下旬",
+        "date_feb_apr": "2月下旬 - 4月30日",
+        "date_may_jun": "5月1日 - 6月30日",
+        "date_jul": "2026年7月11-15日",
+        "date_aug": "2026年8月",
         "d_nov_t": "委員会発足・発表募集開始",
         "d_nov_d": "組織委員会発足。11月上旬に募集開始。",
         "d_jan_t": "要旨提出締切",
@@ -505,7 +516,11 @@ const translations = {
         "tok_pop_title": "人気のエリア",
         "tok_day_title": "東京からの日帰り旅行",
         "tok_get_title": "東京の交通",
-        "tok_more_title": "旅の基本情報"
+        "tok_more_title": "旅の基本情報",
+
+        // --- Crowdfunding Banner ---
+        "banner_cf_text": "クラウドファンディング実施中！エジプト人研究者のCRE 26 Tokyo参加旅費をご支援ください",
+        "banner_cf_btn": "寄付する →"
     },
     "ar": {
         "nav_home": "الرئيسية",
@@ -536,6 +551,13 @@ const translations = {
         "hero_btn_reg": "سجل الآن",
         "dates_title": "تواريخ مهمة",
         "dates_desc": "أهم المحطات",
+        "date_nov": "نوفمبر 2025",
+        "date_jan": "16 يناير 2026",
+        "date_feb": "أواخر فبراير 2026",
+        "date_feb_apr": "أواخر فبراير - 30 أبريل 2026",
+        "date_may_jun": "1 مايو - 30 يونيو 2026",
+        "date_jul": "11-15 يوليو 2026",
+        "date_aug": "أغسطس 2026",
         "d_nov_t": "تشكيل اللجنة وفتح باب التقديم",
         "d_nov_d": "تم تأسيس اللجنة المنظمة و كذلك اللجنة العلمية، و سيتم فتح باب التقديم في بداية شهر نوفمبر",
         "d_jan_t": "الموعد النهائي لتقديم الملخصات",
@@ -753,6 +775,10 @@ const translations = {
 
         // --- Practical Tips ---
         "tip_hero_title": "نصائح عملية",
-        "tip_hero_sub": "معلومات أساسية لزيارتك"
+        "tip_hero_sub": "معلومات أساسية لزيارتك",
+
+        // --- Crowdfunding Banner ---
+        "banner_cf_text": "!نقبل التبرعات الآن! ادعم سفر الباحثين المصريين لحضور مؤتمر CRE 26 في طوكيو",
+        "banner_cf_btn": "← تبرع الآن"
     }
 };
