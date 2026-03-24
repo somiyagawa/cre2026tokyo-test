@@ -255,6 +255,20 @@ const translations = {
         "tip_hero_title": "Practical Tips",
         "tip_hero_sub": "Essential information for your visit",
 
+        // --- Hero Detail Sub-texts ---
+        "hero_date_sub": "Saturday to Wednesday",
+        "hero_place_sub": "Tokyo City Centre (TBA)",
+        "hero_scope_sub": "Prehistoric to Islamic Period",
+
+        // --- First Circular ---
+        "fc_badge": "1ST CIRCULAR NOW AVAILABLE",
+        "fc_eyebrow": "First Circular",
+        "fc_heading": "The Official First Circular is Now Published",
+        "fc_body": "Detailed information on the venue, museum visits, conference dinner, preliminary programme, presentation formats, registration fees, visa procedures, and the Kamakura excursion is now available.",
+        "fc_date": "11–15 July 2026",
+        "fc_loc": "Central Tokyo",
+        "fc_btn_dl": "Download 1st Circular (PDF)",
+
         // --- Crowdfunding Banner ---
         "banner_cf_text": "Now accepting donations! Support Egyptian researchers' travel to CRE 26 Tokyo",
         "banner_cf_btn": "Donate Now →"
@@ -518,6 +532,20 @@ const translations = {
         "tok_get_title": "東京の交通",
         "tok_more_title": "旅の基本情報",
 
+        // --- Hero Detail Sub-texts ---
+        "hero_date_sub": "土曜日〜水曜日",
+        "hero_place_sub": "東京都心（会場未定）",
+        "hero_scope_sub": "先史時代〜\nイスラーム時代",
+
+        // --- First Circular ---
+        "fc_badge": "第1サーキュラー公開中",
+        "fc_eyebrow": "第1サーキュラー",
+        "fc_heading": "第1サーキュラーが正式に公開されました",
+        "fc_body": "会場、博物館見学、大会ディナー、暫定プログラム、発表形式、参加費、ビザ手続き、鎌倉エクスカーションに関する詳細情報をご覧いただけます。",
+        "fc_date": "2026年7月11日〜15日",
+        "fc_loc": "東京都心",
+        "fc_btn_dl": "第1サーキュラーをダウンロード（PDF）",
+
         // --- Crowdfunding Banner ---
         "banner_cf_text": "クラウドファンディング実施中！エジプト人研究者のCRE 26 Tokyo参加旅費をご支援ください",
         "banner_cf_btn": "寄付する →"
@@ -553,10 +581,10 @@ const translations = {
         "dates_desc": "أهم المحطات",
         "date_nov": "نوفمبر 2025",
         "date_jan": "16 يناير 2026",
-        "date_feb": "أواخر فبراير 2026",
-        "date_feb_apr": "أواخر فبراير - 30 أبريل 2026",
+        "date_feb": "أواخر شهر فبراير 2026",
+        "date_feb_apr": "أواخر شهر فبراير - 30 إبريل 2026",
         "date_may_jun": "1 مايو - 30 يونيو 2026",
-        "date_jul": "11-15 يوليو 2026",
+        "date_jul": "11 يوليو - 15 يوليو 2026",
         "date_aug": "أغسطس 2026",
         "d_nov_t": "تشكيل اللجنة وفتح باب التقديم",
         "d_nov_d": "تم تأسيس اللجنة المنظمة و كذلك اللجنة العلمية، و سيتم فتح باب التقديم في بداية شهر نوفمبر",
@@ -776,6 +804,20 @@ const translations = {
         // --- Practical Tips ---
         "tip_hero_title": "نصائح عملية",
         "tip_hero_sub": "معلومات أساسية لزيارتك",
+
+        // --- Hero Detail Sub-texts ---
+        "hero_date_sub": "من السبت إلى الأربعاء",
+        "hero_place_sub": "وسط طوكيو (يُحدد لاحقاً)",
+        "hero_scope_sub": "من عصور ما قبل التاريخ\nإلى العصر الإسلامي",
+
+        // --- First Circular ---
+        "fc_badge": "النشرة الأولى متاحة الآن",
+        "fc_eyebrow": "النشرة الأولى",
+        "fc_heading": "تم نشر النشرة الأولى الرسمية",
+        "fc_body": "تتوفر الآن معلومات تفصيلية حول المكان وزيارات المتاحف وعشاء المؤتمر والبرنامج الأولي وأشكال العروض ورسوم التسجيل وإجراءات التأشيرة ورحلة كاماكورا.",
+        "fc_date": "١١–١٥ يوليو ٢٠٢٦",
+        "fc_loc": "وسط طوكيو",
+        "fc_btn_dl": "تحميل النشرة الأولى (PDF)",
 
         // --- Crowdfunding Banner ---
         "banner_cf_text": "!نقبل التبرعات الآن! ادعم سفر الباحثين المصريين لحضور مؤتمر CRE 26 في طوكيو",

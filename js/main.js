@@ -134,7 +134,7 @@ function getCookie(name) {
 // ===================================
 function initMobileMenu() {
     const mobileToggle = document.querySelector('.mobile-menu-toggle');
-    const nav = document.querySelector('nav ul');
+    const nav = document.querySelector('nav');
     const dropdownParents = document.querySelectorAll('nav ul li.has-dropdown');
 
     if (mobileToggle && nav) {
@@ -150,7 +150,7 @@ function initMobileMenu() {
             const link = parent.querySelector('a');
             if (link) {
                 link.addEventListener('click', function(e) {
-                    if (window.innerWidth <= 768) {
+                    if (window.innerWidth <= 900) {
                         e.preventDefault();
                         parent.classList.toggle('active');
                     }
