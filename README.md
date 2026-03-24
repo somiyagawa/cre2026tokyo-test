@@ -1,7 +1,7 @@
 # CRE 26 Tokyo - Official Conference Website
 
 ## Project Overview
-This is the official static website for the **Current Research in Egyptology 26 (CRE 26)** conference, to be held at the University of Tsukuba Tokyo Campus, July 11-15, 2026. The site features a modern "Cyber-Tokyo" aesthetic with neon accents and glassmorphism effects, fully responsive design, and comprehensive multilingual support (English, Japanese, Arabic).
+This is the official static website for the **Current Research in Egyptology 26 (CRE 26)** conference, to be held in Central Tokyo (venue to be confirmed), July 11-15, 2026. The site features a modern "Cyber-Tokyo" aesthetic with neon accents and glassmorphism effects, fully responsive design, and comprehensive multilingual support (English, Japanese, Arabic).
 
 ## Key Features
 
