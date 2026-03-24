@@ -432,10 +432,11 @@ nav ul li.has-dropdown:hover .dropdown { opacity: 1; visibility: visible; transf
 .hero-logo-large img { max-height: 120px; width: auto; }
 .hero h1 { font-size: 2.2rem; margin-bottom: 0.5rem; color: var(--text-primary); position: relative; z-index: 2; }
 .hero-subtitle { font-size: 1.1rem; color: var(--text-secondary); margin-bottom: 1.5rem; position: relative; z-index: 2; }
-.hero-details { position: relative; z-index: 2; display: flex; justify-content: center; gap: 1.5rem; margin-bottom: 1.5rem; padding: 1rem 0; border-top: 1px solid rgba(0,0,0,0.1); border-bottom: 1px solid rgba(0,0,0,0.1); }
+.hero-details { position: relative; z-index: 2; display: flex; justify-content: center; gap: 2rem; margin-bottom: 1.5rem; padding: 1rem 0; border-top: 1px solid rgba(0,0,0,0.1); border-bottom: 1px solid rgba(0,0,0,0.1); }
+.hero-detail-item { display: flex; flex-direction: column; align-items: center; text-align: center; flex: 1; max-width: 200px; }
 .hero-detail-item .icon { font-size: 1.2rem; margin-bottom: 0.25rem; }
 .hero-detail-item strong { font-size: 0.95rem; }
-.hero-detail-item span { font-size: 0.85rem; }
+.hero-detail-item span { font-size: 0.85rem; line-height: 1.4; }
 .hero-cta { position: relative; z-index: 2; display: flex; justify-content: center; gap: 1rem; }
 
 /* Section Headers - Compact */
