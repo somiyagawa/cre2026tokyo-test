@@ -190,6 +190,7 @@ const translations = {
         "about_past_intro": "CRE has been hosted by prestigious institutions across the UK and Europe, and now, for the first time, it comes to Asia with CRE 26 in Tokyo.",
         "about_link_btn": "Latest Information (Official Website)",
         "about_link_desc": "Click here for the full history and details on the official CRE website.",
+        "about_past_list": "<li>2000: Oxford</li><li>2001: Liverpool</li><li>2002: Birmingham</li><li>2003: London (UCL)</li><li>2004: Durham</li><li>2005: Cambridge</li><li>2006: Oxford</li><li>2007: Swansea</li><li>2008: Manchester</li><li>2009: Liverpool</li><li>2010: Leiden (First outside UK)</li><li>...and many more leading up to today.</li>",
 
         // --- Tokyo Guide ---
         "tok_hero_title": "Discover Tokyo",
@@ -466,6 +467,7 @@ const translations = {
         "tip_internet_t": "Internet & WiFi",
         "tip_internet_d": "Free WiFi is available at stations, convenience stores, and many public spaces. Consider renting a pocket WiFi or buying a prepaid SIM for best coverage.",
         "tip_elec_t": "Electricity",
+        "tip_elec_list": "<li><strong>Voltage:</strong> 100V</li><li><strong>Frequency:</strong> 50Hz (East) / 60Hz (West)</li><li><strong>Plugs:</strong> Type A (2 flat pins)</li>",
         "tip_elec_d": "Most modern electronics work fine. Bring adapters for other plug types.",
         "tip_lang_t": "Language",
         "tip_lang_d": "English signage is common in Tokyo, but learning basic Japanese phrases helps greatly. Translation apps are very useful.",
@@ -738,6 +740,7 @@ const translations = {
         "about_past_intro": "CREはこれまで英国およびヨーロッパの名門大学で開催されてきましたが、CRE 26 東京により、初めてアジアで開催されます。",
         "about_link_btn": "最新情報（公式サイト）",
         "about_link_desc": "CRE公式サイトで詳細な歴史と情報をご覧ください。",
+        "about_past_list": "<li>2000年：オックスフォード</li><li>2001年：リヴァプール</li><li>2002年：バーミンガム</li><li>2003年：ロンドン（UCL）</li><li>2004年：ダラム</li><li>2005年：ケンブリッジ</li><li>2006年：オックスフォード</li><li>2007年：スウォンジー</li><li>2008年：マンチェスター</li><li>2009年：リヴァプール</li><li>2010年：ライデン（初の英国外開催）</li><li>…その後も各地で開催。</li>",
 
         // --- Call for Papers ---
         "cfp_hero_title": "発表募集",
@@ -1006,6 +1009,7 @@ const translations = {
         "tip_internet_t": "インターネットとWiFi",
         "tip_internet_d": "駅、コンビニ、多くの公共スペースで無料WiFiが利用可能。ポケットWiFiのレンタルやプリペイドSIMの購入も検討を。",
         "tip_elec_t": "電気",
+        "tip_elec_list": "<li><strong>電圧：</strong>100V</li><li><strong>周波数：</strong>50Hz（東日本）/ 60Hz（西日本）</li><li><strong>プラグ：</strong>Aタイプ（平型2ピン）</li>",
         "tip_elec_d": "ほとんどの最新電子機器は問題なく使えます。他のプラグタイプ用のアダプターをお持ちください。",
         "tip_lang_t": "言語",
         "tip_lang_d": "東京では英語表記が一般的ですが、基本的な日本語フレーズを覚えると大いに役立ちます。翻訳アプリがとても便利。",
@@ -1266,6 +1270,7 @@ const translations = {
         "about_past_intro": "استضافت مؤسسات مرموقة في المملكة المتحدة وأوروبا مؤتمر CRE، والآن ولأول مرة ينتقل إلى آسيا مع CRE 26 في طوكيو.",
         "about_link_btn": "أحدث المعلومات (الموقع الرسمي)",
         "about_link_desc": "انقر هنا للاطلاع على التاريخ الكامل والتفاصيل على الموقع الرسمي لمؤتمر CRE.",
+        "about_past_list": "<li>2000: أكسفورد</li><li>2001: ليفربول</li><li>2002: برمنغهام</li><li>2003: لندن (UCL)</li><li>2004: دورهام</li><li>2005: كامبريدج</li><li>2006: أكسفورد</li><li>2007: سوانزي</li><li>2008: مانشستر</li><li>2009: ليفربول</li><li>2010: ليدن (أول انعقاد خارج المملكة المتحدة)</li><li>…والعديد من المؤتمرات اللاحقة.</li>",
 
         // --- Tokyo Guide ---
         "tok_hero_title": "اكتشف طوكيو",
@@ -1542,6 +1547,7 @@ const translations = {
         "tip_internet_t": "الإنترنت والواي فاي",
         "tip_internet_d": "واي فاي مجاني متاح في المحطات والمتاجر الصغيرة والعديد من الأماكن العامة. فكر في استئجار واي فاي محمول أو شراء شريحة مدفوعة مسبقاً لأفضل تغطية.",
         "tip_elec_t": "الكهرباء",
+        "tip_elec_list": "<li><strong>الجهد:</strong> 100 فولت</li><li><strong>التردد:</strong> 50 هرتز (شرق) / 60 هرتز (غرب)</li><li><strong>القوابس:</strong> النوع A (دبوسان مسطحان)</li>",
         "tip_elec_d": "معظم الأجهزة الإلكترونية الحديثة تعمل بشكل جيد. أحضر محولات لأنواع القوابس الأخرى.",
         "tip_lang_t": "اللغة",
         "tip_lang_d": "اللافتات الإنجليزية شائعة في طوكيو، لكن تعلم العبارات اليابانية الأساسية يساعد كثيراً. تطبيقات الترجمة مفيدة جداً.",
