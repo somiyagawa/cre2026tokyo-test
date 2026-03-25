@@ -2,13 +2,15 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <link rel="dns-prefetch" href="//fonts.googleapis.com">
+  <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="CRE 2026 Tokyo Organizing Committee">
   <title>[TEST VERSION] Organizing Committee | CRE 2026 Tokyo | ãã¹ãç</title>
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/i18n.css">
@@ -204,7 +206,7 @@
       </div>
       <div class="grid grid-4 reveal" style="margin-top: 2rem; justify-content: center;">
         <div class="card text-center">
-          <img src="images/committee/s200_dr._faten.kamal.jpeg" alt="Dr. Faten Kamal" style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; margin: 0 auto 1rem; border: 3px solid var(--color-coral);">
+          <img src="images/committee/s200_dr._faten.kamal.jpeg" alt="Dr. Faten Kamal" style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; margin: 0 auto 1rem; border: 3px solid var(--color-coral);" loading="lazy">
           <h4 class="card-title">Dr. Faten Kamal</h4>
           <p style="color: var(--color-coral); font-weight: 500; margin-bottom: 0.5rem;">Arabic Translation</p>
           <p style="color: var(--color-medium-gray); font-size: 0.9rem;">MoTA (Ministry of Tourism and Antiquities)</p>
@@ -261,7 +263,7 @@
   </footer>
 
   <button class="scroll-top" aria-label="Scroll to top"><i class="fas fa-arrow-up"></i></button>
-  <script src="js/translations.js"></script>
-  <script src="js/main.js"></script>
+  <script src="js/translations.js" defer></script>
+  <script src="js/main.js" defer></script>
 </body>
 </html>
