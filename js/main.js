@@ -91,7 +91,16 @@ function applyLanguage(lang) {
         elements.forEach(el => {
             const key = el.getAttribute('data-i18n');
             if (dict[key]) {
-                el.innerHTML = dict[key]; 
+                el.innerHTML = dict[key];
+            }
+        });
+
+        // Find all elements with data-i18n-html attribute (for HTML content)
+        const htmlElements = document.querySelectorAll('[data-i18n-html]');
+        htmlElements.forEach(el => {
+            const key = el.getAttribute('data-i18n-html');
+            if (dict[key]) {
+                el.innerHTML = dict[key];
             }
         });
     }
