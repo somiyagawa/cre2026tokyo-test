@@ -174,6 +174,7 @@ const translations = {
         "supp_crowd_title": "Crowdfunding Campaign",
         "supp_crowd_p": "We are planning a crowdfunding campaign via Readyfor to support participation of Egyptian scholars.",
         "supp_status": "Campaign details will be announced soon.",
+        "supp_sponsor": "For sponsorship inquiries: <a href=\"mailto:tokyo.cre2026@gmail.com\">tokyo.cre2026@gmail.com</a>",
 
         // --- About ---
         "about_hero_title": "About CRE",
@@ -182,6 +183,13 @@ const translations = {
         "about_mission_title": "Mission Statement",
         "about_past_title": "Past Conferences",
         "about_btn": "Latest Information (Official Website)",
+        "about_intro_p1": "<strong>Current Research in Egyptology (CRE)</strong> is a postgraduate conference set up to facilitate research and interaction between graduate students and early career researchers in Egyptology and related fields. The first CRE conference was held in Oxford in 2000, where it welcomed 40 participants from 5 British universities.",
+        "about_intro_p2": "Since then, CRE has grown into an international event, held annually at various universities around the world. It provides a friendly and supportive environment for students to present their research, exchange ideas, and network with colleagues from different institutions and backgrounds.",
+        "about_mission_p1": "The primary aim of CRE is to provide a platform for new researchers to present their work to their peers. It encourages interdisciplinary approaches and welcomes contributions from all areas of Egyptology, including archaeology, philology, history, art history, museology, and reception studies.",
+        "about_mission_p2": "The conference proceedings are published annually, ensuring that the research presented at CRE reaches a wider audience and contributes to the scholarly record.",
+        "about_past_intro": "CRE has been hosted by prestigious institutions across the UK and Europe, and now, for the first time, it comes to Asia with CRE 26 in Tokyo.",
+        "about_link_btn": "Latest Information (Official Website)",
+        "about_link_desc": "Click here for the full history and details on the official CRE website.",
 
         // --- Tokyo Guide ---
         "tok_hero_title": "Discover Tokyo",
@@ -714,6 +722,7 @@ const translations = {
         "supp_crowd_title": "クラウドファンディング",
         "supp_crowd_p": "エジプト人研究者の参加支援のため、Readyforでのクラウドファンディングを計画しています。",
         "supp_status": "詳細は近日中にお知らせします。",
+        "supp_sponsor": "スポンサーシップに関するお問い合わせ：<a href=\"mailto:tokyo.cre2026@gmail.com\">tokyo.cre2026@gmail.com</a>",
 
         // --- About ---
         "about_hero_title": "CREについて",
@@ -722,6 +731,13 @@ const translations = {
         "about_mission_title": "ミッション",
         "about_past_title": "過去の会議",
         "about_btn": "最新情報（公式サイト）",
+        "about_intro_p1": "<strong>Current Research in Egyptology（CRE）</strong>は、エジプト学および関連分野の大学院生・若手研究者の研究発表と交流を促進するために設立された大学院生会議です。第1回CRE会議は2000年にオックスフォードで開催され、英国5大学から40名の参加者を迎えました。",
+        "about_intro_p2": "以来、CREは世界各地の大学で毎年開催される国際的な学会へと発展しました。学生が研究を発表し、意見を交換し、異なる機関や背景を持つ同僚とネットワークを構築できる、友好的で支援的な環境を提供しています。",
+        "about_mission_p1": "CREの主な目的は、若手研究者が同世代の研究者に自らの研究を発表する場を提供することです。学際的なアプローチを奨励し、考古学、文献学、歴史学、美術史、博物館学、受容研究など、エジプト学のあらゆる分野からの貢献を歓迎します。",
+        "about_mission_p2": "会議の議事録は毎年出版され、CREで発表された研究がより広い読者に届き、学術的記録に貢献することを保証しています。",
+        "about_past_intro": "CREはこれまで英国およびヨーロッパの名門大学で開催されてきましたが、CRE 26 東京により、初めてアジアで開催されます。",
+        "about_link_btn": "最新情報（公式サイト）",
+        "about_link_desc": "CRE公式サイトで詳細な歴史と情報をご覧ください。",
 
         // --- Call for Papers ---
         "cfp_hero_title": "発表募集",
@@ -1234,6 +1250,7 @@ const translations = {
         "supp_crowd_title": "حملة التمويل الجماعي",
         "supp_crowd_p": "نخطط لحملة عبر Readyfor لدعم الباحثين المصريين.",
         "supp_status": "سيتم إعلان التفاصيل قريباً.",
+        "supp_sponsor": "للاستفسار عن الرعاية: <a href=\"mailto:tokyo.cre2026@gmail.com\">tokyo.cre2026@gmail.com</a>",
 
         // --- About ---
         "about_hero_title": "حول CRE",
@@ -1242,6 +1259,13 @@ const translations = {
         "about_mission_title": "بيان المهمة",
         "about_past_title": "المؤتمرات السابقة",
         "about_btn": "أحدث المعلومات (الموقع الرسمي)",
+        "about_intro_p1": "<strong>مؤتمر آفاق البحث المعاصر في علم المصريات (CRE)</strong> هو مؤتمر لطلاب الدراسات العليا أُنشئ لتسهيل البحث والتفاعل بين طلاب الدراسات العليا والباحثين في بداية مسيرتهم المهنية في مجال علم المصريات والمجالات ذات الصلة. عُقد أول مؤتمر CRE في أكسفورد عام 2000، حيث استقبل 40 مشاركاً من 5 جامعات بريطانية.",
+        "about_intro_p2": "منذ ذلك الحين، تطور المؤتمر ليصبح حدثاً دولياً يُعقد سنوياً في جامعات مختلفة حول العالم. يوفر بيئة ودية وداعمة للطلاب لتقديم أبحاثهم وتبادل الأفكار وبناء شبكات مع زملاء من مؤسسات وخلفيات متنوعة.",
+        "about_mission_p1": "الهدف الرئيسي لمؤتمر CRE هو توفير منصة للباحثين الجدد لتقديم أعمالهم أمام أقرانهم. يشجع المؤتمر المنهجيات متعددة التخصصات ويرحب بالمساهمات من جميع مجالات علم المصريات، بما في ذلك علم الآثار وفقه اللغة والتاريخ وتاريخ الفن وعلم المتاحف ودراسات التلقي.",
+        "about_mission_p2": "تُنشر أعمال المؤتمر سنوياً، مما يضمن وصول الأبحاث المقدمة في CRE إلى جمهور أوسع والمساهمة في السجل العلمي.",
+        "about_past_intro": "استضافت مؤسسات مرموقة في المملكة المتحدة وأوروبا مؤتمر CRE، والآن ولأول مرة ينتقل إلى آسيا مع CRE 26 في طوكيو.",
+        "about_link_btn": "أحدث المعلومات (الموقع الرسمي)",
+        "about_link_desc": "انقر هنا للاطلاع على التاريخ الكامل والتفاصيل على الموقع الرسمي لمؤتمر CRE.",
 
         // --- Tokyo Guide ---
         "tok_hero_title": "اكتشف طوكيو",
