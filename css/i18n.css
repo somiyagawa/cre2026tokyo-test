@@ -37,7 +37,19 @@ html[lang="ar"] .logo {
 }
 
 html[lang="ar"] .mobile-menu-toggle {
-    justify-self: start;
+    right: auto;
+    left: 1.5rem;
+}
+
+/* RTL Mobile Menu */
+@media (max-width: 900px) {
+    html[lang="ar"] nav ul li > a {
+        text-align: right;
+    }
+    html[lang="ar"] .dropdown {
+        padding-left: 0;
+        padding-right: 1rem;
+    }
 }
 
 html[lang="ar"] nav ul li.has-dropdown > a {
@@ -161,6 +173,12 @@ body {
 .goog-text-highlight {
     background-color: transparent !important;
     box-shadow: none !important;
+}
+
+/* RTL Lang Switcher */
+html[lang="ar"] .lang-switch {
+    right: auto;
+    left: 20px;
 }
 
 /* Mobile Lang Switcher adjustments */
