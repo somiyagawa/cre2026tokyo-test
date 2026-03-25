@@ -276,6 +276,9 @@ const translations = {
         // --- Crowdfunding Banner ---
         "banner_cf_text": "Now accepting donations! Support Egyptian researchers' travel to CRE 26 Tokyo",
         "banner_cf_btn": "Donate Now →",
+        "banner_pp_btn": "PayPal →",
+        "supp_readyfor_btn": "Donate via Readyfor",
+        "supp_paypal_btn": "Donate via PayPal",
 
         // --- Additional Page Translations ---
         "nav_1st": "1st Circular",
@@ -805,6 +808,9 @@ const translations = {
         // --- Crowdfunding Banner ---
         "banner_cf_text": "クラウドファンディング実施中！エジプト人研究者のCRE 26 Tokyo参加旅費をご支援ください",
         "banner_cf_btn": "寄付する →",
+        "banner_pp_btn": "PayPal →",
+        "supp_readyfor_btn": "Readyforで寄付する",
+        "supp_paypal_btn": "PayPalで寄付する",
 
         // --- Additional Page Translations ---
         "nav_1st": "第1サーキュラー",
@@ -1330,6 +1336,9 @@ const translations = {
         // --- Crowdfunding Banner ---
         "banner_cf_text": "!نقبل التبرعات الآن! ادعم سفر الباحثين المصريين لحضور مؤتمر CRE 26 في طوكيو",
         "banner_cf_btn": "← تبرع الآن",
+        "banner_pp_btn": "← PayPal",
+        "supp_readyfor_btn": "تبرع عبر Readyfor",
+        "supp_paypal_btn": "تبرع عبر PayPal",
 
         // --- Additional Page Translations ---
         "nav_1st": "النشرة الأولى",
