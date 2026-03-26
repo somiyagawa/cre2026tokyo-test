@@ -916,7 +916,7 @@ const translations = {
         // --- About ---
         "about_hero_title": "CREについて",
         "about_hero_sub": "Current Research in Egyptologyの歴史と使命",
-        "about_title": "エジプト学の最新研究（CRE）",
+        "about_title": "エジプト学先端研究国際会議（CRE）",
         "about_mission_title": "ミッション",
         "about_past_title": "過去の会議",
         "about_btn": "最新情報（公式サイト）",
