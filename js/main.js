@@ -43,9 +43,9 @@ function initLanguageSwitcher() {
     const switcher = document.createElement('div');
     switcher.className = 'lang-switch';
     switcher.innerHTML = `
-        <button class="lang-btn" data-lang="ar">AR</button>
-        <button class="lang-btn" data-lang="en">EN</button>
-        <button class="lang-btn" data-lang="ja">JP</button>
+        <button class="lang-btn" data-lang="ar">العربية</button>
+        <button class="lang-btn" data-lang="en">English</button>
+        <button class="lang-btn" data-lang="ja">日本語</button>
     `;
     document.body.appendChild(switcher);
 

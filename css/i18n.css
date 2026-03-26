@@ -119,17 +119,17 @@ html[lang="ar"] .museum-highlights li::before {
     background: var(--glass-surface);
     border: 1px solid var(--glass-border);
     color: var(--text-primary);
-    padding: 0.5rem 0.8rem;
+    padding: 0.6rem 1.2rem;
     border-radius: 50px;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inter', 'Noto Sans JP', 'Cairo', sans-serif;
     font-weight: 700;
-    font-size: 0.8rem;
+    font-size: 0.95rem;
     cursor: pointer;
     box-shadow: var(--glass-shadow);
     transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
-    min-width: 50px;
+    min-width: 70px;
     text-align: center;
 }
 
