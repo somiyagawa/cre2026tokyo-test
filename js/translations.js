@@ -294,6 +294,16 @@ const translations = {
         "hero_place_sub": "Tokyo City Centre (TBA)",
         "hero_scope_sub": "Prehistoric to Islamic Period",
 
+        // --- Second Circular ---
+        "sc_badge": "2ND CIRCULAR NOW AVAILABLE",
+        "sc_eyebrow": "Second Circular",
+        "sc_heading": "The Official Second Circular is Now Published",
+        "sc_body": "Detailed information on the organising & scientific committees, venue, preliminary programme, presentation formats, museum visits, conference dinner, excursion, registration, immigration & visas, travel advice, and accommodation is now available.",
+        "sc_date": "11–15 July 2026",
+        "sc_loc": "National Research Institute for Cultural Properties, Tokyo",
+        "sc_btn_dl": "Download 2nd Circular (PDF)",
+        "nav_2nd": "2nd Circular",
+
         // --- First Circular ---
         "fc_badge": "1ST CIRCULAR NOW AVAILABLE",
         "fc_eyebrow": "First Circular",
@@ -311,6 +321,7 @@ const translations = {
         "supp_paypal_btn": "Donate via PayPal",
 
         // --- Additional Page Translations ---
+        "nav_2nd": "2nd Circular",
         "nav_1st": "1st Circular",
         "oc_hero_sub": "Leadership & Organization",
         "oc_hero_title": "Organizing Committee",
@@ -1002,6 +1013,16 @@ const translations = {
         "hero_place_sub": "東京都心（会場未定）",
         "hero_scope_sub": "先史時代〜\nイスラーム時代",
 
+        // --- Second Circular ---
+        "sc_badge": "第2サーキュラー公開中",
+        "sc_eyebrow": "第2サーキュラー",
+        "sc_heading": "第2サーキュラーが正式に公開されました",
+        "sc_body": "組織委員会・学術委員会、会場、暫定プログラム、発表形式、博物館見学、大会ディナー、エクスカーション、参加登録、出入国・ビザ、旅行情報、宿泊施設に関する詳細情報をご覧いただけます。",
+        "sc_date": "2026年7月11日〜15日",
+        "sc_loc": "東京文化財研究所",
+        "sc_btn_dl": "第2サーキュラーをダウンロード（PDF）",
+        "nav_2nd": "第2サーキュラー",
+
         // --- First Circular ---
         "fc_badge": "第1サーキュラー公開中",
         "fc_eyebrow": "第1サーキュラー",
@@ -1019,6 +1040,7 @@ const translations = {
         "supp_paypal_btn": "PayPalで寄付する",
 
         // --- Additional Page Translations ---
+        "nav_2nd": "第2サーキュラー",
         "nav_1st": "第1サーキュラー",
         "oc_hero_sub": "リーダーシップと運営",
         "oc_hero_title": "実行委員会",
@@ -1706,6 +1728,16 @@ const translations = {
         "hero_place_sub": "وسط طوكيو (يُحدد لاحقاً)",
         "hero_scope_sub": "من عصور ما قبل التاريخ\nإلى العصر الإسلامي",
 
+        // --- Second Circular ---
+        "sc_badge": "النشرة الثانية متاحة الآن",
+        "sc_eyebrow": "النشرة الثانية",
+        "sc_heading": "تم نشر النشرة الثانية الرسمية",
+        "sc_body": "تتوفر الآن معلومات تفصيلية حول اللجنة المنظمة واللجنة العلمية والمكان والبرنامج الأولي وأشكال العروض وزيارات المتاحف وعشاء المؤتمر والرحلة والتسجيل والهجرة والتأشيرات ونصائح السفر والإقامة.",
+        "sc_date": "١١–١٥ يوليو ٢٠٢٦",
+        "sc_loc": "المعهد الوطني لأبحاث الممتلكات الثقافية، طوكيو",
+        "sc_btn_dl": "تحميل النشرة الثانية (PDF)",
+        "nav_2nd": "النشرة الثانية",
+
         // --- First Circular ---
         "fc_badge": "النشرة الأولى متاحة الآن",
         "fc_eyebrow": "النشرة الأولى",
@@ -1723,6 +1755,7 @@ const translations = {
         "supp_paypal_btn": "تبرع عبر PayPal",
 
         // --- Additional Page Translations ---
+        "nav_2nd": "النشرة الثانية",
         "nav_1st": "النشرة الأولى",
         "oc_hero_sub": "القيادة والتنظيم",
         "oc_hero_title": "اللجنة المنظمة",
