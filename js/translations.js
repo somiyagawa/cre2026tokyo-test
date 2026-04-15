@@ -713,7 +713,50 @@ const translations = {
         "prog_10min_list": "<li>Short presentations are 10-minutes long, and will take place during dedicated sessions.</li><li>These presentations will be presented in a series of six consecutive talks followed by a break.</li>",
         "prog_poster_list": "<li>Posters must be printed in A0 size, portrait orientation (1189 x 841 mm).</li><li>Posters must have a vertical orientation.</li><li>A poster must contain: presenter's name, affiliate institution, contact details.</li><li>Additional design choices are at the discretion of the presenters.</li>",
         "prog_note": "<strong>Note:</strong> Information regarding session locations is provisional. Final details will be confirmed in the Second Circular.",
-        "coming_soon": "Coming Soon"
+        "coming_soon": "Coming Soon",
+
+        // --- Missing keys: Venue ---
+        "ven_wifi_t": "Internet",
+        "ven_wifi_p": "Visitor Wi-Fi will be available at the National Research Institute for Cultural Properties, Tokyo. Access details will be included in the materials distributed on the day.",
+        "ven_venue_desc": "This venue is located near Ueno Park and is accessible from several major train and subway lines. Conference presentations will be held in three lecture rooms within the venue. Poster presentations will be held in designated common areas, providing central spaces for presenting and discussing research during the scheduled poster sessions. The conference will take place on the basement level, and elevators are available.",
+        "ven_venue_note": "If you have any questions regarding the venue, please contact the Organising Committee at: <a href=\"mailto:tokyo.cre2026@gmail.com\">tokyo.cre2026@gmail.com</a>. Please refrain from contacting the Institute directly.",
+        "ven_access_jr1": "◆ JR Yamanote Line: 7-minute walk from Uguisudani Station (South Exit; 0.7 km)",
+        "ven_access_jr2": "◆ JR Yamanote Line: 13-minute walk from Ueno Station (Park Exit; 1.1 km)",
+        "ven_access_metro": "◆ Tokyo Metro Ginza Line / Hibiya Line: 18-minute walk from Ueno Station (1.5 km)",
+
+        // --- Missing keys: Registration ---
+        "reg_wise_title": "Wise Payment Options",
+        "reg_wise_desc": "Available Wise payment tiers:",
+        "reg_wise_1": "Early Registration: JPY 8,000",
+        "reg_wise_2": "Early Registration + Conference Dinner: JPY 18,000",
+        "reg_wise_3": "Early Registration + Excursion: JPY 16,000",
+        "reg_wise_4": "Early Registration + Conference Dinner + Excursion: JPY 26,000",
+        "reg_wise_note": "* Please make sure to complete the transfer process after adding funds to your Wise account. Simply adding funds does not constitute a completed payment.",
+        "reg_bank_title": "Bank Transfer Details",
+        "reg_bank_desc": "Please use the following information for bank transfers (all bank transfer fees should be charged to sender):",
+        "reg_fee_dinner": "Conference Dinner",
+        "reg_fee_dinner_price": "JPY 10,000",
+        "reg_fee_excursion": "Excursion (Kamakura & Enoshima)",
+        "reg_fee_excursion_price": "JPY 8,000",
+        "reg_excursion_title": "Excursion: Kamakura & Enoshima",
+
+        // --- Missing keys: Practical Tips ---
+        "tip_immigration_t": "<i class=\"fas fa-passport\" style=\"color: var(--brand-primary);\"></i> Immigration",
+        "tip_immigration_d": "<li><strong>Visit Japan Web:</strong> All participants strongly recommended to complete immigration and customs procedures via Visit Japan Web system prior to arrival</li>",
+        "tip_visas_t": "<i class=\"fas fa-id-card\" style=\"color: var(--brand-primary);\"></i> Visas",
+        "tip_visas_d": "<li><strong>Visa Requirements:</strong> Depend on nationality, residence status, and purpose of travel</li><li><strong>Confirm Requirements:</strong> Participants responsible for confirming visa requirements</li><li><strong>Step 1:</strong> Check if nationality is on visa-exempt countries list</li><li><strong>Step 2:</strong> If not, find nationality and confirm applicable conditions (separate links for China, Russia, CIS countries/Ukraine/Georgia, all other nationalities)</li><li><strong>General Info:</strong> Available from Ministry of Foreign Affairs of Japan</li><li><strong>Egyptian Passport Holders:</strong> Required to obtain short-term business visa. Also applies to those receiving financial assistance from organizers</li><li><strong>Visa Support:</strong> <a href=\"mailto:visa.cre2026@gmail.com\">visa.cre2026@gmail.com</a></li>",
+        "tip_travel_advice_t": "Travel Advice from Ueno",
+        "tip_haneda_d": "<li>Take Tokyo Monorail to Hamamatsucho</li><li>Transfer to JR line</li>",
+        "tip_narita_d": "<li>Keisei Skyliner directly to Keisei-Ueno Station</li>",
+        "tip_suica_d": "<li><strong>Type:</strong> Prepaid IC card for trains, buses, and many participating shops</li><li><strong>Validity:</strong> 28 days including the date of purchase; generally non-refundable</li><li><strong>Limit:</strong> One card per person</li><li><strong>Where to Buy:</strong> Welcome Suica ticket vending machines at Narita Airport Terminal 1 Station, Narita Airport Terminal 2/3 Station, and Haneda Airport Terminal 3 (Tokyo Monorail) Station, as well as at selected JR EAST Travel Service Centers</li><li><strong>Top Up:</strong> Up to 20,000 yen at ticket machines, fare adjustment machines, and Seven Bank ATMs</li>",
+
+        // --- Missing keys: Other ---
+        "acc_overview_title": "Accommodation Options in Central Tokyo",
+        "sc_title": "Scientific Committee",
+        "supp_supporters_t": "Supporters",
+        "con_visa": "Visa Support",
+        "d_early_t": "Early Registration",
+        "d_early_d": "Register early at the discounted rate of JPY 8,000."
     },
     "ja": {
         "nav_home": "ホーム",
@@ -1432,7 +1475,50 @@ const translations = {
         "prog_20min_list": "<li>標準発表は20分間で、その後5分間の質疑応答があります。</li><li>各発表の終了後、参加者が部屋を移動できるよう5分間の休憩があります。</li><li>4つのパラレルセッションが行われ、各セッションは1〜2時間続き、その後長めの休憩があります。</li>",
         "prog_10min_list": "<li>ショート発表は10分間で、専用のセッション中に行われます。</li><li>これらの発表は、6つの連続した発表の後に休憩を挟む形式で行われます。</li>",
         "prog_poster_list": "<li>ポスターはA0サイズ、縦向き（1189 × 841 mm）で印刷してください。</li><li>ポスターは縦向きでなければなりません。</li><li>ポスターには、発表者名、所属機関、連絡先を記載してください。</li><li>その他のデザインは発表者の裁量に委ねられます。</li>",
-        "prog_note": "<strong>注意:</strong> セッション会場に関する情報は暫定的なものです。最終的な詳細は第2サーキュラーで確認されます。"
+        "prog_note": "<strong>注意:</strong> セッション会場に関する情報は暫定的なものです。最終的な詳細は第2サーキュラーで確認されます。",
+
+        // --- 追加キー: 会場 ---
+        "ven_wifi_t": "インターネット",
+        "ven_wifi_p": "東京文化財研究所では来場者用Wi-Fiをご利用いただけます。接続に関する詳細は当日配布する資料に記載されます。",
+        "ven_venue_desc": "会場は上野公園の近くに位置し、複数の主要鉄道・地下鉄路線からアクセスが可能です。学会発表は会場内の3つの講義室で行われます。ポスター発表は指定された共用エリアで行われ、ポスターセッション中に研究を発表・議論するための中心的なスペースとなります。学会は地下階で開催され、エレベーターをご利用いただけます。",
+        "ven_venue_note": "会場に関するご質問は、組織委員会（<a href=\"mailto:tokyo.cre2026@gmail.com\">tokyo.cre2026@gmail.com</a>）までお問い合わせください。研究所へ直接のお問い合わせはお控えください。",
+        "ven_access_jr1": "◆ JR山手線：鶯谷駅（南口）から徒歩7分（0.7 km）",
+        "ven_access_jr2": "◆ JR山手線：上野駅（公園口）から徒歩13分（1.1 km）",
+        "ven_access_metro": "◆ 東京メトロ銀座線／日比谷線：上野駅から徒歩18分（1.5 km）",
+
+        // --- 追加キー: 参加登録 ---
+        "reg_wise_title": "Wise決済オプション",
+        "reg_wise_desc": "Wise決済の料金プラン：",
+        "reg_wise_1": "早期登録：8,000円",
+        "reg_wise_2": "早期登録 + 大会ディナー：18,000円",
+        "reg_wise_3": "早期登録 + エクスカーション：16,000円",
+        "reg_wise_4": "早期登録 + 大会ディナー + エクスカーション：26,000円",
+        "reg_wise_note": "※ Wiseアカウントへの入金だけでは支払い完了とはなりません。必ず送金手続きを完了してください。",
+        "reg_bank_title": "銀行振込の詳細",
+        "reg_bank_desc": "銀行振込の際は以下の情報をご利用ください（振込手数料はすべて送金者負担となります）：",
+        "reg_fee_dinner": "大会ディナー",
+        "reg_fee_dinner_price": "10,000円",
+        "reg_fee_excursion": "エクスカーション（鎌倉・江の島）",
+        "reg_fee_excursion_price": "8,000円",
+        "reg_excursion_title": "エクスカーション：鎌倉・江の島",
+
+        // --- 追加キー: 実用情報 ---
+        "tip_immigration_t": "<i class=\"fas fa-passport\" style=\"color: var(--brand-primary);\"></i> 入国手続き",
+        "tip_immigration_d": "<li><strong>Visit Japan Web：</strong>すべての参加者は、到着前にVisit Japan Webシステムで入国・税関手続きを完了することを強くお勧めします</li>",
+        "tip_visas_t": "<i class=\"fas fa-id-card\" style=\"color: var(--brand-primary);\"></i> ビザ",
+        "tip_visas_d": "<li><strong>ビザの必要性：</strong>国籍、在留資格、渡航目的により異なります</li><li><strong>要件の確認：</strong>参加者ご自身でビザの要件をご確認ください</li><li><strong>ステップ1：</strong>ご自身の国籍がビザ免除国リストに含まれているか確認してください</li><li><strong>ステップ2：</strong>含まれていない場合、該当する条件を確認してください（中国、ロシア、CIS諸国・ウクライナ・ジョージア、その他の国籍で別途リンクあり）</li><li><strong>一般情報：</strong>外務省のウェブサイトをご参照ください</li><li><strong>エジプトのパスポート保持者：</strong>短期商用ビザの取得が必要です。組織者から財政支援を受ける方にも適用されます</li><li><strong>ビザサポート：</strong> <a href=\"mailto:visa.cre2026@gmail.com\">visa.cre2026@gmail.com</a></li>",
+        "tip_travel_advice_t": "上野からのアクセス情報",
+        "tip_haneda_d": "<li>東京モノレールで浜松町へ</li><li>JR線に乗り換え</li>",
+        "tip_narita_d": "<li>京成スカイライナーで京成上野駅へ直行</li>",
+        "tip_suica_d": "<li><strong>種類：</strong>電車・バス・多くの加盟店で使えるプリペイドICカード</li><li><strong>有効期間：</strong>購入日を含む28日間（原則払い戻し不可）</li><li><strong>制限：</strong>お一人様1枚まで</li><li><strong>購入場所：</strong>成田空港第1ターミナル駅、成田空港第2・第3ターミナル駅、羽田空港第3ターミナル駅（東京モノレール）のWelcome Suica自動券売機、およびJR東日本トラベルサービスセンター</li><li><strong>チャージ：</strong>券売機、精算機、セブン銀行ATMで最大20,000円まで</li>",
+
+        // --- 追加キー: その他 ---
+        "acc_overview_title": "東京都心部の宿泊オプション",
+        "sc_title": "学術委員会",
+        "supp_supporters_t": "支援者・協力機関",
+        "con_visa": "ビザサポート",
+        "d_early_t": "早期登録",
+        "d_early_d": "早期割引料金8,000円でご登録いただけます。"
     },
     "ar": {
         "nav_home": "الرئيسية",
@@ -2149,6 +2235,49 @@ const translations = {
         "prog_20min_list": "<li>العروض التقديمية القياسية مدتها 20 دقيقة تليها 5 دقائق للأسئلة والأجوبة.</li><li>في نهاية كل عرض تقديمي، ستكون هناك استراحة مدتها 5 دقائق للسماح للمشاركين بالتنقل بين القاعات.</li><li>ستقام أربع جلسات متوازية، تستمر كل جلسة من ساعة إلى ساعتين، تليها استراحة أطول.</li>",
         "prog_10min_list": "<li>العروض التقديمية القصيرة مدتها 10 دقائق، وستقام خلال جلسات مخصصة.</li><li>ستُقدم هذه العروض في سلسلة من ست محادثات متتالية تليها استراحة.</li>",
         "prog_poster_list": "<li>يجب طباعة الملصقات بحجم A0، بالاتجاه العمودي (1189 × 841 مم).</li><li>يجب أن تكون الملصقات بالاتجاه العمودي.</li><li>يجب أن يحتوي الملصق على: اسم المقدم، المؤسسة التابع لها، وبيانات الاتصال.</li><li>خيارات التصميم الإضافية متروكة لتقدير المقدمين.</li>",
-        "prog_note": "<strong>ملاحظة:</strong> المعلومات المتعلقة بمواقع الجلسات مبدئية. سيتم تأكيد التفاصيل النهائية في النشرة الثانية."
+        "prog_note": "<strong>ملاحظة:</strong> المعلومات المتعلقة بمواقع الجلسات مبدئية. سيتم تأكيد التفاصيل النهائية في النشرة الثانية.",
+
+        // --- مفاتيح مفقودة: المكان ---
+        "ven_wifi_t": "الإنترنت",
+        "ven_wifi_p": "ستتوفر شبكة Wi-Fi للزوار في المعهد الوطني لأبحاث الممتلكات الثقافية، طوكيو. سيتم تضمين تفاصيل الاتصال في المواد الموزعة يوم المؤتمر.",
+        "ven_venue_desc": "يقع المكان بالقرب من حديقة أوينو ويمكن الوصول إليه من عدة خطوط قطارات ومترو رئيسية. ستُعقد العروض التقديمية في ثلاث قاعات محاضرات داخل المكان. ستُعقد عروض الملصقات في مناطق مشتركة مخصصة، توفر مساحات مركزية لعرض الأبحاث ومناقشتها خلال جلسات الملصقات المقررة. سيُعقد المؤتمر في الطابق السفلي، وتتوفر مصاعد.",
+        "ven_venue_note": "إذا كانت لديك أي أسئلة بخصوص المكان، يرجى التواصل مع اللجنة المنظمة على: <a href=\"mailto:tokyo.cre2026@gmail.com\">tokyo.cre2026@gmail.com</a>. يرجى عدم التواصل مع المعهد مباشرة.",
+        "ven_access_jr1": "◆ خط JR يامانوتي: 7 دقائق سيراً من محطة أوغويسوداني (المخرج الجنوبي؛ 0.7 كم)",
+        "ven_access_jr2": "◆ خط JR يامانوتي: 13 دقيقة سيراً من محطة أوينو (مخرج الحديقة؛ 1.1 كم)",
+        "ven_access_metro": "◆ مترو طوكيو خط غينزا / خط هيبيا: 18 دقيقة سيراً من محطة أوينو (1.5 كم)",
+
+        // --- مفاتيح مفقودة: التسجيل ---
+        "reg_wise_title": "خيارات الدفع عبر Wise",
+        "reg_wise_desc": "مستويات الدفع المتاحة عبر Wise:",
+        "reg_wise_1": "التسجيل المبكر: 8,000 ين ياباني",
+        "reg_wise_2": "التسجيل المبكر + عشاء المؤتمر: 18,000 ين ياباني",
+        "reg_wise_3": "التسجيل المبكر + الرحلة: 16,000 ين ياباني",
+        "reg_wise_4": "التسجيل المبكر + عشاء المؤتمر + الرحلة: 26,000 ين ياباني",
+        "reg_wise_note": "* يرجى التأكد من إتمام عملية التحويل بعد إضافة الأموال إلى حسابك في Wise. مجرد إضافة الأموال لا يُعتبر دفعاً مكتملاً.",
+        "reg_bank_title": "تفاصيل التحويل المصرفي",
+        "reg_bank_desc": "يرجى استخدام المعلومات التالية للتحويلات المصرفية (يجب أن يتحمل المرسل جميع رسوم التحويل المصرفي):",
+        "reg_fee_dinner": "عشاء المؤتمر",
+        "reg_fee_dinner_price": "10,000 ين ياباني",
+        "reg_fee_excursion": "الرحلة (كاماكورا وإينوشيما)",
+        "reg_fee_excursion_price": "8,000 ين ياباني",
+        "reg_excursion_title": "الرحلة: كاماكورا وإينوشيما",
+
+        // --- مفاتيح مفقودة: نصائح عملية ---
+        "tip_immigration_t": "<i class=\"fas fa-passport\" style=\"color: var(--brand-primary);\"></i> الهجرة",
+        "tip_immigration_d": "<li><strong>Visit Japan Web:</strong> يُوصى بشدة لجميع المشاركين بإكمال إجراءات الهجرة والجمارك عبر نظام Visit Japan Web قبل الوصول إلى اليابان</li>",
+        "tip_visas_t": "<i class=\"fas fa-id-card\" style=\"color: var(--brand-primary);\"></i> التأشيرات",
+        "tip_visas_d": "<li><strong>متطلبات التأشيرة:</strong> تعتمد على الجنسية وحالة الإقامة والغرض من السفر</li><li><strong>تأكيد المتطلبات:</strong> يتحمل المشاركون مسؤولية التأكد من متطلبات التأشيرة</li><li><strong>الخطوة 1:</strong> تحقق مما إذا كانت جنسيتك مدرجة في قائمة الدول المعفاة من التأشيرة</li><li><strong>الخطوة 2:</strong> إذا لم تكن مدرجة، ابحث عن جنسيتك وتأكد من الشروط المطبقة (روابط منفصلة للصين وروسيا ودول رابطة الدول المستقلة/أوكرانيا/جورجيا وجميع الجنسيات الأخرى)</li><li><strong>معلومات عامة:</strong> متاحة من وزارة الخارجية اليابانية</li><li><strong>حاملو جوازات السفر المصرية:</strong> يُطلب الحصول على تأشيرة أعمال قصيرة الأجل. ينطبق هذا أيضاً على من يتلقون مساعدة مالية من المنظمين</li><li><strong>دعم التأشيرات:</strong> <a href=\"mailto:visa.cre2026@gmail.com\">visa.cre2026@gmail.com</a></li>",
+        "tip_travel_advice_t": "نصائح السفر من أوينو",
+        "tip_haneda_d": "<li>استقل قطار طوكيو المعلق (مونوريل) إلى هاماماتسوتشو</li><li>انتقل إلى خط JR</li>",
+        "tip_narita_d": "<li>قطار كييسي سكايلاينر مباشرة إلى محطة كييسي-أوينو</li>",
+        "tip_suica_d": "<li><strong>النوع:</strong> بطاقة IC مسبقة الدفع للقطارات والحافلات والعديد من المتاجر المشاركة</li><li><strong>الصلاحية:</strong> 28 يوماً بما في ذلك تاريخ الشراء؛ غير قابلة للاسترداد بشكل عام</li><li><strong>الحد:</strong> بطاقة واحدة لكل شخص</li><li><strong>مكان الشراء:</strong> أجهزة بيع تذاكر Welcome Suica في محطة مطار ناريتا المبنى 1، ومحطة مطار ناريتا المبنى 2/3، ومحطة مطار هانيدا المبنى 3 (مونوريل طوكيو)، وكذلك في مراكز خدمات السفر المختارة التابعة لـ JR EAST</li><li><strong>الشحن:</strong> حتى 20,000 ين في أجهزة التذاكر وأجهزة تعديل الأجرة وأجهزة الصراف الآلي لبنك سيفن</li>",
+
+        // --- مفاتيح مفقودة: أخرى ---
+        "acc_overview_title": "خيارات الإقامة في وسط طوكيو",
+        "sc_title": "اللجنة العلمية",
+        "supp_supporters_t": "الداعمون",
+        "con_visa": "دعم التأشيرات",
+        "d_early_t": "التسجيل المبكر",
+        "d_early_d": "سجّل مبكراً بسعر مخفض قدره 8,000 ين ياباني."
     }
 };
