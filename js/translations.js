@@ -23,7 +23,7 @@ const translations = {
         "foot_org": "Organized by CRE Japan Committee",
         "foot_photo": "BG Photographs by Szymon Shields, Sarmat Batagov, in Pixels",
         "foot_brand": "CRE 26 Tokyo",
-        "foot_info": "Current Research in Egyptology<br>July 11-15, 2026<br>National Research Institute for Cultural Properties, Tokyo",
+        "foot_info": "Current Research in Egyptology<br>July 11-15, 2026<br><a href='https://maps.app.goo.gl/vuXx6C8anbVp61hVA' target='_blank' style='color: rgba(245,237,224,0.8); text-decoration: underline;'>National Research Institute for Cultural Properties, Tokyo</a>",
 
         // --- Index (Home) ---
         "hero_title": "Current Research in Egyptology 26",
@@ -361,7 +361,7 @@ const translations = {
         "air_step_haneda_rec": "<strong>Recommended: Tokyo Monorail → JR Yamanote Line</strong>",
         "air_step_narita_t": "<i class=\"fas fa-walking\" style=\"color: var(--brand-primary);\"></i> Step-by-Step Guide from Narita",
         "air_step_narita_rec": "<strong>Recommended: Narita Express (N'EX) to Tokyo Station</strong>",
-        "air_protip": "<strong>Pro Tip:</strong> The conference venue is the National Research Institute for Cultural Properties, Tokyo (TOBUNKEN), located near Ueno Park. The nearest stations are Uguisudani (JR Yamanote Line, 7 min walk) and Ueno (JR/Metro, 13 min walk).",
+        "air_protip": "<strong>Pro Tip:</strong> The conference venue is the <a href='https://maps.app.goo.gl/vuXx6C8anbVp61hVA' target='_blank' style='color: inherit; text-decoration: underline;'>National Research Institute for Cultural Properties, Tokyo (TOBUNKEN)</a>, located near Ueno Park. The nearest stations are Uguisudani (JR Yamanote Line, 7 min walk) and Ueno (JR/Metro, 13 min walk).",
         "air_keikyu_t": "Keikyu Line",
         "air_keikyu_d": "Direct access to Asakusa Line. Good for eastern Tokyo destinations.",
         "air_limo_t": "Limousine Bus",
@@ -738,7 +738,7 @@ const translations = {
         "foot_org": "主催：CRE日本委員会",
         "foot_photo": "背景写真：Szymon Shields、Sarmat Batagov（Pixels）",
         "foot_brand": "CRE 26 東京",
-        "foot_info": "エジプト学の最新研究<br>2026年7月11日〜15日<br>東京文化財研究所",
+        "foot_info": "エジプト学の最新研究<br>2026年7月11日〜15日<br><a href='https://maps.app.goo.gl/vuXx6C8anbVp61hVA' target='_blank' style='color: rgba(245,237,224,0.8); text-decoration: underline;'>東京文化財研究所</a>",
 
         // --- Index ---
         "hero_title": "エジプト学先端研究第26回国際会議",
@@ -1457,7 +1457,7 @@ const translations = {
         "foot_org": "تنظيم اللجنة اليابانية لمؤتمر CRE",
         "foot_photo": "صور الخلفية: Szymon Shields، Sarmat Batagov من Pixels",
         "foot_brand": "CRE 26 طوكيو",
-        "foot_info": "الأبحاث الحالية في علم المصريات<br>11-15 يوليو 2026<br>المعهد الوطني لأبحاث الممتلكات الثقافية، طوكيو",
+        "foot_info": "الأبحاث الحالية في علم المصريات<br>11-15 يوليو 2026<br><a href='https://maps.app.goo.gl/vuXx6C8anbVp61hVA' target='_blank' style='color: rgba(245,237,224,0.8); text-decoration: underline;'>المعهد الوطني لأبحاث الممتلكات الثقافية، طوكيو</a>",
 
         "hero_title": "آفاق البحث المعاصر في علوم المصريات 26",
         "hero_subtitle": "المؤتمر الدولي السادس والعشرون في طوكيو، اليابان",
