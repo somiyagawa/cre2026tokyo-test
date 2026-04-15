@@ -23,7 +23,7 @@ const translations = {
         "foot_org": "Organized by CRE Japan Committee",
         "foot_photo": "BG Photographs by Szymon Shields, Sarmat Batagov, in Pixels",
         "foot_brand": "CRE 26 Tokyo",
-        "foot_info": "Current Research in Egyptology<br>July 11-15, 2026<br>Central Tokyo (venue TBA)",
+        "foot_info": "Current Research in Egyptology<br>July 11-15, 2026<br>National Research Institute for Cultural Properties, Tokyo",
 
         // --- Index (Home) ---
         "hero_title": "Current Research in Egyptology 26",
@@ -162,10 +162,10 @@ const translations = {
 
         // --- Venue ---
         "ven_hero_title": "Venue & Access",
-        "ven_hero_sub": "Central Tokyo (venue TBA)",
+        "ven_hero_sub": "National Research Institute for Cultural Properties, Tokyo",
         "ven_venue_title": "Conference Venue",
-        "ven_venue_name": "Central Tokyo (venue to be confirmed)",
-        "ven_venue_addr": "Tokyo, Japan",
+        "ven_venue_name": "National Research Institute for Cultural Properties, Tokyo (TOBUNKEN)",
+        "ven_venue_addr": "13-43 Ueno Park, Taito-ku, Tokyo",
         "ven_access_title": "Access Information",
         "ven_access_p": "Detailed access information from Haneda Airport, Tokyo Station, and major hotels.",
         "ven_btn_air": "From Haneda Airport →",
@@ -291,7 +291,7 @@ const translations = {
 
         // --- Hero Detail Sub-texts ---
         "hero_date_sub": "Saturday to Wednesday",
-        "hero_place_sub": "Tokyo City Centre (TBA)",
+        "hero_place_sub": "National Research Institute for Cultural Properties, Tokyo",
         "hero_scope_sub": "Prehistoric to Islamic Period",
 
         // --- Second Circular ---
@@ -738,7 +738,7 @@ const translations = {
         "foot_org": "主催：CRE日本委員会",
         "foot_photo": "背景写真：Szymon Shields、Sarmat Batagov（Pixels）",
         "foot_brand": "CRE 26 東京",
-        "foot_info": "エジプト学の最新研究<br>2026年7月11日〜15日<br>東京都心（会場未定）",
+        "foot_info": "エジプト学の最新研究<br>2026年7月11日〜15日<br>東京文化財研究所",
 
         // --- Index ---
         "hero_title": "エジプト学先端研究第26回国際会議",
@@ -908,10 +908,10 @@ const translations = {
 
         // --- Venue ---
         "ven_hero_title": "会場・アクセス",
-        "ven_hero_sub": "東京中心部（会場最終調整中）",
+        "ven_hero_sub": "東京文化財研究所",
         "ven_venue_title": "会議会場",
-        "ven_venue_name": "東京中心部（会場確定次第お知らせします）",
-        "ven_venue_addr": "東京都",
+        "ven_venue_name": "東京文化財研究所（TOBUNKEN）",
+        "ven_venue_addr": "〒110-8713 東京都台東区上野公園13-43",
         "ven_access_title": "アクセス情報",
         "ven_access_p": "羽田空港・東京駅・主要ホテルからの詳細アクセス情報。",
         "ven_btn_air": "羽田・成田空港からのアクセス →",
@@ -1010,7 +1010,7 @@ const translations = {
 
         // --- Hero Detail Sub-texts ---
         "hero_date_sub": "土曜日〜水曜日",
-        "hero_place_sub": "東京都心（会場未定）",
+        "hero_place_sub": "東京文化財研究所",
         "hero_scope_sub": "先史時代〜\nイスラーム時代",
 
         // --- Second Circular ---
@@ -1457,7 +1457,7 @@ const translations = {
         "foot_org": "تنظيم اللجنة اليابانية لمؤتمر CRE",
         "foot_photo": "صور الخلفية: Szymon Shields، Sarmat Batagov من Pixels",
         "foot_brand": "CRE 26 طوكيو",
-        "foot_info": "الأبحاث الحالية في علم المصريات<br>11-15 يوليو 2026<br>وسط طوكيو (المكان سيُحدد لاحقًا)",
+        "foot_info": "الأبحاث الحالية في علم المصريات<br>11-15 يوليو 2026<br>المعهد الوطني لأبحاث الممتلكات الثقافية، طوكيو",
 
         "hero_title": "آفاق البحث المعاصر في علوم المصريات 26",
         "hero_subtitle": "المؤتمر الدولي السادس والعشرون في طوكيو، اليابان",
@@ -1596,10 +1596,10 @@ const translations = {
 
         // --- Venue ---
         "ven_hero_title": "المكان والوصول",
-        "ven_hero_sub": "وسط طوكيو (سيُعلن عن المكان لاحقًا)",
+        "ven_hero_sub": "المعهد الوطني لأبحاث الممتلكات الثقافية، طوكيو",
         "ven_venue_title": "موقع المؤتمر",
-        "ven_venue_name": "وسط طوكيو (سيتم التأكيد)",
-        "ven_venue_addr": "طوكيو، اليابان",
+        "ven_venue_name": "المعهد الوطني لأبحاث الممتلكات الثقافية، طوكيو (TOBUNKEN)",
+        "ven_venue_addr": "13-43 حديقة أوينو، تايتو-كو، طوكيو",
         "ven_access_title": "معلومات الوصول",
         "ven_access_p": "تفاصيل الوصول من مطار هانيدا ومحطة طوكيو.",
         "ven_btn_air": "من مطار هانيدا →",
@@ -1725,7 +1725,7 @@ const translations = {
 
         // --- Hero Detail Sub-texts ---
         "hero_date_sub": "من السبت إلى الأربعاء",
-        "hero_place_sub": "وسط طوكيو (يُحدد لاحقاً)",
+        "hero_place_sub": "المعهد الوطني لأبحاث الممتلكات الثقافية، طوكيو",
         "hero_scope_sub": "من عصور ما قبل التاريخ\nإلى العصر الإسلامي",
 
         // --- Second Circular ---
