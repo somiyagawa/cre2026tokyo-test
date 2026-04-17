@@ -140,7 +140,7 @@ const translations = {
         // --- Registration ---
         "reg_hero_title": "Registration",
         "reg_hero_sub": "Details coming in February 2026",
-        "reg_status": "Registration fees and details are currently TBD.",
+        "reg_status": "<strong><i class=\"fas fa-check-circle\"></i> Status:</strong> Registration for CRE 2026 is <strong>NOW OPEN</strong>!",
         "reg_info_title": "Registration Information",
         "reg_info_p": "Detailed information will be announced in the First Circular, scheduled for release in Late February 2026.",
         "reg_sched_title": "Registration Schedule",
@@ -805,7 +805,22 @@ const translations = {
 
         // --- Support page: Readyfor English guide ---
         "supp_readyfor_guide": "English guide to donate via Readyfor",
-        "supp_readyfor_guide_note": "Step-by-step instructions in English for international supporters."
+        "supp_readyfor_guide_note": "Step-by-step instructions in English for international supporters.",
+
+        // --- Excursion details (registration.html) ---
+        "reg_exc_date": "<strong>Date:</strong> Wednesday, 15 July",
+        "reg_exc_departure": "<strong>Departure:</strong> Tokyo Station at 09:00",
+        "reg_exc_arrival": "<strong>Arrival in Kamakura:</strong> Approximately 10:30 (chartered bus)",
+        "reg_exc_fee": "<strong>Participation Fee:</strong> JPY 8,000 (optional)",
+        "reg_exc_venues_label": "<strong>Venues Visited:</strong>",
+        "reg_exc_v1": "Tsurugaoka Hachimangū Shrine",
+        "reg_exc_v2": "Great Buddha (Daibutsu)",
+        "reg_exc_v3": "Hase-dera Temple",
+        "reg_exc_v4": "Time at leisure in Kamakura",
+        "reg_exc_v5": "Enoshima Shrine",
+        "reg_exc_v6": "Enoshima Caves",
+        "reg_exc_v7": "Views of the Pacific Ocean and Mt. Fuji",
+        "reg_exc_status": "<strong>Status:</strong> Optional, can be booked during registration"
     },
     "ja": {
         "nav_home": "ホーム",
@@ -1072,7 +1087,7 @@ const translations = {
         // --- Registration ---
         "reg_hero_title": "参加登録",
         "reg_hero_sub": "2026年2月に詳細発表予定",
-        "reg_status": "参加費・詳細は現在調整中です。",
+        "reg_status": "<strong><i class=\"fas fa-check-circle\"></i> ステータス：</strong>CRE 2026の参加登録は<strong>受付中</strong>です！",
         "reg_info_title": "参加登録情報",
         "reg_info_p": "詳細は2026年2月下旬発行予定の第一回サーキュラーにてお知らせします。",
         "reg_sched_title": "登録スケジュール",
@@ -1616,7 +1631,22 @@ const translations = {
 
         // --- 支援ページ：Readyfor 英語ガイド ---
         "supp_readyfor_guide": "ReadyForでの寄付方法（英語ガイド）",
-        "supp_readyfor_guide_note": "海外からのご支援者向けの英語によるステップバイステップ案内です。"
+        "supp_readyfor_guide_note": "海外からのご支援者向けの英語によるステップバイステップ案内です。",
+
+        // --- エクスカーション詳細 (registration.html) ---
+        "reg_exc_date": "<strong>日程：</strong>2026年7月15日（水）",
+        "reg_exc_departure": "<strong>出発：</strong>東京駅 09:00",
+        "reg_exc_arrival": "<strong>鎌倉到着：</strong>10:30頃（専用チャーターバス）",
+        "reg_exc_fee": "<strong>参加費：</strong>8,000円（任意参加）",
+        "reg_exc_venues_label": "<strong>訪問地：</strong>",
+        "reg_exc_v1": "鶴岡八幡宮",
+        "reg_exc_v2": "鎌倉大仏（大仏）",
+        "reg_exc_v3": "長谷寺",
+        "reg_exc_v4": "鎌倉自由散策",
+        "reg_exc_v5": "江島神社",
+        "reg_exc_v6": "江の島岩屋",
+        "reg_exc_v7": "太平洋および富士山の眺望",
+        "reg_exc_status": "<strong>ステータス：</strong>任意参加。参加登録時にお申し込みいただけます。"
     },
     "ar": {
         "nav_home": "الرئيسية",
@@ -1758,7 +1788,7 @@ const translations = {
         // --- Registration ---
         "reg_hero_title": "التسجيل",
         "reg_hero_sub": "التفاصيل في فبراير 2026",
-        "reg_status": "رسوم وتفاصيل التسجيل غير محددة حالياً.",
+        "reg_status": "<strong><i class=\"fas fa-check-circle\"></i> الحالة:</strong> التسجيل في مؤتمر CRE 2026 <strong>مفتوح الآن</strong>!",
         "reg_info_title": "معلومات التسجيل",
         "reg_info_p": "سيتم الإعلان عن التفاصيل في المنشور الأول في أواخر فبراير 2026.",
         "reg_sched_title": "جدول التسجيل",
@@ -2425,6 +2455,21 @@ const translations = {
 
         // --- صفحة الدعم: دليل Readyfor بالإنجليزية ---
         "supp_readyfor_guide": "دليل التبرّع عبر Readyfor بالإنجليزية",
-        "supp_readyfor_guide_note": "تعليمات تفصيلية خطوة بخطوة بالإنجليزية للداعمين الدوليين."
+        "supp_readyfor_guide_note": "تعليمات تفصيلية خطوة بخطوة بالإنجليزية للداعمين الدوليين.",
+
+        // --- تفاصيل الرحلة (registration.html) ---
+        "reg_exc_date": "<strong>التاريخ:</strong> الأربعاء 15 يوليو",
+        "reg_exc_departure": "<strong>المغادرة:</strong> محطة طوكيو في الساعة 09:00",
+        "reg_exc_arrival": "<strong>الوصول إلى كاماكورا:</strong> نحو الساعة 10:30 (حافلة مستأجرة)",
+        "reg_exc_fee": "<strong>رسوم المشاركة:</strong> 8,000 ين ياباني (اختيارية)",
+        "reg_exc_venues_label": "<strong>المواقع التي ستُزار:</strong>",
+        "reg_exc_v1": "ضريح تسوروغاوكا هاتشيمان-غو",
+        "reg_exc_v2": "بوذا الكبير (دايبوتسو)",
+        "reg_exc_v3": "معبد هاسي-ديرا",
+        "reg_exc_v4": "وقت حرّ في كاماكورا",
+        "reg_exc_v5": "ضريح إينوشيما",
+        "reg_exc_v6": "كهوف إينوشيما",
+        "reg_exc_v7": "إطلالات على المحيط الهادئ وجبل فوجي",
+        "reg_exc_status": "<strong>الحالة:</strong> اختيارية، يمكن الحجز أثناء التسجيل"
     }
 };
