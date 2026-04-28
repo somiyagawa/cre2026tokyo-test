@@ -196,7 +196,10 @@ function initScrollToTop() {
 function initBackgroundSlideshow() {
     const slides = document.querySelectorAll('.bg-slide');
     if (slides.length <= 1) return;
-    let currentSlide = 0;
+    // Random first slide
+    slides[0].classList.remove('active');
+    let currentSlide = Math.floor(Math.random() * slides.length);
+    slides[currentSlide].classList.add('active');
     setInterval(() => {
         let nextSlide;
         do {
