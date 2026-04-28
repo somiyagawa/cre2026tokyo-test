@@ -535,7 +535,7 @@ const translations = {
         "reg_sched_date1": "Late Feb 2026",
         "reg_sched_date2": "Late Feb - 30 Apr",
         "reg_sched_date3": "1 May - 30 June",
-        "reg_info_desc": "Registration for CRE 2026 is not yet open. Further information on registration procedures will be provided in the <strong>Second Circular</strong>.",
+        "reg_info_desc": "Registration for CRE 2026 is now open. Further information on registration procedures is provided in the <a href=\"https://cre26.tokyo/CRE_Second_Circular.pdf\" target=\"_blank\"><strong>Second Circular</strong></a>.",
         "reg_fee_title": "Registration Fees",
         "reg_fee_early": "Early Registration",
         "reg_fee_early_price": "JPY 8,000",
@@ -829,7 +829,31 @@ const translations = {
         "reg_exc_v5": "Enoshima Shrine",
         "reg_exc_v6": "Enoshima Caves",
         "reg_exc_v7": "Views of the Pacific Ocean and Mt. Fuji",
-        "reg_exc_status": "<strong>Status:</strong> Optional, can be booked during registration"
+        "reg_exc_status": "<strong>Status:</strong> Optional, can be booked during registration",
+
+        // --- Registration: Bank / Dinner / Museum details ---
+        "reg_bank_details": "<p style=\"margin: 0 0 0.5rem 0;\"><strong>Beneficiary Bank:</strong> MUFG BANK, LTD.</p><p style=\"margin: 0 0 0.5rem 0;\"><strong>Branch:</strong> Takatanobaba Branch</p><p style=\"margin: 0 0 0.5rem 0;\"><strong>Branch Address:</strong> 3-2-3, Takadanobaba, Shinjuku-ku, Tokyo, Japan</p><p style=\"margin: 0 0 0.5rem 0;\"><strong>SWIFT/BIC:</strong> BOTKJPJT (11-digit: BOTKJPJTXXX)</p><p style=\"margin: 0 0 0.5rem 0;\"><strong>Account Number:</strong> 053-2384351</p><p style=\"margin: 0 0 0.5rem 0;\"><strong>Account Name:</strong> CRE Japan Committee</p><p style=\"margin: 0;\"><strong>Account Address:</strong> 305 Connect-Midorino, 17-4, Midorino 2-chome, Tsukuba, Ibaraki, 305-0881, Japan</p>",
+        "reg_dinner_details": "<p style=\"margin: 0 0 0.75rem 0;\"><strong>Date &amp; Time:</strong> Monday, 13 July, 7:00pm–9:00pm</p><p style=\"margin: 0 0 0.75rem 0;\"><strong>Venue:</strong> MY Shokudo Dining &amp; Sakaba, 3F, TOKYO TORCH Terrace, 2-6-4 Otemachi, Chiyoda City, Tokyo 100-0004</p><p style=\"margin: 0 0 0.75rem 0;\"><strong>Participation Fee:</strong> JPY 10,000</p><p style=\"margin: 0 0 0.75rem 0;\"><strong>Details:</strong> Buffet-style dining with drinks included</p><p style=\"margin: 0 0 0.75rem 0;\"><strong>Access:</strong> From Ueno Station: Take JR Yamanote or Keihin-Tohoku Line to Tokyo Station (~6 min). Exit at Nihonbashi and walk to TOKYO TORCH Terrace (~5 min), located on the 3rd floor</p><p style=\"margin: 0;\"><strong>Status:</strong> Optional, can be booked during registration</p>",
+        "reg_museum_details": "<p style=\"margin: 0 0 0.5rem 0;\"><strong>Venue:</strong> Ancient Orient Museum in Ikebukuro</p><p style=\"margin: 0 0 0.5rem 0;\"><strong>Date:</strong> Sunday, 12 July</p><p style=\"margin: 0 0 0.5rem 0;\"><strong>Cost:</strong> Included in registration fee (excluding transportation between venue and museum)</p><p style=\"margin: 0;\"><strong>Note:</strong> Advance registration required at conference venue</p>",
+
+        // --- Accommodation page ---
+        "acc_overview_p1": "A range of accommodation options is available in central Tokyo, particularly along the Tokyo Metro Marunouchi Line and JR Yamanote Line. The conference venue is most easily reached from Ueno Station or Uguisudani Station on the JR Yamanote Line. Tokyo Station is also conveniently located.",
+        "acc_overview_p2": "<strong>We encourage participants to consider accommodation near stations on the JR Yamanote Line or Tokyo Metro Marunouchi Line.</strong> Areas around stations between Ueno – Tokyo – Shinjuku are especially practical.",
+        "acc_contact_note": "If you have any questions regarding accommodation recommendations, please contact the Organising Committee at: <a href=\"mailto:tokyo.cre2026@gmail.com\">tokyo.cre2026@gmail.com</a>",
+        "acc_area_ueno": "Ueno Area",
+        "acc_area_akihabara": "Akihabara/Kanda Area",
+        "acc_area_shinjuku": "Shinjuku Area",
+        "acc_area_akasaka": "Akasaka Area",
+        "acc_area_ginza": "Ginza Area",
+        "acc_area_kyobashi": "Kyobashi Area",
+        "acc_area_otemachi": "Otemachi Area",
+        "acc_area_ochanomizu": "Ochanomizu Area",
+        "acc_area_ikebukuro": "Ikebukuro Area",
+
+        // --- Venue / Support: additional keys ---
+        "ven_map_btn": "Google Map →",
+        "supp_partners_t": "Partner Institutions",
+        "supp_partners_soon": "More partner institutions coming soon."
     },
     "ja": {
         "nav_home": "ホーム",
@@ -1370,7 +1394,7 @@ const translations = {
         "reg_sched_date1": "2026年2月下旬",
         "reg_sched_date2": "2月下旬〜4月30日",
         "reg_sched_date3": "5月1日〜6月30日",
-        "reg_info_desc": "CRE 2026の参加登録はまだ開始されていません。登録手続きの詳細は<strong>第二サーキュラー</strong>にてお知らせします。",
+        "reg_info_desc": "CRE 2026の参加登録は現在受付中です。登録手続きの詳細は<a href=\"https://cre26.tokyo/CRE_Second_Circular.pdf\" target=\"_blank\"><strong>第2回サーキュラー</strong></a>に記載されています。",
         "reg_fee_title": "参加費",
         "reg_fee_early": "早期登録",
         "reg_fee_early_price": "8,000円",
@@ -1664,7 +1688,31 @@ const translations = {
         "reg_exc_v5": "江島神社",
         "reg_exc_v6": "江の島岩屋",
         "reg_exc_v7": "太平洋および富士山の眺望",
-        "reg_exc_status": "<strong>ステータス：</strong>任意参加。参加登録時にお申し込みいただけます。"
+        "reg_exc_status": "<strong>ステータス：</strong>任意参加。参加登録時にお申し込みいただけます。",
+
+        // --- 参加登録：銀行振込／ディナー／博物館見学 詳細 ---
+        "reg_bank_details": "<p style=\"margin: 0 0 0.5rem 0;\"><strong>受取銀行：</strong>三菱UFJ銀行</p><p style=\"margin: 0 0 0.5rem 0;\"><strong>支店：</strong>高田馬場支店</p><p style=\"margin: 0 0 0.5rem 0;\"><strong>支店住所：</strong>〒169-0075 東京都新宿区高田馬場3-2-3</p><p style=\"margin: 0 0 0.5rem 0;\"><strong>SWIFT/BIC：</strong>BOTKJPJT（11桁：BOTKJPJTXXX）</p><p style=\"margin: 0 0 0.5rem 0;\"><strong>口座番号：</strong>053-2384351</p><p style=\"margin: 0 0 0.5rem 0;\"><strong>口座名義：</strong>CRE Japan Committee</p><p style=\"margin: 0;\"><strong>口座住所：</strong>〒305-0881 茨城県つくば市みどりの2丁目17-4 コネクトみどりの305</p>",
+        "reg_dinner_details": "<p style=\"margin: 0 0 0.75rem 0;\"><strong>日時：</strong>2026年7月13日（月）19:00〜21:00</p><p style=\"margin: 0 0 0.75rem 0;\"><strong>会場：</strong>MY Shokudo Dining & Sakaba（マイ食堂ダイニング＆酒場）3F、TOKYO TORCH Terrace、〒100-0004 東京都千代田区大手町2-6-4</p><p style=\"margin: 0 0 0.75rem 0;\"><strong>参加費：</strong>10,000円</p><p style=\"margin: 0 0 0.75rem 0;\"><strong>内容：</strong>ビュッフェ形式（飲み物付き）</p><p style=\"margin: 0 0 0.75rem 0;\"><strong>アクセス：</strong>上野駅からJR山手線または京浜東北線で東京駅まで約6分。日本橋口から徒歩約5分、TOKYO TORCH Terrace 3階</p><p style=\"margin: 0;\"><strong>ステータス：</strong>任意参加。参加登録時にお申し込みいただけます。</p>",
+        "reg_museum_details": "<p style=\"margin: 0 0 0.5rem 0;\"><strong>会場：</strong>古代オリエント博物館（池袋）</p><p style=\"margin: 0 0 0.5rem 0;\"><strong>日程：</strong>2026年7月12日（日）</p><p style=\"margin: 0 0 0.5rem 0;\"><strong>費用：</strong>参加登録費に含まれます（会場と博物館間の交通費は各自負担）</p><p style=\"margin: 0;\"><strong>備考：</strong>会議会場での事前登録が必要です</p>",
+
+        // --- 宿泊ページ ---
+        "acc_overview_p1": "東京都心部には、東京メトロ丸ノ内線およびJR山手線沿線を中心に、さまざまな宿泊施設がございます。会議会場へは、JR山手線の上野駅または鶯谷駅からのアクセスが最も便利です。東京駅からのアクセスも良好です。",
+        "acc_overview_p2": "<strong>JR山手線または東京メトロ丸ノ内線の沿線駅近くの宿泊施設をお勧めいたします。</strong>上野〜東京〜新宿間の各駅周辺が特に便利です。",
+        "acc_contact_note": "宿泊施設に関するご質問は、組織委員会までお問い合わせください：<a href=\"mailto:tokyo.cre2026@gmail.com\">tokyo.cre2026@gmail.com</a>",
+        "acc_area_ueno": "上野エリア",
+        "acc_area_akihabara": "秋葉原・神田エリア",
+        "acc_area_shinjuku": "新宿エリア",
+        "acc_area_akasaka": "赤坂エリア",
+        "acc_area_ginza": "銀座エリア",
+        "acc_area_kyobashi": "京橋エリア",
+        "acc_area_otemachi": "大手町エリア",
+        "acc_area_ochanomizu": "御茶ノ水エリア",
+        "acc_area_ikebukuro": "池袋エリア",
+
+        // --- 会場／支援ページ：追加キー ---
+        "ven_map_btn": "Google Map →",
+        "supp_partners_t": "パートナー機関",
+        "supp_partners_soon": "パートナー機関は随時追加予定です。"
     },
     "ar": {
         "nav_home": "الرئيسية",
@@ -2201,7 +2249,7 @@ const translations = {
         "reg_sched_date1": "أواخر فبراير 2026",
         "reg_sched_date2": "أواخر فبراير - 30 أبريل",
         "reg_sched_date3": "1 مايو - 30 يونيو",
-        "reg_info_desc": "لم يُفتح التسجيل لـ CRE 2026 بعد. سيتم توفير مزيد من المعلومات حول إجراءات التسجيل في <strong>النشرة الثانية</strong>.",
+        "reg_info_desc": "التسجيل في CRE 2026 مفتوح الآن. يمكن الاطّلاع على مزيد من المعلومات حول إجراءات التسجيل في <a href=\"https://cre26.tokyo/CRE_Second_Circular.pdf\" target=\"_blank\"><strong>النشرة الثانية</strong></a>.",
         "reg_fee_title": "رسوم التسجيل",
         "reg_fee_early": "التسجيل المبكر",
         "reg_fee_early_price": "8,000 ين",
@@ -2497,6 +2545,30 @@ const translations = {
         "reg_exc_v5": "ضريح إينوشيما",
         "reg_exc_v6": "كهوف إينوشيما",
         "reg_exc_v7": "إطلالات على المحيط الهادئ وجبل فوجي",
-        "reg_exc_status": "<strong>الحالة:</strong> اختيارية، يمكن الحجز أثناء التسجيل"
+        "reg_exc_status": "<strong>الحالة:</strong> اختيارية، يمكن الحجز أثناء التسجيل",
+
+        // --- التسجيل: تفاصيل التحويل المصرفي / العشاء / المتحف ---
+        "reg_bank_details": "<p style=\"margin: 0 0 0.5rem 0;\"><strong>البنك المستفيد:</strong> MUFG BANK, LTD.</p><p style=\"margin: 0 0 0.5rem 0;\"><strong>الفرع:</strong> فرع تاكاتانوبابا (Takatanobaba)</p><p style=\"margin: 0 0 0.5rem 0;\"><strong>عنوان الفرع:</strong> 3-2-3, Takadanobaba, Shinjuku-ku, Tokyo, Japan</p><p style=\"margin: 0 0 0.5rem 0;\"><strong>رمز SWIFT/BIC:</strong> BOTKJPJT (11 خانة: BOTKJPJTXXX)</p><p style=\"margin: 0 0 0.5rem 0;\"><strong>رقم الحساب:</strong> 053-2384351</p><p style=\"margin: 0 0 0.5rem 0;\"><strong>اسم الحساب:</strong> CRE Japan Committee</p><p style=\"margin: 0;\"><strong>عنوان الحساب:</strong> 305 Connect-Midorino, 17-4, Midorino 2-chome, Tsukuba, Ibaraki, 305-0881, Japan</p>",
+        "reg_dinner_details": "<p style=\"margin: 0 0 0.75rem 0;\"><strong>التاريخ والوقت:</strong> الاثنين 13 يوليو، 7:00 مساءً – 9:00 مساءً</p><p style=\"margin: 0 0 0.75rem 0;\"><strong>المكان:</strong> MY Shokudo Dining &amp; Sakaba، الطابق الثالث، TOKYO TORCH Terrace، 2-6-4 أوتيماتشي، تشيودا-كو، طوكيو 100-0004</p><p style=\"margin: 0 0 0.75rem 0;\"><strong>رسوم المشاركة:</strong> 10,000 ين ياباني</p><p style=\"margin: 0 0 0.75rem 0;\"><strong>التفاصيل:</strong> بوفيه مع مشروبات مشمولة</p><p style=\"margin: 0 0 0.75rem 0;\"><strong>الوصول:</strong> من محطة أوينو: استقل خط JR يامانوتي أو كيهين-توهوكو إلى محطة طوكيو (~6 دقائق). اخرج من مخرج نيهونباشي وامشِ إلى TOKYO TORCH Terrace (~5 دقائق)، الطابق الثالث</p><p style=\"margin: 0;\"><strong>الحالة:</strong> اختيارية، يمكن الحجز أثناء التسجيل</p>",
+        "reg_museum_details": "<p style=\"margin: 0 0 0.5rem 0;\"><strong>المكان:</strong> متحف الشرق القديم في إيكيبوكورو</p><p style=\"margin: 0 0 0.5rem 0;\"><strong>التاريخ:</strong> الأحد 12 يوليو</p><p style=\"margin: 0 0 0.5rem 0;\"><strong>التكلفة:</strong> مشمولة في رسوم التسجيل (باستثناء تكاليف النقل بين المقرّ والمتحف)</p><p style=\"margin: 0;\"><strong>ملاحظة:</strong> يُشترط التسجيل المسبق في مقرّ المؤتمر</p>",
+
+        // --- صفحة الإقامة ---
+        "acc_overview_p1": "تتوفر مجموعة متنوعة من خيارات الإقامة في وسط طوكيو، لا سيّما على طول خط مترو طوكيو مارونوأوتشي وخط JR يامانوتي. يمكن الوصول إلى مقرّ المؤتمر بسهولة من محطة أوينو أو محطة أوغويسوداني على خط JR يامانوتي. كما أن محطة طوكيو تقع في موقع ملائم.",
+        "acc_overview_p2": "<strong>نشجّع المشاركين على اختيار إقامة بالقرب من محطات خط JR يامانوتي أو خط مترو طوكيو مارونوأوتشي.</strong> المناطق المحيطة بالمحطات الواقعة بين أوينو وطوكيو وشينجوكو عمليّة بشكل خاص.",
+        "acc_contact_note": "إذا كانت لديكم أي استفسارات بشأن توصيات الإقامة، يُرجى التواصل مع اللجنة المنظّمة على: <a href=\"mailto:tokyo.cre2026@gmail.com\">tokyo.cre2026@gmail.com</a>",
+        "acc_area_ueno": "منطقة أوينو",
+        "acc_area_akihabara": "منطقة أكيهابارا / كاندا",
+        "acc_area_shinjuku": "منطقة شينجوكو",
+        "acc_area_akasaka": "منطقة أكاساكا",
+        "acc_area_ginza": "منطقة غينزا",
+        "acc_area_kyobashi": "منطقة كيوباشي",
+        "acc_area_otemachi": "منطقة أوتيماتشي",
+        "acc_area_ochanomizu": "منطقة أوتشانوميزو",
+        "acc_area_ikebukuro": "منطقة إيكيبوكورو",
+
+        // --- المكان / الدعم: مفاتيح إضافية ---
+        "ven_map_btn": "خريطة غوغل ←",
+        "supp_partners_t": "المؤسسات الشريكة",
+        "supp_partners_soon": "سيتم إضافة المزيد من المؤسسات الشريكة قريباً."
     }
 };
