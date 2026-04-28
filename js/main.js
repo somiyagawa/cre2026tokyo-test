@@ -195,12 +195,16 @@ function initScrollToTop() {
 
 function initBackgroundSlideshow() {
     const slides = document.querySelectorAll('.bg-slide');
-    if (slides.length === 0) return;
+    if (slides.length <= 1) return;
     let currentSlide = 0;
     setInterval(() => {
+        let nextSlide;
+        do {
+            nextSlide = Math.floor(Math.random() * slides.length);
+        } while (nextSlide === currentSlide);
         slides[currentSlide].classList.remove('active');
-        currentSlide = (currentSlide + 1) % slides.length;
-        slides[currentSlide].classList.add('active');
+        slides[nextSlide].classList.add('active');
+        currentSlide = nextSlide;
     }, 8000);
 }
 
