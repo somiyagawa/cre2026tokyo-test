@@ -21,7 +21,7 @@ const translations = {
         "foot_tips": "Practical Tips",
         "foot_contact": "Contact",
         "foot_org": "Organized by CRE Japan Committee",
-        "foot_photo": "BG Photographs by Szymon Shields, Sarmat Batagov, in Pixels",
+        "foot_photo": "BG Photographs by Szymon Shields, Sarmat Batagov, in Pixels. Some photos taken at teamLab Borderless",
         "foot_brand": "CRE 26 Tokyo",
         "foot_info": "Current Research in Egyptology<br>July 11-15, 2026<br><a href='https://maps.app.goo.gl/vuXx6C8anbVp61hVA' target='_blank' style='color: rgba(245,237,224,0.8); text-decoration: underline;'>National Research Institute for Cultural Properties, Tokyo</a>",
 
@@ -876,7 +876,7 @@ const translations = {
         "foot_tips": "旅の基本情報",
         "foot_contact": "お問い合わせ",
         "foot_org": "主催：CRE日本委員会",
-        "foot_photo": "背景写真：Szymon Shields、Sarmat Batagov（Pixels）",
+        "foot_photo": "背景写真：Szymon Shields、Sarmat Batagov（Pixels）。一部の写真はteamLab Borderlessにて撮影",
         "foot_brand": "CRE 26 東京",
         "foot_info": "エジプト学の最新研究<br>2026年7月11日〜15日<br><a href='https://maps.app.goo.gl/vuXx6C8anbVp61hVA' target='_blank' style='color: rgba(245,237,224,0.8); text-decoration: underline;'>東京文化財研究所</a>",
 
@@ -1735,7 +1735,7 @@ const translations = {
         "foot_tips": "نصائح عملية",
         "foot_contact": "اتصل بنا",
         "foot_org": "تنظيم اللجنة اليابانية لمؤتمر CRE",
-        "foot_photo": "صور الخلفية: Szymon Shields، Sarmat Batagov من Pixels",
+        "foot_photo": "صور الخلفية: Szymon Shields، Sarmat Batagov من Pixels. بعض الصور مأخوذة في teamLab Borderless",
         "foot_brand": "CRE 26 طوكيو",
         "foot_info": "الأبحاث الحالية في علم المصريات<br>11-15 يوليو 2026<br><a href='https://maps.app.goo.gl/vuXx6C8anbVp61hVA' target='_blank' style='color: rgba(245,237,224,0.8); text-decoration: underline;'>المعهد الوطني لأبحاث الممتلكات الثقافية، طوكيو</a>",
 
