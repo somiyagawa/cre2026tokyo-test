@@ -13,7 +13,7 @@
     <link rel="dns-prefetch" href="//fonts.googleapis.com">
     <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Current Research in Egyptology 26 - 26th International Conference in Tokyo, Japan. July 11-15, 2026 in the city center of Tokyo.">
+    <meta name="description" content="Current Research in Egyptology 26 - 26th International Conference in Tokyo, Japan. July 11-15, 2026 at the National Research Institute for Cultural Properties, Tokyo.">
     <meta name="keywords" content="Egyptology, CRE 26, Tokyo, Ancient Egypt, Conference, Research, Archaeology">
     <meta name="author" content="CRE Japan Committee">
     <title>CRE 26 Tokyo | Current Research in Egyptology</title>
@@ -255,14 +255,265 @@
         .cre-fc-btn-primary { justify-content: center; }
     }
     </style>
+
+    <!-- Second Circular Announcement Styles -->
+    <style>
+    .cre-sc-announcement {
+        position: relative;
+        padding: 5rem 1.5rem;
+        overflow: hidden;
+        background: linear-gradient(135deg,
+            rgba(5, 10, 25, 0.97) 0%,
+            rgba(10, 30, 70, 0.97) 30%,
+            rgba(5, 10, 25, 0.97) 50%);
+        border-top: 1px solid rgba(100, 160, 230, 0.3);
+        border-bottom: 1px solid rgba(100, 160, 230, 0.3);
+    }
+    .cre-sc-announcement::before {
+        content: "𓋹 𓍑 𓋴";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 8rem;
+        letter-spacing: 4rem;
+        color: rgba(100, 160, 230, 0.04);
+        white-space: nowrap;
+        pointer-events: none;
+        user-select: none;
+        z-index: 0;
+    }
+    .cre-sc-announcement::after {
+        content: "";
+        position: absolute;
+        inset: 1.5rem;
+        border: 1px solid rgba(100, 160, 230, 0.12);
+        pointer-events: none;
+        z-index: 0;
+    }
+    .cre-sc-inner {
+        position: relative;
+        z-index: 1;
+        max-width: 960px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .cre-sc-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        background: rgba(100, 160, 230, 0.12);
+        border: 1px solid rgba(100, 160, 230, 0.4);
+        border-radius: 999px;
+        padding: 6px 18px 6px 12px;
+        margin-bottom: 2rem;
+    }
+    .cre-sc-pulse {
+        display: inline-block;
+        width: 9px;
+        height: 9px;
+        border-radius: 50%;
+        background: #64a0e6;
+        position: relative;
+        flex-shrink: 0;
+    }
+    .cre-sc-pulse::before {
+        content: "";
+        position: absolute;
+        inset: -4px;
+        border-radius: 50%;
+        background: rgba(100, 160, 230, 0.35);
+        animation: cre-pulse 1.8s ease-in-out infinite;
+    }
+    .cre-sc-badge-text {
+        font-size: 0.72rem;
+        font-weight: 700;
+        letter-spacing: 0.15em;
+        color: #64a0e6;
+        text-transform: uppercase;
+    }
+    .cre-sc-grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2.5rem;
+    }
+    .cre-sc-cover-wrap {
+        perspective: 800px;
+        width: 260px;
+    }
+    .cre-sc-cover-frame {
+        position: relative;
+        border-radius: 4px;
+        overflow: hidden;
+        box-shadow:
+            0 0 0 1px rgba(100, 160, 230, 0.4),
+            0 20px 60px rgba(0, 0, 0, 0.85),
+            0 0 60px rgba(100, 160, 230, 0.1);
+        transform: perspective(700px) rotateY(0deg) rotateX(2deg);
+        transition: transform 0.5s ease, box-shadow 0.5s ease;
+        animation: cre-float 4s ease-in-out infinite;
+    }
+    .cre-sc-cover-frame:hover {
+        transform: perspective(700px) rotateY(0deg) rotateX(0deg) translateY(-6px) scale(1.03);
+        box-shadow:
+            0 0 0 1px rgba(100, 160, 230, 0.65),
+            0 28px 70px rgba(0, 0, 0, 0.85),
+            0 0 80px rgba(100, 160, 230, 0.18);
+        animation: none;
+    }
+    .cre-sc-cover-img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    .cre-sc-cover-shine {
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+            130deg,
+            rgba(255, 255, 255, 0.1) 0%,
+            transparent 40%,
+            transparent 60%,
+            rgba(100, 160, 230, 0.05) 100%
+        );
+        pointer-events: none;
+    }
+    .cre-sc-cover-fallback {
+        width: 100%;
+        aspect-ratio: 0.71;
+        background: linear-gradient(160deg, #06101a, #0a1e46);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .cre-sc-fallback-scarab { font-size: 4rem; opacity: 0.6; }
+    .cre-sc-fallback-title {
+        color: #64a0e6;
+        font-size: 1.1rem;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+    }
+    .cre-sc-eyebrow {
+        font-size: 0.8rem;
+        font-weight: 700;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        color: #64a0e6;
+        margin: 0 0 0.75rem;
+        text-align: center;
+    }
+    .cre-sc-heading {
+        font-family: 'Playfair Display', 'Georgia', serif;
+        font-size: clamp(1.6rem, 3vw, 2.4rem);
+        font-weight: 700;
+        line-height: 1.2;
+        color: #f5ede0;
+        margin: 0 0 1.25rem;
+        text-align: center;
+    }
+    .cre-sc-body {
+        font-size: 0.95rem;
+        line-height: 1.8;
+        color: rgba(245, 237, 224, 0.7);
+        margin: 0 auto 2rem;
+        max-width: 560px;
+        text-align: center;
+    }
+    .cre-sc-meta {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.75rem;
+        margin-bottom: 2.5rem;
+        justify-content: center;
+    }
+    .cre-sc-meta-item {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        background: rgba(100, 160, 230, 0.08);
+        border: 1px solid rgba(100, 160, 230, 0.2);
+        border-radius: 999px;
+        padding: 5px 14px;
+        font-size: 0.82rem;
+        color: rgba(245, 237, 224, 0.8);
+    }
+    .cre-sc-meta-icon { font-size: 14px; line-height: 1; }
+    .cre-sc-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        align-items: center;
+        justify-content: center;
+    }
+    .cre-sc-btn-primary {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 14px 28px;
+        background: linear-gradient(135deg, #64a0e6, #3a70b0);
+        color: #f5ede0;
+        font-weight: 700;
+        font-size: 0.9rem;
+        letter-spacing: 0.02em;
+        border-radius: 4px;
+        text-decoration: none;
+        transition: all 0.25s ease;
+        box-shadow: 0 4px 20px rgba(100, 160, 230, 0.25);
+    }
+    .cre-sc-btn-primary:hover {
+        background: linear-gradient(135deg, #7ab4f0, #4a80c0);
+        box-shadow: 0 6px 30px rgba(100, 160, 230, 0.45);
+        transform: translateY(-2px);
+    }
+    @media (max-width: 500px) {
+        .cre-sc-actions { flex-direction: column; align-items: stretch; }
+        .cre-sc-btn-primary { justify-content: center; }
+    }
+    </style>
 </head>
 <body>
     <!-- Background Slideshow -->
     <div id="bg-slideshow">
-        <div class="bg-slide active" style="background-image: url('images/bg-tokyo-1.jpg');"></div>
+        <div class="bg-slide active" style="background-image: url('images/bg-museum.jpg');"></div>
+        <div class="bg-slide" style="background-image: url('images/bg-study.jpg');"></div>
+        <div class="bg-slide" style="background-image: url('images/bg-study2.jpg');"></div>
+        <div class="bg-slide" style="background-image: url('images/bg-tokyo-1.jpg');"></div>
+        <div class="bg-slide" style="background-image: url('images/bg-tokyo-1a.jpg');"></div>
+        <div class="bg-slide" style="background-image: url('images/bg-tokyo-1c.jpg');"></div>
         <div class="bg-slide" style="background-image: url('images/bg-tokyo-2.jpg');"></div>
+        <div class="bg-slide" style="background-image: url('images/bg-tokyo-2b.JPG');"></div>
         <div class="bg-slide" style="background-image: url('images/bg-tokyo-3.jpg');"></div>
+        <div class="bg-slide" style="background-image: url('images/bg-tokyo-3a.jpg');"></div>
         <div class="bg-slide" style="background-image: url('images/bg-tokyo-4.jpg');"></div>
+        <div class="bg-slide" style="background-image: url('images/bg-tokyo-4a.jpg');"></div>
+        <div class="bg-slide" style="background-image: url('images/bg-tokyo-4b.JPG');"></div>
+        <div class="bg-slide" style="background-image: url('images/bg-tokyo-day.jpg');"></div>
+        <div class="bg-slide" style="background-image: url('images/bg-venue.jpg');"></div>
+        <div class="bg-slide" style="background-image: url('images/bg-venue2.jpg');"></div>
+        <div class="bg-slide" style="background-image: url('images/bg-img_0109.jpg');"></div>
+        <div class="bg-slide" style="background-image: url('images/bg-img_0466.jpg');"></div>
+        <div class="bg-slide" style="background-image: url('images/bg-img_1319.jpg');"></div>
+        <div class="bg-slide" style="background-image: url('images/bg-img_2891.jpg');"></div>
+        <div class="bg-slide" style="background-image: url('images/bg-img_2896.jpg');"></div>
+        <div class="bg-slide" style="background-image: url('images/bg-img_2903.jpg');"></div>
+        <div class="bg-slide" style="background-image: url('images/bg-img_3601.jpg');"></div>
+        <div class="bg-slide" style="background-image: url('images/bg-img_3608.jpg');"></div>
+        <div class="bg-slide" style="background-image: url('images/bg-img_3643.jpg');"></div>
+        <div class="bg-slide" style="background-image: url('images/bg-img_3645.jpg');"></div>
+        <div class="bg-slide" style="background-image: url('images/bg-img_3694.jpg');"></div>
+        <div class="bg-slide" style="background-image: url('images/bg-img_3709.jpg');"></div>
+        <div class="bg-slide" style="background-image: url('images/bg-img_3953.jpg');"></div>
+        <div class="bg-slide" style="background-image: url('images/bg-img_3994.jpg');"></div>
+        <div class="bg-slide" style="background-image: url('images/bg-img_5032.jpg');"></div>
+        <div class="bg-slide" style="background-image: url('images/bg-img_9990.jpg');"></div>
+        <div class="bg-slide" style="background-image: url('images/bg-img_0003.jpg');"></div>
+        <div class="bg-slide" style="background-image: url('images/bg-img_0005.jpg');"></div>
+        <div class="bg-slide" style="background-image: url('images/bg-img_0036.jpg');"></div>
+        <div class="bg-slide" style="background-image: url('images/bg-img_0078.jpg');"></div>
+        <div class="bg-slide" style="background-image: url('images/bg-img_0106.jpg');"></div>
     </div>
     <div class="bg-overlay"></div>
 
@@ -280,8 +531,10 @@
             <nav>
                 <ul>
                     <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+                    <li><a href="index.html#2nd" data-i18n="nav_2nd">2nd Circular</a></li>
                     <li><a href="index.html#1st" data-i18n="nav_1st">1st Circular</a></li>
 
+                    <li><a href="venue.html" data-i18n="nav_tokyo_ven">Venue</a></li>
                     <li class="has-dropdown">
                         <a href="#" data-i18n="nav_conf">Conference</a>
                         <ul class="dropdown">
@@ -297,7 +550,6 @@
                     <li class="has-dropdown">
                         <a href="#" data-i18n="nav_tokyo">Tokyo</a>
                         <ul class="dropdown">
-                            <li><a href="venue.html" data-i18n="nav_tokyo_ven">Venue</a></li>
                             <li><a href="collections.html" data-i18n="nav_tokyo_mus">Museums</a></li>
                             <!-- <li><a href="accommodation.html" data-i18n="nav_tokyo_hot">Hotels</a></li> -->
                             <li><a href="tokyo-guide.html" data-i18n="nav_tokyo_gui">Guide</a></li>
@@ -347,7 +599,7 @@
                     <div class="hero-detail-item">
                         <div class="icon">📍</div>
                         <strong class="notranslate" data-i18n="hero_place">Tokyo, Japan</strong>
-                        <span class="notranslate" data-i18n="hero_place_sub">Tokyo City Centre<br>(TBA)</span>
+                        <a href="https://maps.app.goo.gl/vuXx6C8anbVp61hVA" target="_blank" class="notranslate" data-i18n="hero_place_sub" style="color: inherit; text-decoration: underline; text-decoration-color: rgba(255,255,255,0.3);">National Research Institute for Cultural Properties, Tokyo</a>
                     </div>
                     <div class="hero-detail-item">
                         <div class="icon">🌏</div>
@@ -357,8 +609,188 @@
                 </div>
 
                 <div class="hero-cta">
-                    <!--<a href="https://cre26.tokyo#1st" class="btn btn-primary notranslate" target="_blank">1ST CIRCULAR</a>-->
-                    <!--<a href="registration.html" class="btn btn-secondary notranslate" data-i18n="hero_btn_reg">Register Now</a>-->
+                    <a href="registration.html" class="btn btn-primary notranslate" data-i18n="hero_btn_reg">Register Now</a>
+                    <a href="CRE_Second_Circular.pdf" class="btn btn-secondary notranslate" target="_blank" download>Download 2nd Circular (PDF)</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visual spacer between hero and 2nd Circular sections -->
+    <div aria-hidden="true" style="height: 4rem; width: 100%;"></div>
+
+    <!-- Second Circular Announcement Section -->
+    <section class="cre-sc-announcement" id="2nd" style="margin-top: 2rem;">
+        <div class="cre-sc-inner">
+
+            <div class="cre-sc-badge">
+                <span class="cre-sc-pulse"></span>
+                <span class="cre-sc-badge-text notranslate" data-i18n="sc_badge">2ND CIRCULAR NOW AVAILABLE</span>
+            </div>
+
+            <div class="cre-sc-grid">
+
+                <!-- Cover image -->
+                <div class="cre-sc-cover-wrap">
+                    <div class="cre-sc-cover-frame">
+                        <img src="images/2ndcircular.png"
+                             alt="CRE 26 Tokyo — 2nd Circular Cover"
+                             class="cre-sc-cover-img"
+                             onerror="this.style.display='none'; document.querySelector('.cre-sc-cover-fallback').style.display='flex';" loading="lazy">
+                        <div class="cre-sc-cover-fallback" style="display:none;">
+                            <div class="cre-sc-fallback-scarab">𓆣</div>
+                            <div class="cre-sc-fallback-title">2nd Circular</div>
+                        </div>
+                        <div class="cre-sc-cover-shine"></div>
+                    </div>
+                </div>
+
+                <!-- Text + CTA -->
+                <div class="cre-sc-content">
+                    <p class="cre-sc-eyebrow notranslate" data-i18n="sc_eyebrow">Second Circular</p>
+                    <h2 class="cre-sc-heading notranslate" data-i18n="sc_heading">
+                        The Official Second Circular<br>is Now Published
+                    </h2>
+                    <p class="cre-sc-body notranslate" data-i18n="sc_body">
+                        Detailed information on the organising &amp; scientific committees, venue,
+                        preliminary programme, presentation formats, museum visits, conference dinner,
+                        excursion, registration, immigration &amp; visas, travel advice, and accommodation
+                        is now available.
+                    </p>
+
+                    <div class="cre-sc-meta">
+                        <div class="cre-sc-meta-item">
+                            <span class="cre-sc-meta-icon">📅</span>
+                            <span class="notranslate" data-i18n="sc_date">11–15 July 2026</span>
+                        </div>
+                        <div class="cre-sc-meta-item">
+                            <span class="cre-sc-meta-icon">📍</span>
+                            <a href="https://maps.app.goo.gl/vuXx6C8anbVp61hVA" target="_blank" class="notranslate" data-i18n="sc_loc" style="color: inherit; text-decoration: underline; text-decoration-color: rgba(245,237,224,0.3);">National Research Institute for Cultural Properties, Tokyo</a>
+                        </div>
+                    </div>
+
+                    <div class="cre-sc-actions">
+                        <a href="CRE_Second_Circular.pdf" class="cre-sc-btn-primary notranslate"
+                           target="_blank" download
+                           data-i18n="sc_btn_dl">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                 viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                 stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"
+                                 style="flex-shrink:0;">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                                <polyline points="7 10 12 15 17 10"/>
+                                <line x1="12" y1="15" x2="12" y2="3"/>
+                            </svg>
+                            Download 2nd Circular (PDF)
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Second Circular Highlights: Venue, SUICA, Museum Tour, Excursion -->
+    <section class="section" id="2nd-highlights" style="background: rgba(255, 255, 255, 0.4);">
+        <div class="container" id="t-home-sc-highlights">
+            <div class="section-header">
+                <h2 class="section-title notranslate" data-i18n="sch_title">From the 2nd Circular</h2>
+                <p class="section-description notranslate" data-i18n="sch_desc">Key practical information for participants: the confirmed venue, transport in Tokyo, the museum tour, and the post-conference excursion</p>
+            </div>
+
+            <!-- Venue Confirmed Announcement -->
+            <div class="glass-card" style="margin-bottom: 2.5rem; padding: 2rem; border-left: 4px solid var(--brand-primary);">
+                <div style="display: flex; align-items: flex-start; gap: 1.5rem; flex-wrap: wrap;">
+                    <div style="flex-shrink: 0;">
+                        <i class="fas fa-map-marker-alt" style="font-size: 2.5rem; color: var(--brand-primary);"></i>
+                    </div>
+                    <div style="flex: 1; min-width: 260px;">
+                        <div class="notranslate" data-i18n="sch_venue_badge" style="display: inline-block; background: rgba(198, 150, 70, 0.15); color: var(--brand-primary); font-size: 0.72rem; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; padding: 4px 12px; border-radius: 999px; margin-bottom: 0.75rem;">Venue Confirmed</div>
+                        <h3 class="notranslate" data-i18n="sch_venue_t" style="margin-bottom: 0.75rem;">Tokyo National Research Institute for Cultural Properties (TOBUNKEN / 東文研)</h3>
+                        <p class="notranslate" data-i18n="sch_venue_d">
+                            We are pleased to announce that the conference venue has been officially confirmed as the <strong>Tokyo National Research Institute for Cultural Properties</strong> (東京文化財研究所, TOBUNKEN / 東文研), located in the Ueno cultural district. TOBUNKEN is Japan's foremost institute for the study, documentation, and conservation of cultural heritage, and offers an especially fitting setting for an international gathering dedicated to the material and textual heritage of ancient Egypt.
+                        </p>
+                        <a href="venue.html" class="btn btn-outline notranslate" data-i18n="sch_venue_b" style="margin-top: 0.5rem;">Venue &amp; Access →</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid-3">
+
+                <!-- SUICA & Transport -->
+                <div class="glass-card">
+                    <i class="fas fa-train" style="font-size: 2.5rem; color: var(--brand-primary); margin-bottom: 1rem; display: block;"></i>
+                    <h3 class="notranslate" data-i18n="sch_suica_t">SUICA &amp; Public Transport</h3>
+                    <p class="notranslate" data-i18n="sch_suica_d">
+                        Participants are strongly encouraged to obtain a SUICA IC card upon arrival. A single tap grants access to JR lines, Tokyo Metro, Toei Subway, and most buses, and the card can also be used at vending machines, convenience stores, and many shops. The 2nd Circular provides detailed guidance on how to acquire, recharge, and use SUICA (including mobile and Welcome SUICA options for international visitors).
+                    </p>
+                    <a href="suica-guide.html" class="btn btn-outline notranslate" data-i18n="sch_suica_b">SUICA Guide →</a>
+                </div>
+
+                <!-- Museum Tour -->
+                <div class="glass-card">
+                    <i class="fas fa-landmark" style="font-size: 2.5rem; color: var(--brand-primary); margin-bottom: 1rem; display: block;"></i>
+                    <h3 class="notranslate" data-i18n="sch_mus_t">Museum Tour</h3>
+                    <p class="notranslate" data-i18n="sch_mus_d">
+                        On Sunday, 12 July 2026, participants are invited to a guided tour of the Ancient Orient Museum (古代オリエント博物館) in Ikebukuro, whose collection includes notable Egyptian, Mesopotamian, and Levantine material. Transfer from the conference venue begins at 17:30, with the tour itself scheduled from 19:00 to 19:30. Full logistics, including access and admission arrangements, are detailed in the 2nd Circular.
+                    </p>
+                    <a href="collections.html" class="btn btn-outline notranslate" data-i18n="sch_mus_b">Egyptian Collections →</a>
+                </div>
+
+                <!-- Excursion -->
+                <div class="glass-card">
+                    <i class="fas fa-torii-gate" style="font-size: 2.5rem; color: var(--brand-primary); margin-bottom: 1rem; display: block;"></i>
+                    <h3 class="notranslate" data-i18n="sch_exc_t">Excursion: Kamakura &amp; Enoshima</h3>
+                    <p class="notranslate" data-i18n="sch_exc_d">
+                        The post-conference excursion will take place on Wednesday, 15 July 2026, with a chartered bus to Kamakura — Japan's medieval capital, renowned for its Zen temples and the Great Buddha (Daibutsu) — followed by a visit to the coastal island of Enoshima. Arrival in Kamakura is planned for approximately 10:30, with free time to explore the town. The participation fee is JPY 8,000 and is not included in the conference registration.
+                    </p>
+                    <a href="registration.html#excursion" class="btn btn-outline notranslate" data-i18n="sch_exc_b">Registration Details →</a>
+                </div>
+
+            </div>
+
+            <div style="text-align: center; margin-top: 2.5rem;">
+                <a href="CRE_Second_Circular.pdf" class="btn btn-primary notranslate" target="_blank" download data-i18n="sch_cta">
+                    <i class="fas fa-file-pdf" style="margin-right: 0.5rem;"></i>
+                    Read the Full 2nd Circular (PDF)
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Urgent Donation Appeal: 15 Researchers Still Need Support -->
+    <section class="section" id="donations-urgent" style="background: linear-gradient(135deg, rgba(192, 57, 43, 0.08), rgba(231, 76, 60, 0.04));">
+        <div class="container" id="t-home-donations">
+            <div class="glass-card" style="max-width: 940px; margin: 0 auto; padding: 3rem; border-left: 5px solid #c0392b;">
+                <div style="text-align: center; margin-bottom: 1.25rem;">
+                    <span class="notranslate" data-i18n="don_badge" style="display: inline-block; background: rgba(192, 57, 43, 0.12); color: #c0392b; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; padding: 5px 14px; border-radius: 999px;">Urgent Appeal</span>
+                </div>
+                <h2 class="notranslate" data-i18n="don_title" style="text-align: center; margin-bottom: 1rem;">
+                    <i class="fas fa-hands-helping" style="color: #c0392b; margin-right: 0.5rem;"></i>
+                    15 Researchers Still Need Travel Support
+                </h2>
+                <p class="notranslate" data-i18n="don_body" style="text-align: center; font-size: 1.05rem; line-height: 1.8; max-width: 780px; margin: 0 auto;">
+                    CRE 26 Tokyo is committed to the broadest possible international participation, including the attendance of colleagues from Egypt and other regions for whom conference travel represents a considerable financial burden. At present, <strong>fifteen researchers still require travel grants</strong> in order to present their work in Tokyo. Every contribution — through our ReadyFor crowdfunding campaign or via PayPal — directly supports their airfare, accommodation, and registration, and helps ensure that scholarship on ancient Egypt remains a genuinely global endeavour.
+                </p>
+                <div style="text-align: center; margin-top: 2rem; display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center;">
+                    <a href="https://readyfor.jp/projects/CRE26-Tokyo" target="_blank" class="btn btn-primary notranslate" data-i18n="don_btn_rf" style="background: linear-gradient(135deg, #c0392b, #e74c3c); border: none;">
+                        <i class="fas fa-heart" style="margin-right: 0.5rem;"></i>
+                        Donate via ReadyFor
+                    </a>
+                    <a href="https://paypal.me/cre26tokyo" target="_blank" class="btn btn-outline notranslate" data-i18n="don_btn_pp">
+                        <i class="fab fa-paypal" style="margin-right: 0.5rem;"></i>
+                        Donate via PayPal
+                    </a>
+                    <a href="support.html" class="btn btn-outline notranslate" data-i18n="don_btn_more">
+                        Learn More →
+                    </a>
+                </div>
+                <div style="text-align: center; margin-top: 1.25rem;">
+                    <a href="https://readyfor.jp/projects/CRE26-Tokyo/announcements/420724" target="_blank" rel="noopener noreferrer" class="notranslate" data-i18n="don_rf_guide" style="display: inline-flex; align-items: center; gap: 0.5rem; color: #c0392b; text-decoration: none; font-weight: 500; font-size: 0.9rem; border-bottom: 1px dashed rgba(192, 57, 43, 0.4); padding-bottom: 2px;">
+                        <i class="fas fa-book-open"></i>
+                        English guide to donate via ReadyFor
+                        <i class="fas fa-external-link-alt" style="font-size: 0.8em;"></i>
+                    </a>
                 </div>
             </div>
         </div>
@@ -478,7 +910,7 @@
                 </div>
 
                 <div class="timeline-item">
-                    <div class="timeline-date notranslate" data-i18n="date_apr">Late April 2026</div>
+                    <div class="timeline-date notranslate" data-i18n="date_apr">April 2026</div>
                     <div class="timeline-content">
                         <h3 class="notranslate" data-i18n="d_apr_t">Second Circular</h3>
                         <p class="notranslate" data-i18n="d_apr_d">Second Circular published with detailed program information.</p>
@@ -486,10 +918,18 @@
                 </div>
 
                 <div class="timeline-item">
-                    <div class="timeline-date notranslate" data-i18n="date_jun">Early May - 30 June 2026</div>
+                    <div class="timeline-date notranslate" data-i18n="date_feb_apr">Until 31 May 2026</div>
+                    <div class="timeline-content">
+                        <h3 class="notranslate" data-i18n="d_early_t">Early Registration</h3>
+                        <p class="notranslate" data-i18n="d_early_d">Register early at the discounted rate of JPY 8,000.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date notranslate" data-i18n="date_jun">1 June - 1 July 2026</div>
                     <div class="timeline-content">
                         <h3 class="notranslate" data-i18n="d_jun_t">Late Registration</h3>
-                        <p class="notranslate" data-i18n="d_jun_d">Final registration period for the conference.</p>
+                        <p class="notranslate" data-i18n="d_jun_d">Final registration period at JPY 10,000.</p>
                     </div>
                 </div>
 
@@ -601,7 +1041,7 @@
 
                 <div class="glass-card">
                     <h3><i class="fas fa-map-marker-alt" style="color: var(--brand-primary); margin-right: 0.5rem;"></i><span class="notranslate" data-i18n="l_ven_t">Venue &amp; Access</span></h3>
-                    <p class="notranslate" data-i18n="l_ven_d">Find directions to the venue and plan your journey from Haneda Airport.</p>
+                    <p class="notranslate" data-i18n="l_ven_d">Find directions to the National Research Institute for Cultural Properties, Tokyo (TOBUNKEN).</p>
                     <a href="venue.html" class="btn btn-outline notranslate" data-i18n="l_ven_b">View Venue →</a>
                 </div>
 
@@ -613,8 +1053,8 @@
 
                 <div class="glass-card">
                     <h3><i class="fas fa-bed" style="color: var(--brand-primary); margin-right: 0.5rem;"></i><span class="notranslate" data-i18n="l_acc_t">Accommodation</span></h3>
-                    <p class="notranslate" data-i18n="l_acc_d">Find budget-friendly hotels, hostels, and traditional ryokan near the conference venue.</p>
-                    <a href="#" class="btn btn-outline notranslate" style="opacity: 0.7; cursor: default;" data-i18n="coming_soon">Coming Soon</a>
+                    <p class="notranslate" data-i18n="l_acc_d">Find recommended hotels near the conference venue along the JR Yamanote Line and Tokyo Metro Marunouchi Line.</p>
+                    <a href="accommodation.html" class="btn btn-outline notranslate" data-i18n="l_acc_b">View Hotels →</a>
                 </div>
 
                 <div class="glass-card">
@@ -634,7 +1074,7 @@
                 <p class="section-description notranslate" data-i18n="con_desc">Get in touch with the organizing committee</p>
             </div>
 
-            <div class="grid grid-3">
+            <div class="grid grid-2">
                 <div class="glass-card" style="text-align: center;">
                     <i class="fas fa-envelope" style="font-size: 2.5rem; color: var(--brand-primary); margin-bottom: 1rem; display: block;"></i>
                     <h4 class="notranslate" data-i18n="con_gen">General Inquiries</h4>
@@ -652,6 +1092,12 @@
                     <h4 class="notranslate" data-i18n="con_reg">Registration</h4>
                     <p><a href="mailto:tokyo.cre2026@gmail.com">tokyo.cre2026@gmail.com</a></p>
                 </div>
+
+                <div class="glass-card" style="text-align: center;">
+                    <i class="fas fa-passport" style="font-size: 2.5rem; color: var(--brand-primary); margin-bottom: 1rem; display: block;"></i>
+                    <h4 class="notranslate" data-i18n="con_visa">Visa Support</h4>
+                    <p><a href="mailto:visa.cre2026@gmail.com">visa.cre2026@gmail.com</a></p>
+                </div>
             </div>
         </div>
     </section>
@@ -663,7 +1109,7 @@
                 <h3 class="notranslate" data-i18n="foot_brand">CRE 26 Tokyo</h3>
                 <p class="notranslate" data-i18n-html="foot_info">Current Research in Egyptology<br>
                 July 11-15, 2026<br>
-                Tokyo City Centre (TBA)</p>
+                <a href="https://maps.app.goo.gl/vuXx6C8anbVp61hVA" target="_blank" style="color: rgba(245,237,224,0.8); text-decoration: underline;">National Research Institute for Cultural Properties, Tokyo</a></p>
             </div>
 
             <div class="footer-section">
@@ -699,7 +1145,7 @@
         </div>
 
         <div class="footer-bottom">
-            <p><span class="notranslate" data-i18n="foot_copy">&copy; 2025 CRE Japan Committee. All rights reserved.</span> | <span class="notranslate" data-i18n="foot_org">Organized by CRE Japan Committee</span> | <span class="notranslate" data-i18n="foot_photo">BG Photographs by Szymon Shields, Sarmat Batagov, in Pixels</span></p>
+            <p><span class="notranslate" data-i18n="foot_copy">&copy; 2025 CRE Japan Committee. All rights reserved.</span> | <span class="notranslate" data-i18n="foot_org">Organized by CRE Japan Committee</span> | <span class="notranslate" data-i18n="foot_photo">BG Photographs by Szymon Shields, Sarmat Batagov, in Pixels. Some photos taken at teamLab Borderless</span></p>
         </div>
     </footer>
 

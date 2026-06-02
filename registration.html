@@ -36,6 +36,7 @@
             <nav>
                 <ul>
                     <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+                    <li><a href="venue.html" data-i18n="nav_tokyo_ven">Venue</a></li>
                     <li class="has-dropdown">
                         <a href="#" data-i18n="nav_conf">Conference</a>
                         <ul class="dropdown">
@@ -49,7 +50,6 @@
                     <li class="has-dropdown">
                         <a href="#" data-i18n="nav_tokyo">Tokyo</a>
                         <ul class="dropdown">
-                            <li><a href="venue.html" data-i18n="nav_tokyo_ven">Venue</a></li>
                             <li><a href="collections.html" data-i18n="nav_tokyo_mus">Museums</a></li>
                             <li><a href="accommodation.html" data-i18n="nav_tokyo_hot">Hotels</a></li>
                             <li><a href="tokyo-guide.html" data-i18n="nav_tokyo_gui">Guide</a></li>
@@ -91,11 +91,35 @@
         <div class="container">
             <div class="alert alert-warning">
                 <p class="notranslate" data-i18n-html="reg_status"><strong><i class="fas fa-clock"></i> Status:</strong> Early registration for CRE 2026 has <strong>closed</strong>. <strong>Late registration is now open</strong>. Please see the updated payment information below and in the <strong>Second Circular</strong>.</p>
+            <div class="alert alert-success">
+                <p class="notranslate" data-i18n-html="reg_status"><strong><i class="fas fa-check-circle"></i> Status:</strong> Registration for CRE 2026 is <strong>NOW OPEN</strong>!</p>
+            </div>
+
+            <!-- Registration Form CTA -->
+            <div class="glass-card" style="padding: 2.5rem; margin-top: 2rem; text-align: center; border-left: 5px solid var(--brand-primary); background: linear-gradient(135deg, rgba(198, 150, 70, 0.08), rgba(198, 150, 70, 0.03));">
+                <h2 class="notranslate" data-i18n="reg_form_title" style="margin-bottom: 0.75rem; text-align: center;">
+                    <i class="fas fa-edit" style="color: var(--brand-primary); margin-right: 0.5rem;"></i>
+                    Register for CRE 26 Tokyo
+                </h2>
+                <p class="notranslate" data-i18n="reg_form_desc" style="max-width: 640px; margin: 0 auto 1.75rem; line-height: 1.7; text-align: center;">
+                    Please complete the official registration form below. You will be asked for your personal details, affiliation, presentation information (if applicable), and your choice of optional events (conference dinner and excursion).
+                </p>
+                <div style="display: flex; justify-content: center; align-items: center; width: 100%;">
+                    <a href="https://forms.gle/YfUzahVVP8prdniV8" target="_blank" rel="noopener noreferrer" class="btn btn-primary notranslate" data-i18n="reg_form_btn" style="font-size: 1.05rem; padding: 14px 32px;">
+                        <i class="fab fa-google" style="margin-right: 0.5rem;"></i>
+                        Open the Registration Form
+                        <i class="fas fa-external-link-alt" style="margin-left: 0.5rem; font-size: 0.85em;"></i>
+                    </a>
+                </div>
+                <p style="margin: 1.25rem auto 0; font-size: 0.85rem; color: rgba(0,0,0,0.6); text-align: center;" class="notranslate" data-i18n="reg_form_note">
+                    The form opens in a new tab via Google Forms.
+                </p>
             </div>
 
             <div class="glass-card" style="padding: 3rem; margin-top: 2rem;">
                 <h2 class="notranslate" data-i18n="reg_info_title">Registration Information</h2>
                 <p class="notranslate" data-i18n-html="reg_info_desc">Early registration for CRE 2026 has now closed, and <strong>late registration is open</strong>. Full registration procedures and payment details are provided in the <strong>Second Circular</strong>.</p>
+                <p class="notranslate" data-i18n-html="reg_info_desc">Registration for CRE 2026 is now open. Further information on registration procedures is provided in the <a href="https://cre26.tokyo/CRE_Second_Circular.pdf" target="_blank"><strong>Second Circular</strong></a>.</p>
 
                 <div style="margin-top: 1.5rem;">
                     <a href="CRE-Second-Circular.pdf" target="_blank" rel="noopener" class="btn btn-primary notranslate" data-i18n="reg_circular_dl"><i class="fas fa-file-pdf" style="margin-right: 0.5rem;"></i>Download Second Circular (PDF)</a>
@@ -126,6 +150,20 @@
                             <tr style="border-bottom: 1px solid rgba(0,0,0,0.05);">
                                 <td style="padding: 0.75rem;" class="notranslate" data-i18n="reg_fee_late_all">④ Late Registration + Conference Dinner + Excursion</td>
                                 <td style="padding: 0.75rem; text-align: right; font-weight: 600;" class="notranslate" data-i18n="reg_fee_late_all_price">JPY 28,000</td>
+                                <td style="padding: 0.75rem;" class="notranslate" data-i18n="reg_fee_early">Early Registration (until 31 May 2026)</td>
+                                <td style="padding: 0.75rem; text-align: right; font-weight: 600;" class="notranslate" data-i18n="reg_fee_early_price">JPY 8,000</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid rgba(0,0,0,0.05);">
+                                <td style="padding: 0.75rem;" class="notranslate" data-i18n="reg_fee_late">Late Registration (until 1 July 2026)</td>
+                                <td style="padding: 0.75rem; text-align: right; font-weight: 600;" class="notranslate" data-i18n="reg_fee_late_price">JPY 10,000</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid rgba(0,0,0,0.05);">
+                                <td style="padding: 0.75rem;" class="notranslate" data-i18n="reg_fee_dinner">Conference Dinner</td>
+                                <td style="padding: 0.75rem; text-align: right; font-weight: 600;" class="notranslate" data-i18n="reg_fee_dinner_price">JPY 10,000</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid rgba(0,0,0,0.05);">
+                                <td style="padding: 0.75rem;" class="notranslate" data-i18n="reg_fee_excursion">Excursion (Kamakura & Enoshima)</td>
+                                <td style="padding: 0.75rem; text-align: right; font-weight: 600;" class="notranslate" data-i18n="reg_fee_excursion_price">JPY 8,000</td>
                             </tr>
                         </tbody>
                     </table>
@@ -183,23 +221,52 @@
                 <p style="margin-top: 1.5rem; padding: 1rem; background-color: rgba(244, 208, 63, 0.1); border-left: 4px solid #f4d03f; border-radius: 0.25rem;" class="notranslate" data-i18n-html="reg_not_included"><strong>Note:</strong> The conference dinner and excursion are <strong>not included</strong> in the registration fee.</p>
 
                 <h3 style="margin-top: 2.5rem;" class="notranslate" data-i18n="reg_dinner_title">Conference Dinner</h3>
-                <div style="margin-top: 1rem; padding: 1.5rem; background-color: rgba(230, 126, 34, 0.05); border-radius: 0.5rem; border-left: 4px solid #e67e22;">
-                    <p class="notranslate" data-i18n-html="reg_dinner_desc"><strong>Date & Time:</strong> Monday, 13 July, 19:00-21:00<br>
-                    <strong>Venue:</strong> MY Shokudo Dining & Sakaba, near Tokyo Station<br>
-                    <strong>Participation Fee:</strong> JPY 10,000<br>
-                    <strong>Status:</strong> Optional, can be booked separately at registration time</p>
+                <div style="margin-top: 1rem; padding: 1.5rem; background-color: rgba(230, 126, 34, 0.05); border-radius: 0.5rem; border-left: 4px solid #e67e22;" class="notranslate" data-i18n-html="reg_dinner_details">
+                    <p style="margin: 0 0 0.75rem 0;"><strong>Date &amp; Time:</strong> Monday, 13 July, 7:00pm–9:00pm</p>
+                    <p style="margin: 0 0 0.75rem 0;"><strong>Venue:</strong> MY Shokudo Dining &amp; Sakaba, 3F, TOKYO TORCH Terrace, 2-6-4 Otemachi, Chiyoda City, Tokyo 100-0004</p>
+                    <p style="margin: 0 0 0.75rem 0;"><strong>Participation Fee:</strong> JPY 10,000</p>
+                    <p style="margin: 0 0 0.75rem 0;"><strong>Details:</strong> Buffet-style dining with drinks included</p>
+                    <p style="margin: 0 0 0.75rem 0;"><strong>Access:</strong> From Ueno Station: Take JR Yamanote or Keihin-Tohoku Line to Tokyo Station (~6 min). Exit at Nihonbashi and walk to TOKYO TORCH Terrace (~5 min), located on the 3rd floor</p>
+                    <p style="margin: 0;"><strong>Status:</strong> Optional, can be booked during registration</p>
                 </div>
 
                 <h3 style="margin-top: 2.5rem;" class="notranslate" data-i18n="reg_museum_title">Museum Visit</h3>
-                <div style="margin-top: 1rem; padding: 1.5rem; background-color: rgba(52, 152, 219, 0.05); border-radius: 0.5rem; border-left: 4px solid #3498db;">
-                    <p class="notranslate" data-i18n-html="reg_museum_desc"><strong>Venue:</strong> Ancient Orient Museum in Ikebukuro<br>
-                    <strong>Date:</strong> Sunday, 12 July<br>
-                    <strong>Cost:</strong> Included in registration fee (excluding transportation between venue and museum)<br>
-                    <strong>Note:</strong> Advance registration required at conference venue</p>
+                <div style="margin-top: 1rem; padding: 1.5rem; background-color: rgba(52, 152, 219, 0.05); border-radius: 0.5rem; border-left: 4px solid #3498db;" class="notranslate" data-i18n-html="reg_museum_details">
+                    <p style="margin: 0 0 0.5rem 0;"><strong>Venue:</strong> Ancient Orient Museum in Ikebukuro</p>
+                    <p style="margin: 0 0 0.5rem 0;"><strong>Date:</strong> Sunday, 12 July</p>
+                    <p style="margin: 0 0 0.5rem 0;"><strong>Cost:</strong> Included in registration fee (excluding transportation between venue and museum)</p>
+                    <p style="margin: 0;"><strong>Note:</strong> Advance registration required at conference venue</p>
                 </div>
 
-                <div style="margin-top: 3rem; border-top: 1px solid rgba(0,0,0,0.1); padding-top: 2rem;">
-                    <p class="notranslate" data-i18n-html="reg_contact_info"><strong>For inquiries:</strong> <a href="mailto:tokyo.cre2026@gmail.com" style="color: var(--brand-primary); font-weight: bold;">tokyo.cre2026@gmail.com</a></p>
+                <h3 style="margin-top: 2.5rem;" class="notranslate" data-i18n="reg_excursion_title">Excursion: Kamakura & Enoshima</h3>
+                <div style="margin-top: 1rem; padding: 1.5rem; background-color: rgba(155, 89, 182, 0.05); border-radius: 0.5rem; border-left: 4px solid #9b59b6;">
+                    <p style="margin: 0 0 0.75rem 0;" class="notranslate" data-i18n-html="reg_exc_date"><strong>Date:</strong> Wednesday, 15 July</p>
+                    <p style="margin: 0 0 0.75rem 0;" class="notranslate" data-i18n-html="reg_exc_departure"><strong>Departure:</strong> Tokyo Station at 09:00</p>
+                    <p style="margin: 0 0 0.75rem 0;" class="notranslate" data-i18n-html="reg_exc_arrival"><strong>Arrival in Kamakura:</strong> Approximately 10:30 (chartered bus)</p>
+                    <p style="margin: 0 0 0.75rem 0;" class="notranslate" data-i18n-html="reg_exc_fee"><strong>Participation Fee:</strong> JPY 8,000 (optional)</p>
+                    <p style="margin: 0 0 0.75rem 0;" class="notranslate" data-i18n-html="reg_exc_venues_label"><strong>Venues Visited:</strong></p>
+                    <ul style="margin: 0.5rem 0 0.75rem 0; padding-left: 2rem; list-style-type: disc;">
+                        <li style="margin-bottom: 0.3rem;" class="notranslate" data-i18n="reg_exc_v1">Tsurugaoka Hachimangū Shrine</li>
+                        <li style="margin-bottom: 0.3rem;" class="notranslate" data-i18n="reg_exc_v2">Great Buddha (Daibutsu)</li>
+                        <li style="margin-bottom: 0.3rem;" class="notranslate" data-i18n="reg_exc_v3">Hase-dera Temple</li>
+                        <li style="margin-bottom: 0.3rem;" class="notranslate" data-i18n="reg_exc_v4">Time at leisure in Kamakura</li>
+                        <li style="margin-bottom: 0.3rem;" class="notranslate" data-i18n="reg_exc_v5">Enoshima Shrine</li>
+                        <li style="margin-bottom: 0.3rem;" class="notranslate" data-i18n="reg_exc_v6">Enoshima Caves</li>
+                        <li class="notranslate" data-i18n="reg_exc_v7">Views of the Pacific Ocean and Mt. Fuji</li>
+                    </ul>
+                    <p style="margin: 0;" class="notranslate" data-i18n-html="reg_exc_status"><strong>Status:</strong> Optional, can be booked during registration</p>
+                </div>
+
+                <div style="margin-top: 3rem; border-top: 1px solid rgba(0,0,0,0.1); padding-top: 2rem; text-align: center;">
+                    <h3 class="notranslate" data-i18n="reg_ready_title" style="margin-bottom: 1rem; text-align: center;">Ready to Register?</h3>
+                    <div style="display: flex; justify-content: center; align-items: center; width: 100%;">
+                        <a href="https://forms.gle/YfUzahVVP8prdniV8" target="_blank" rel="noopener noreferrer" class="btn btn-primary notranslate" data-i18n="reg_ready_btn" style="font-size: 1.05rem; padding: 14px 32px;">
+                            <i class="fab fa-google" style="margin-right: 0.5rem;"></i>
+                            Open the Registration Form
+                            <i class="fas fa-external-link-alt" style="margin-left: 0.5rem; font-size: 0.85em;"></i>
+                        </a>
+                    </div>
+                    <p style="margin: 1.5rem auto 0; text-align: center;" class="notranslate" data-i18n-html="reg_contact_info"><strong>For inquiries:</strong> <a href="mailto:tokyo.cre2026@gmail.com" style="color: var(--brand-primary); font-weight: bold;">tokyo.cre2026@gmail.com</a></p>
                 </div>
             </div>
         </div>
@@ -209,7 +276,7 @@
         <div class="footer-content">
             <div class="footer-section">
                 <h3 class="notranslate" data-i18n="foot_brand">CRE 26 Tokyo</h3>
-                <p class="notranslate" data-i18n-html="foot_info">Current Research in Egyptology<br>July 11-15, 2026<br>Central Tokyo (venue TBA)</p>
+                <p class="notranslate" data-i18n-html="foot_info">Current Research in Egyptology<br>July 11-15, 2026<br><a href="https://maps.app.goo.gl/vuXx6C8anbVp61hVA" target="_blank" style="color: rgba(245,237,224,0.8); text-decoration: underline;">National Research Institute for Cultural Properties, Tokyo</a></p>
             </div>
             <div class="footer-section">
                 <h3 class="notranslate" data-i18n="foot_conf">Conference</h3>
@@ -222,7 +289,6 @@
             <div class="footer-section">
                 <h3 class="notranslate" data-i18n="foot_vis">Visit Tokyo</h3>
                 <ul>
-                    <li><a href="venue.html" data-i18n="nav_tokyo_ven">Venue</a></li>
                     <li><a href="accommodation.html" data-i18n="nav_tokyo_hot">Hotels</a></li>
                     <li><a href="tokyo-guide.html" data-i18n="nav_tokyo_gui">Guide</a></li>
                     <li><a href="collections.html" data-i18n="nav_tokyo_mus">Museums</a></li>
