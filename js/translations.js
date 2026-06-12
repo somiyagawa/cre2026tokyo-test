@@ -321,8 +321,8 @@ const translations = {
         "fc_btn_dl": "Download 1st Circular (PDF)",
 
         // --- Crowdfunding Banner ---
-        "banner_cf_text": "Now accepting donations! Support Egyptian researchers' travel to CRE 26 Tokyo",
-        "banner_cf_btn": "Donate Now →",
+        "banner_cf_text": "Our crowdfunding campaign received donations from 318 supporters. Thank you for your generous support!",
+        "banner_cf_btn": "View Supporters →",
         "banner_pp_btn": "PayPal →",
         "supp_readyfor_btn": "Donate via Readyfor",
         "supp_paypal_btn": "Donate via PayPal",
@@ -1188,8 +1188,8 @@ const translations = {
         "fc_btn_dl": "第1サーキュラーをダウンロード（PDF）",
 
         // --- Crowdfunding Banner ---
-        "banner_cf_text": "クラウドファンディング実施中！エジプト人研究者のCRE 26 Tokyo参加旅費をご支援ください",
-        "banner_cf_btn": "寄付する →",
+        "banner_cf_text": "クラウドファンディングでは総勢318名の方にご寄付をいただきました。ご支援誠にありがとうございました！",
+        "banner_cf_btn": "ご支援者一覧 →",
         "banner_pp_btn": "PayPal →",
         "supp_readyfor_btn": "Readyforで寄付する",
         "supp_paypal_btn": "PayPalで寄付する",
@@ -2054,8 +2054,8 @@ const translations = {
         "fc_btn_dl": "تحميل ملف إصدار الإعلان الرسمي الأول للمؤتمر (PDF)",
 
         // --- Crowdfunding Banner ---
-        "banner_cf_text": "!نقبل التبرعات الآن! ادعم سفر الباحثين المصريين لحضور مؤتمر CRE 26 في طوكيو",
-        "banner_cf_btn": "تبرع الآن →",
+        "banner_cf_text": "تلقّت حملة التمويل الجماعي تبرعات من 318 داعمًا. شكرًا جزيلًا لدعمكم السخي!",
+        "banner_cf_btn": "قائمة الداعمين →",
         "banner_pp_btn": "PayPal →",
         "supp_readyfor_btn": "تبرع عبر Readyfor",
         "supp_paypal_btn": "تبرع عبر PayPal",
