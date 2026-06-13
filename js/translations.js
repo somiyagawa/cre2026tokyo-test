@@ -1,5 +1,7 @@
 const translations = {
     "en": {
+        "pc_format_l": "Format",
+        "pc_sym_format_v": "11 papers · 12 scholars · hybrid (online)",
         "acc_ueno_intro": "Ueno is the most convenient base for the conference venue — a few minutes on the JR Yamanote Line or within walking distance. Options near Ueno Station, by type:",
         "acc_cat_luxury": "Luxury / Upscale",
         "acc_cat_business": "Business Hotels",
@@ -931,6 +933,8 @@ const translations = {
         "reg_form_note": "Please complete the form only after you have made your payment. The form opens in a new tab via Google Forms.",
     },
     "ja": {
+        "pc_format_l": "形式",
+        "pc_sym_format_v": "11発表・12名の登壇者・ハイブリッド（オンライン）",
         "acc_ueno_intro": "上野は会場へのアクセスが最も便利なエリアです（JR山手線で数分、または徒歩圏内）。上野駅周辺の宿泊施設をタイプ別にご紹介します。",
         "acc_cat_luxury": "ラグジュアリー／上級",
         "acc_cat_business": "ビジネスホテル",
@@ -1862,6 +1866,8 @@ const translations = {
         "reg_form_note": "お支払いがお済みになってからフォームにご記入ください。フォームはGoogleフォームで新しいタブで開きます。",
     },
     "ar": {
+        "pc_format_l": "الصيغة",
+        "pc_sym_format_v": "١١ بحثاً · ١٢ باحثاً · حضورياً وعبر الإنترنت",
         "acc_ueno_intro": "يُعدّ حيّ أوينو أنسب موقع للإقامة بالنسبة لمقرّ المؤتمر — على بُعد دقائق قليلة بخط JR يامانوتي أو ضمن مسافة سير. وفيما يلي خيارات الإقامة قرب محطة أوينو مُصنّفة حسب النوع:",
         "acc_cat_luxury": "فاخرة / راقية",
         "acc_cat_business": "فنادق الأعمال",

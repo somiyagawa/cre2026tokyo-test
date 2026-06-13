@@ -19,20 +19,21 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/i18n.css">
     <style>
-        .pc-meta { list-style: none; padding: 0; margin: 1.5rem 0 0; }
-        .pc-meta li { padding: 0.5rem 0; border-bottom: 1px solid rgba(255,255,255,0.1); display: flex; gap: 0.75rem; flex-wrap: wrap; }
-        .pc-meta li strong { min-width: 9rem; }
-        .pc-program { width: 100%; border-collapse: collapse; margin-top: 1.5rem; font-size: 0.92rem; }
-        .pc-program td { border: 1px solid rgba(0,0,0,0.12); padding: 0.55rem 0.7rem; vertical-align: top; }
-        .pc-program .pc-time { white-space: nowrap; font-weight: 600; width: 7.5rem; }
-        .pc-program .pc-speaker { width: 12rem; font-weight: 600; }
+        .pc-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: start; }
+        .pc-event-card { padding: 2rem; }
+        .pc-meta { list-style: none; padding: 0; margin: 1.2rem 0 0; }
+        .pc-meta li { padding: 0.45rem 0; border-bottom: 1px solid rgba(255,255,255,0.1); display: flex; gap: 0.6rem; flex-wrap: wrap; }
+        .pc-meta li strong { min-width: 6.5rem; }
+        .pc-program { width: 100%; border-collapse: collapse; margin-top: 1rem; font-size: 0.78rem; }
+        .pc-program td { border: 1px solid rgba(0,0,0,0.12); padding: 0.45rem 0.55rem; vertical-align: top; }
+        .pc-program .pc-time { white-space: nowrap; font-weight: 600; }
+        .pc-program .pc-speaker { font-weight: 600; }
+        .pc-aff { font-weight: 400; font-size: 0.86em; opacity: 0.7; }
         .pc-row-session td { background: #16335c; color: #fff; font-weight: 700; text-align: center; }
         .pc-row-break td { background: #f5e6a8; color: #4a3b00; font-weight: 600; text-align: center; }
-        .pc-event-card { padding: 3rem; }
-        .pc-event-card + .pc-event-card { margin-top: 2rem; }
+        @media (max-width: 1024px) { .pc-grid { grid-template-columns: 1fr; } .pc-event-card { padding: 2.2rem; } }
         @media (max-width: 600px) {
             .pc-program, .pc-program tbody, .pc-program tr, .pc-program td { display: block; width: auto; }
-            .pc-program .pc-speaker, .pc-program .pc-time { width: auto; }
         }
     </style>
 </head>
@@ -84,7 +85,7 @@
         </a>
     </div>
 
-    <section class="hero" style="min-height: 45vh;">
+    <section class="hero" style="min-height: 40vh;">
         <div class="hero-content">
             <div class="hero-glass">
                 <h1 data-i18n="pc_page_title">Post-conference Symposium &amp; Workshop</h1>
@@ -93,73 +94,101 @@
         </div>
     </section>
 
-    <!-- Symposium -->
     <section class="section">
         <div class="container">
-            <div class="glass-card pc-event-card">
-                <h2 data-i18n="pc_sym_h">Post-conference Symposium — ISET</h2>
-                <p class="notranslate" data-i18n="pc_sym_name" style="font-weight: 600; opacity: 0.9;">The 2nd International Symposium of Egyptology in Tokyo (ISET 2026)</p>
-                <ul class="pc-meta">
-                    <li><strong data-i18n="pc_when_l">Date</strong><span class="notranslate" data-i18n="pc_sym_when_v">Thursday 16 July 2026</span></li>
-                    <li><strong data-i18n="pc_where_l">Venue</strong><span data-i18n="pc_sym_where_v">University of Tsukuba, Tokyo Campus (Room 120)</span></li>
-                    <li><strong data-i18n="pc_time_l">Time</strong><span class="notranslate" data-i18n="pc_sym_time_v">09:00–17:00 (JST)</span></li>
-                </ul>
-                <p style="margin-top: 1.5rem;" data-i18n="pc_sym_desc">A single-day symposium held on 16 July 2026 — the day after CRE 26 — gathering eleven papers by twelve invited scholars on ancient, Coptic, and Islamic Egypt. It is held at the Tokyo Campus of the University of Tsukuba and streamed online. The full program, speakers, and registration are available on the dedicated symposium website.</p>
-                <p style="margin-top: 1.5rem;">
-                    <a href="https://somiyagawa.github.io/iset/" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; gap: 0.5rem; background: linear-gradient(135deg, #c0392b, #e74c3c); color: white; padding: 0.8rem 1.5rem; border-radius: 8px; text-decoration: none; font-weight: 600;">
-                        <i class="fas fa-external-link-alt"></i>
-                        <span data-i18n="pc_sym_btn">Visit the Symposium Website</span>
-                    </a>
-                </p>
-            </div>
-        </div>
-    </section>
+            <div class="pc-grid">
 
-    <!-- Workshop -->
-    <section class="section">
-        <div class="container">
-            <div class="glass-card pc-event-card">
-                <h2 data-i18n="pc_ws_h">Post-conference Workshop</h2>
-                <p class="notranslate" data-i18n="pc_ws_name" style="font-weight: 600; opacity: 0.9;">International Workshop — Approaching Ancient Egypt: Methods and Perspectives for Young Egyptologists</p>
-                <p class="notranslate" data-i18n="pc_ws_name_ja" style="opacity: 0.8;">古代エジプトへのアプローチ ——若手研究者たちの方法と視点——</p>
-                <ul class="pc-meta">
-                    <li><strong data-i18n="pc_when_l">Date</strong><span class="notranslate" data-i18n="pc_ws_when_v">Saturday 18 July 2026</span></li>
-                    <li><strong data-i18n="pc_where_l">Venue</strong><span data-i18n="pc_ws_where_v">Waseda University (Toyama Campus)</span></li>
-                    <li><strong data-i18n="pc_scope_l">Scope</strong><span data-i18n="pc_ws_scope_v">Young scholars, including graduate and undergraduate students from Japan and overseas</span></li>
-                    <li><strong data-i18n="pc_cap_l">Capacity</strong><span data-i18n="pc_ws_cap_v">40 participants</span></li>
-                    <li><strong data-i18n="pc_fee_l">Fee</strong><span data-i18n="pc_ws_fee_v">Free of charge; open to students and researchers</span></li>
-                    <li><strong data-i18n="pc_reg_l">Registration</strong><span data-i18n="pc_ws_reg_v">By 8 July 2026</span></li>
-                    <li><strong data-i18n="pc_contact_l">Contact</strong><span class="notranslate">Tokihisa Higo (<a href="mailto:higo.tokihisa.ft@u.tsukuba.ac.jp">higo.tokihisa.ft@u.tsukuba.ac.jp</a>)</span></li>
-                </ul>
+                <!-- ===== Symposium ===== -->
+                <div class="glass-card pc-event-card">
+                    <h2 data-i18n="pc_sym_h">Post-conference Symposium — ISET</h2>
+                    <p class="notranslate" data-i18n="pc_sym_name" style="font-weight: 600; opacity: 0.9;">The 2nd International Symposium of Egyptology in Tokyo (ISET 2026)</p>
+                    <ul class="pc-meta">
+                        <li><strong data-i18n="pc_when_l">Date</strong><span class="notranslate" data-i18n="pc_sym_when_v">Thursday 16 July 2026</span></li>
+                        <li><strong data-i18n="pc_where_l">Venue</strong><span data-i18n="pc_sym_where_v">University of Tsukuba, Tokyo Campus (Room 120)</span></li>
+                        <li><strong data-i18n="pc_time_l">Time</strong><span class="notranslate" data-i18n="pc_sym_time_v">09:00–17:00 (JST)</span></li>
+                        <li><strong data-i18n="pc_format_l">Format</strong><span class="notranslate" data-i18n="pc_sym_format_v">11 papers · 12 scholars · hybrid (online)</span></li>
+                    </ul>
+                    <p style="margin-top: 1.2rem;" data-i18n="pc_sym_desc">A single-day symposium held on 16 July 2026 — the day after CRE 26 — gathering eleven papers by twelve invited scholars on ancient, Coptic, and Islamic Egypt. It is held at the Tokyo Campus of the University of Tsukuba and streamed online. The full program, speakers, and registration are available on the dedicated symposium website.</p>
+                    <p style="margin-top: 1rem;">
+                        <a href="https://somiyagawa.github.io/iset/" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; gap: 0.5rem; background: linear-gradient(135deg, #c0392b, #e74c3c); color: white; padding: 0.7rem 1.3rem; border-radius: 8px; text-decoration: none; font-weight: 600;">
+                            <i class="fas fa-external-link-alt"></i>
+                            <span data-i18n="pc_sym_btn">Visit the Symposium Website</span>
+                        </a>
+                    </p>
 
-                <p style="margin-top: 1.5rem;" data-i18n="pc_ws_desc1">This workshop aims to provide a platform for young Egyptologists to exchange ideas and engage in interdisciplinary dialogue. Particular emphasis is placed on fostering interaction between international participants and Japanese students at both the graduate and undergraduate levels. Through this exchange, the workshop aims to create an educational environment where participants can learn from diverse perspectives and gain insight into a wide range of research methodologies and current approaches in Egyptology.</p>
+                    <h3 style="margin-top: 1.8rem;" data-i18n="pc_prog_h">Program</h3>
+                    <p style="opacity: 0.7; font-size: 0.85rem; margin-top: 0.3rem;" data-i18n="pc_prog_note">Program subject to change.</p>
+                    <table class="pc-program notranslate" dir="ltr">
+                        <tbody>
+                            <tr class="pc-row-break"><td class="pc-time">09:00–09:10</td><td class="pc-speaker">Opening</td><td>Opening Ceremony · Chair: Prof. Dr. So Miyagawa (U. Tsukuba)</td></tr>
+                            <tr><td class="pc-time">09:10–09:40</td><td class="pc-speaker">Dr. Azza Ezzat<br><span class="pc-aff">Bibliotheca Alexandrina</span></td><td>“Ahmed Pasha Kamal and the First Arabic-Based System in Egyptology”</td></tr>
+                            <tr><td class="pc-time">09:40–10:10</td><td class="pc-speaker">Dr. José Manuel Alba Gómez<br><span class="pc-aff">University of Jaén</span></td><td>“The Qaw el-Kebir Expedition: Insights from the First and Second Fieldwork Campaigns” (U. Alcalá in collaboration with U. Jaén)</td></tr>
+                            <tr><td class="pc-time">10:10–10:40</td><td class="pc-speaker">Sue Kelly<br><span class="pc-aff">Charles University, Prague</span></td><td>“Building Digital Immortality for the Women of Ancient Egypt”</td></tr>
+                            <tr class="pc-row-break"><td class="pc-time">10:40–11:00</td><td></td><td>Interval (20 min)</td></tr>
+                            <tr><td class="pc-time">11:00–11:30</td><td class="pc-speaker">Dr. Daniel González León<br><span class="pc-aff">Yale University</span></td><td>Title TBA</td></tr>
+                            <tr><td class="pc-time">11:30–12:00</td><td class="pc-speaker">Dr. Hazem Farrag<br><span class="pc-aff">Ain Shams University</span></td><td>“Hieroglyphic Transformation in the Temples of Graeco-Roman Egypt”</td></tr>
+                            <tr><td class="pc-time">12:00–12:30</td><td class="pc-speaker">Dr. Heba Hassan Ahmed Amer<br><span class="pc-aff">Alexandria National Museum</span></td><td>“Sacred Meals and Religious Identity in Greco-Roman Egypt: Evidence from Alexandria and Oxyrhynchus”</td></tr>
+                            <tr class="pc-row-break"><td class="pc-time">12:30–13:30</td><td></td><td>Luncheon interval (60 min)</td></tr>
+                            <tr><td class="pc-time">13:30–14:00</td><td class="pc-speaker">Walid Elsayed<br><span class="pc-aff">Tahta Antiquities Inspectorate, Sohag</span></td><td>“The Archaeology of the North Sohag Region in the Light of the Most Recent Archaeological Explorations”</td></tr>
+                            <tr><td class="pc-time">14:00–14:30</td><td class="pc-speaker">Dr. Marwan Kilani<br><span class="pc-aff">University of Basel</span></td><td>“Language as a Historical Source: Integrating Linguistics into Egyptological Historical Research”</td></tr>
+                            <tr><td class="pc-time">14:30–15:00</td><td class="pc-speaker">Prof. Dr. Nesma Ibrahim<br><span class="pc-aff">New Valley University</span></td><td>“New Readings of Coptic Inscriptions from the Bagawat Necropolis (Kharga Oasis)”</td></tr>
+                            <tr class="pc-row-break"><td class="pc-time">15:00–15:20</td><td></td><td>Interval (20 min)</td></tr>
+                            <tr><td class="pc-time">15:20–15:50</td><td class="pc-speaker">Aziza Abdallah &amp; Hadeer Belal<br><span class="pc-aff">Egyptian Museum, Cairo</span></td><td>“Reborn in the Records: The Museum Life of a Falcon Mummy Coffin Repatriated to Egypt in 2021”</td></tr>
+                            <tr><td class="pc-time">15:50–16:20</td><td class="pc-speaker">Prof. Dr. Magdy Elwan<br><span class="pc-aff">Assiut University</span></td><td>“Masterpieces of Islamic Architecture in Egypt through the Eyes of Foreign Travelers”</td></tr>
+                            <tr class="pc-row-break"><td class="pc-time">16:50–17:00</td><td class="pc-speaker">Closing</td><td>Closing Ceremony</td></tr>
+                            <tr class="pc-row-session"><td class="pc-time">17:00–17:20</td><td></td><td>Pre-visit guidance · Dr. Tadashi Kikugawa</td></tr>
+                            <tr class="pc-row-session"><td class="pc-time">19:30–20:30</td><td></td><td>Excursion · Ancient Egyptian Museum, Shibuya</td></tr>
+                            <tr class="pc-row-session"><td class="pc-time">21:00–22:00</td><td></td><td>Night view · Tokyo Metropolitan Gov. Building, Shinjuku</td></tr>
+                            <tr class="pc-row-session"><td class="pc-time">17 Jul · 15:00</td><td></td><td>Optional · Printing Museum, Tokyo (next day)</td></tr>
+                        </tbody>
+                    </table>
+                </div>
 
-                <h3 style="margin-top: 2rem;" data-i18n="pc_prog_h">Program</h3>
-                <p style="opacity: 0.7; font-size: 0.85rem; margin-top: 0.3rem;" data-i18n="pc_prog_note">Program subject to change.</p>
-                <table class="pc-program notranslate" dir="ltr">
-                    <tbody>
-                        <tr class="pc-row-break"><td class="pc-time">10:00–10:05</td><td class="pc-speaker"></td><td>Opening</td></tr>
-                        <tr class="pc-row-session"><td>Session 1</td><td></td><td>Texts and their Materiality</td></tr>
-                        <tr><td class="pc-time">10:05–10:30</td><td class="pc-speaker">Tokihisa Higo</td><td>Examining the Book of the Dead Chapter 125 through Its Manuscripts</td></tr>
-                        <tr><td class="pc-time">10:30–11:00</td><td class="pc-speaker">John Rogers</td><td>From Fragments to Frameworks: Using Manetho Critically</td></tr>
-                        <tr><td class="pc-time">11:00–11:30</td><td class="pc-speaker">Elena Hertel</td><td>The Materiality of Inscribed Objects in Ancient Egypt</td></tr>
-                        <tr class="pc-row-break"><td class="pc-time">11:30–11:45</td><td></td><td>Coffee Break</td></tr>
-                        <tr class="pc-row-session"><td>Session 2</td><td></td><td>Documentation and Conservation</td></tr>
-                        <tr><td class="pc-time">11:45–12:15</td><td class="pc-speaker">Maarten Praet</td><td>Forgotten Documents, New Discoveries: The Importance of Archival Research in Egyptology</td></tr>
-                        <tr><td class="pc-time">12:15–12:45</td><td class="pc-speaker">Mohamed Youssef</td><td>Different Phases of Restoration for TT 265, The Tomb of Amenemopet</td></tr>
-                        <tr class="pc-row-break"><td class="pc-time">12:45–14:00</td><td></td><td>Lunch Break</td></tr>
-                        <tr class="pc-row-session"><td>Session 3</td><td></td><td>Archaeology and Material Culture</td></tr>
-                        <tr><td class="pc-time">14:00–14:30</td><td class="pc-speaker">Luna Beerden</td><td>Written in Bone: Approaching ancient Egyptian Lived Realities through Osteoarchaeology</td></tr>
-                        <tr><td class="pc-time">14:30–15:00</td><td class="pc-speaker">Mizuki Shindo</td><td>Reconstructing the Life History of New Kingdom Pit Graves at North Saqqara</td></tr>
-                        <tr><td class="pc-time">15:00–15:30</td><td class="pc-speaker">Seria Yamazaki</td><td>When Archaeology Tells a Different Story than Texts and Images: The Case of Ancient Egyptian Amulets</td></tr>
-                        <tr class="pc-row-break"><td class="pc-time">15:15–15:30</td><td></td><td>Coffee Break</td></tr>
-                        <tr class="pc-row-session"><td>Session 4</td><td></td><td>Theory and Historiography</td></tr>
-                        <tr><td class="pc-time">15:30–16:00</td><td class="pc-speaker">Geirr Lunden</td><td>Does Egyptology have a theory? A historical perspective from visual art</td></tr>
-                        <tr><td class="pc-time">16:00–16:30</td><td class="pc-speaker">Andrés Martín García de la Cruz</td><td>Postcolonial Egyptology: A Window into the Past, Present, and Future of the Discipline.</td></tr>
-                        <tr class="pc-row-session"><td class="pc-time">16:30–17:00</td><td></td><td>Discussion</td></tr>
-                        <tr class="pc-row-break"><td class="pc-time">17:00–17:10</td><td></td><td>Closing</td></tr>
-                    </tbody>
-                </table>
+                <!-- ===== Workshop ===== -->
+                <div class="glass-card pc-event-card">
+                    <h2 data-i18n="pc_ws_h">Post-conference Workshop</h2>
+                    <p class="notranslate" data-i18n="pc_ws_name" style="font-weight: 600; opacity: 0.9;">International Workshop — Approaching Ancient Egypt: Methods and Perspectives for Young Egyptologists</p>
+                    <p class="notranslate" data-i18n="pc_ws_name_ja" style="opacity: 0.8;">古代エジプトへのアプローチ ——若手研究者たちの方法と視点——</p>
+                    <ul class="pc-meta">
+                        <li><strong data-i18n="pc_when_l">Date</strong><span class="notranslate" data-i18n="pc_ws_when_v">Saturday 18 July 2026</span></li>
+                        <li><strong data-i18n="pc_where_l">Venue</strong><span data-i18n="pc_ws_where_v">Waseda University (Toyama Campus)</span></li>
+                        <li><strong data-i18n="pc_scope_l">Scope</strong><span data-i18n="pc_ws_scope_v">Young scholars, including graduate and undergraduate students from Japan and overseas</span></li>
+                        <li><strong data-i18n="pc_cap_l">Capacity</strong><span data-i18n="pc_ws_cap_v">40 participants</span></li>
+                        <li><strong data-i18n="pc_fee_l">Fee</strong><span data-i18n="pc_ws_fee_v">Free of charge; open to students and researchers</span></li>
+                        <li><strong data-i18n="pc_reg_l">Registration</strong><span data-i18n="pc_ws_reg_v">By 8 July 2026</span></li>
+                        <li><strong data-i18n="pc_contact_l">Contact</strong><span class="notranslate">Tokihisa Higo (<a href="mailto:higo.tokihisa.ft@u.tsukuba.ac.jp">higo.tokihisa.ft@u.tsukuba.ac.jp</a>)</span></li>
+                    </ul>
+
+                    <p style="margin-top: 1.2rem;" data-i18n="pc_ws_desc1">This workshop aims to provide a platform for young Egyptologists to exchange ideas and engage in interdisciplinary dialogue. Particular emphasis is placed on fostering interaction between international participants and Japanese students at both the graduate and undergraduate levels. Through this exchange, the workshop aims to create an educational environment where participants can learn from diverse perspectives and gain insight into a wide range of research methodologies and current approaches in Egyptology.</p>
+
+                    <h3 style="margin-top: 1.8rem;" data-i18n="pc_prog_h">Program</h3>
+                    <p style="opacity: 0.7; font-size: 0.85rem; margin-top: 0.3rem;" data-i18n="pc_prog_note">Program subject to change.</p>
+                    <table class="pc-program notranslate" dir="ltr">
+                        <tbody>
+                            <tr class="pc-row-break"><td class="pc-time">10:00–10:05</td><td class="pc-speaker"></td><td>Opening</td></tr>
+                            <tr class="pc-row-session"><td>Session 1</td><td></td><td>Texts and their Materiality</td></tr>
+                            <tr><td class="pc-time">10:05–10:30</td><td class="pc-speaker">Tokihisa Higo</td><td>Examining the Book of the Dead Chapter 125 through Its Manuscripts</td></tr>
+                            <tr><td class="pc-time">10:30–11:00</td><td class="pc-speaker">John Rogers</td><td>From Fragments to Frameworks: Using Manetho Critically</td></tr>
+                            <tr><td class="pc-time">11:00–11:30</td><td class="pc-speaker">Elena Hertel</td><td>The Materiality of Inscribed Objects in Ancient Egypt</td></tr>
+                            <tr class="pc-row-break"><td class="pc-time">11:30–11:45</td><td></td><td>Coffee Break</td></tr>
+                            <tr class="pc-row-session"><td>Session 2</td><td></td><td>Documentation and Conservation</td></tr>
+                            <tr><td class="pc-time">11:45–12:15</td><td class="pc-speaker">Maarten Praet</td><td>Forgotten Documents, New Discoveries: The Importance of Archival Research in Egyptology</td></tr>
+                            <tr><td class="pc-time">12:15–12:45</td><td class="pc-speaker">Mohamed Youssef</td><td>Different Phases of Restoration for TT 265, The Tomb of Amenemopet</td></tr>
+                            <tr class="pc-row-break"><td class="pc-time">12:45–14:00</td><td></td><td>Lunch Break</td></tr>
+                            <tr class="pc-row-session"><td>Session 3</td><td></td><td>Archaeology and Material Culture</td></tr>
+                            <tr><td class="pc-time">14:00–14:30</td><td class="pc-speaker">Luna Beerden</td><td>Written in Bone: Approaching ancient Egyptian Lived Realities through Osteoarchaeology</td></tr>
+                            <tr><td class="pc-time">14:30–15:00</td><td class="pc-speaker">Mizuki Shindo</td><td>Reconstructing the Life History of New Kingdom Pit Graves at North Saqqara</td></tr>
+                            <tr><td class="pc-time">15:00–15:30</td><td class="pc-speaker">Seria Yamazaki</td><td>When Archaeology Tells a Different Story than Texts and Images: The Case of Ancient Egyptian Amulets</td></tr>
+                            <tr class="pc-row-break"><td class="pc-time">15:15–15:30</td><td></td><td>Coffee Break</td></tr>
+                            <tr class="pc-row-session"><td>Session 4</td><td></td><td>Theory and Historiography</td></tr>
+                            <tr><td class="pc-time">15:30–16:00</td><td class="pc-speaker">Geirr Lunden</td><td>Does Egyptology have a theory? A historical perspective from visual art</td></tr>
+                            <tr><td class="pc-time">16:00–16:30</td><td class="pc-speaker">Andrés Martín García de la Cruz</td><td>Postcolonial Egyptology: A Window into the Past, Present, and Future of the Discipline.</td></tr>
+                            <tr class="pc-row-session"><td class="pc-time">16:30–17:00</td><td></td><td>Discussion</td></tr>
+                            <tr class="pc-row-break"><td class="pc-time">17:00–17:10</td><td></td><td>Closing</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
             </div>
         </div>
     </section>
