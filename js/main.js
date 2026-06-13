@@ -13,7 +13,8 @@ document.addEventListener('DOMContentLoaded', function() {
     initMobileMenu();
     initStickyHeader();
     initScrollToTop();
-    initLanguageSwitcher(); 
+    initLanguageSwitcher();
+    initShareButtons();
     
     console.log('All modules loaded');
 });
@@ -209,6 +210,77 @@ function initBackgroundSlideshow() {
         slides[nextSlide].classList.add('active');
         currentSlide = nextSlide;
     }, 8000);
+}
+
+// ===================================
+// Social Share Buttons (Facebook, X, Instagram, LinkedIn)
+// ===================================
+function initShareButtons() {
+    const footer = document.querySelector('footer');
+    if (!footer || footer.querySelector('.footer-share')) return;
+
+    const pageUrl = window.location.href;
+    const wrap = document.createElement('div');
+    wrap.className = 'footer-share';
+    wrap.innerHTML = `
+        <span class="footer-share-label" data-i18n="share_label">Share this page</span>
+        <div class="footer-share-btns">
+            <a class="share-btn share-fb" href="#" rel="noopener" aria-label="Share on Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a class="share-btn share-x" href="#" rel="noopener" aria-label="Share on X"><i class="fab fa-x-twitter"></i></a>
+            <a class="share-btn share-ig" href="#" rel="noopener" aria-label="Share on Instagram"><i class="fab fa-instagram"></i></a>
+            <a class="share-btn share-in" href="#" rel="noopener" aria-label="Share on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        </div>`;
+
+    const bottom = footer.querySelector('.footer-bottom');
+    if (bottom) footer.insertBefore(wrap, bottom);
+    else footer.appendChild(wrap);
+
+    const u = encodeURIComponent(pageUrl);
+    const t = encodeURIComponent(document.title);
+    const popup = (shareUrl) => window.open(shareUrl, 'cre26share', 'noopener,noreferrer,width=600,height=540');
+
+    wrap.querySelector('.share-fb').addEventListener('click', function (e) {
+        e.preventDefault();
+        popup('https://www.facebook.com/sharer/sharer.php?u=' + u);
+    });
+    wrap.querySelector('.share-x').addEventListener('click', function (e) {
+        e.preventDefault();
+        popup('https://twitter.com/intent/tweet?url=' + u + '&text=' + t);
+    });
+    wrap.querySelector('.share-in').addEventListener('click', function (e) {
+        e.preventDefault();
+        popup('https://www.linkedin.com/sharing/share-offsite/?url=' + u);
+    });
+    // Instagram has no web share-by-URL; copy the link so the user can paste it.
+    wrap.querySelector('.share-ig').addEventListener('click', function (e) {
+        e.preventDefault();
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+            navigator.clipboard.writeText(pageUrl).then(showShareToast).catch(function () {
+                window.open('https://www.instagram.com/', '_blank', 'noopener');
+            });
+        } else {
+            window.open('https://www.instagram.com/', '_blank', 'noopener');
+        }
+    });
+}
+
+function showShareToast() {
+    let toast = document.getElementById('share-toast');
+    if (!toast) {
+        toast = document.createElement('div');
+        toast.id = 'share-toast';
+        toast.className = 'share-toast';
+        document.body.appendChild(toast);
+    }
+    let msg = 'Link copied! Paste it into Instagram.';
+    if (typeof translations !== 'undefined') {
+        const lang = localStorage.getItem('cre26_lang') || 'en';
+        if (translations[lang] && translations[lang].share_copied) msg = translations[lang].share_copied;
+    }
+    toast.textContent = msg;
+    toast.classList.add('show');
+    clearTimeout(toast._timer);
+    toast._timer = setTimeout(function () { toast.classList.remove('show'); }, 2600);
 }
 
 // Placeholder functions for safety
