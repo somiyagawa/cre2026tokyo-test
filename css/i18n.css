@@ -181,6 +181,12 @@ html[lang="ar"] .lang-switch {
     left: 20px;
 }
 
+/* RTL: flip icon spacing on the prominent nav item */
+html[lang="ar"] nav ul li.nav-highlight > a i {
+    margin-right: 0;
+    margin-left: 0.4rem;
+}
+
 /* Mobile Lang Switcher adjustments */
 @media (max-width: 768px) {
     .lang-switch {
