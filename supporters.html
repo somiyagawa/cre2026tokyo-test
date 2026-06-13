@@ -62,6 +62,7 @@
                             <li><a href="committee.html" data-i18n="nav_conf_comm">Committee</a></li>
                             <li><a href="support.html" data-i18n="nav_conf_supp">Support</a></li>
                             <li><a href="about.html" data-i18n="nav_conf_about">About</a></li>
+                            <li><a href="post-conference.html" data-i18n="nav_postconf">Post-conference Symposium &amp; Workshop</a></li>
                         </ul>
                     </li>
                     <li class="has-dropdown">
@@ -81,7 +82,7 @@
     <div class="crowdfunding-banner" style="background: linear-gradient(135deg, #c0392b, #e74c3c); color: white; text-align: center; padding: 0.8rem 1rem; font-size: 0.95rem; font-weight: 500; position: relative;">
         <a href="supporters.html" style="color: white; text-decoration: none;">
             <i class="fas fa-heart" style="margin-right: 0.5rem;"></i>
-            <span class="notranslate" data-i18n="banner_cf_text">Our crowdfunding campaign received donations from 318 supporters. Thank you for your generous support!</span>
+            <span class="notranslate" data-i18n-html="banner_cf_text">Our crowdfunding campaign received donations from <strong style='font-size:1.35em; font-weight:800;'>318</strong> supporters. Thank you for your generous support!</span>
             <span class="notranslate" data-i18n="banner_cf_btn" style="margin-left: 0.5rem; text-decoration: underline;">View Supporters →</span>
         </a>
     </div>
@@ -89,30 +90,68 @@
     <section class="hero" style="min-height: 50vh;">
         <div class="hero-content">
             <div class="hero-glass">
-                <h1 class="notranslate">CRE 26 Tokyo クラウドファンディングご支援者一覧<br>Crowdfunding Supporters</h1>
-                <p class="hero-subtitle notranslate">クラファン全体では総勢318名の方にご寄付いただきました。ご支援誠にありがとうございました。<br>In total, 318 people made donations to the crowdfunding campaign. We are sincerely grateful for your support.</p>
+                <h1 class="notranslate" data-i18n="sup_page_title">CRE 26 Tokyo Crowdfunding Supporters</h1>
+                <div style="margin: 1.2rem 0 0.8rem; line-height: 1.1;">
+                    <span class="notranslate" style="font-size: 4.5rem; font-weight: 800; background: linear-gradient(135deg, #e74c3c, #f39c12); -webkit-background-clip: text; background-clip: text; color: transparent; letter-spacing: 0.02em;">318</span>
+                    <span class="notranslate" data-i18n="sup_count_label" style="font-size: 1.3rem; font-weight: 600; margin-left: 0.5rem;">Supporters</span>
+                </div>
+                <p class="hero-subtitle notranslate" data-i18n-html="sup_hero_sub">In total, <strong style="font-size: 1.25em; font-weight: 800;">318</strong> people made donations to the crowdfunding campaign. We are sincerely grateful for your support.</p>
             </div>
         </div>
     </section>
 
     <section class="section">
         <div class="container">
-            <div class="glass-card notranslate" style="padding: 3rem;">
-                <p style="opacity: 0.85; font-size: 0.95rem;">
-                    各区分内では、英字表記を先にアルファベット順で、その後に日本語表記を五十音順で掲載しています。<br>
-                    Within each category, names in Latin script are listed first in alphabetical order, followed by names in Japanese in <i>gojūon</i> order.
+            <div class="glass-card" style="padding: 3rem;">
+                <h2 data-i18n="sup_cf_about_h">About the Crowdfunding Campaign</h2>
+
+                <div style="display: flex; flex-wrap: wrap; gap: 1.5rem; justify-content: center; text-align: center; margin: 2rem 0;">
+                    <div style="flex: 1 1 180px; padding: 1.2rem; border-radius: 12px; background: rgba(192, 57, 43, 0.08); border: 1px solid rgba(192, 57, 43, 0.25);">
+                        <div style="font-size: 0.85rem; opacity: 0.8;" data-i18n="sup_stat_total_l">Total Raised</div>
+                        <div class="notranslate" data-i18n="sup_stat_total_v" style="font-size: 1.9rem; font-weight: 800; background: linear-gradient(135deg, #e74c3c, #f39c12); -webkit-background-clip: text; background-clip: text; color: transparent;">¥5,689,000</div>
+                    </div>
+                    <div style="flex: 1 1 180px; padding: 1.2rem; border-radius: 12px; background: rgba(192, 57, 43, 0.08); border: 1px solid rgba(192, 57, 43, 0.25);">
+                        <div style="font-size: 0.85rem; opacity: 0.8;" data-i18n="sup_stat_goal_l">Initial Goal</div>
+                        <div class="notranslate" data-i18n="sup_stat_goal_v" style="font-size: 1.9rem; font-weight: 800;">¥3,000,000</div>
+                    </div>
+                    <div style="flex: 1 1 180px; padding: 1.2rem; border-radius: 12px; background: rgba(192, 57, 43, 0.08); border: 1px solid rgba(192, 57, 43, 0.25);">
+                        <div style="font-size: 0.85rem; opacity: 0.8;" data-i18n="sup_stat_rate_l">Achievement</div>
+                        <div data-i18n="sup_stat_rate_v" style="font-size: 1.9rem; font-weight: 800; background: linear-gradient(135deg, #e74c3c, #f39c12); -webkit-background-clip: text; background-clip: text; color: transparent;">~1.9× (189%)</div>
+                    </div>
+                    <div style="flex: 1 1 180px; padding: 1.2rem; border-radius: 12px; background: rgba(192, 57, 43, 0.08); border: 1px solid rgba(192, 57, 43, 0.25);">
+                        <div style="font-size: 0.85rem; opacity: 0.8;" data-i18n="sup_stat_sup_l">Supporters</div>
+                        <div data-i18n="sup_stat_sup_v" style="font-size: 1.9rem; font-weight: 800; background: linear-gradient(135deg, #e74c3c, #f39c12); -webkit-background-clip: text; background-clip: text; color: transparent;">318</div>
+                    </div>
+                </div>
+
+                <p style="margin-top: 1rem;" data-i18n="sup_cf_p1">The crowdfunding campaign "Support the First Conference in Japan of the International Egyptological Conference for Early-Career Researchers" (Prof. So Miyagawa's Lab, University of Tsukuba × CRE26 Tokyo Organizing Committee; READYFOR; 23 March – 5 June 2026) was launched to subsidize travel and accommodation for early-career researchers attending CRE 26 Tokyo — especially those from Egypt — as well as excursions and other academic exchange activities, and to enhance the quality of the conference.</p>
+                <p style="margin-top: 1rem;" data-i18n-html="sup_cf_p2">Thanks to your generous support, the campaign far exceeded its initial goal of ¥3,000,000 and surpassed its next goal of ¥5,000,000, ultimately raising <strong style="font-size: 1.15em; font-weight: 800;">¥5,689,000</strong> — approximately <strong style="font-size: 1.15em; font-weight: 800;">1.9 times</strong> the initial goal — with <strong style="font-size: 1.15em; font-weight: 800;">318</strong> donors in total. We are sincerely grateful for your support.</p>
+                <p style="margin-top: 1.5rem; text-align: center;">
+                    <a href="https://readyfor.jp/projects/CRE26-Tokyo" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; gap: 0.5rem; color: #c0392b; text-decoration: none; font-weight: 600; border-bottom: 1px dashed rgba(192, 57, 43, 0.4); padding-bottom: 2px;">
+                        <i class="fas fa-external-link-alt"></i>
+                        <span data-i18n="sup_cf_link">View the Crowdfunding Page on READYFOR</span>
+                    </a>
                 </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="glass-card" style="padding: 3rem;">
+                <h2 data-i18n="sup_list_h">List of Supporters</h2>
+                <p style="margin-top: 1.5rem; opacity: 0.85; font-size: 0.95rem;" data-i18n="sup_list_note">Within each category, names in Latin script are listed first in alphabetical order, followed by names in Japanese in <i>gojūon</i> order.</p>
 
                 <div class="supporter-tier">
-                    <h2>Diamond Sponsor</h2>
-                    <ul class="supporter-names">
+                    <h2 class="notranslate">Diamond Sponsor</h2>
+                    <ul class="supporter-names notranslate">
                         <li>白川 尚史</li>
                     </ul>
                 </div>
 
                 <div class="supporter-tier">
-                    <h2>Silver Sponsor</h2>
-                    <ul class="supporter-names">
+                    <h2 class="notranslate">Silver Sponsor</h2>
+                    <ul class="supporter-names notranslate">
                         <li>Izumi Takamiya</li>
                         <li>Jiro Kondo</li>
                         <li>古代エジプト美術館 館長 菊川匡</li>
@@ -122,8 +161,8 @@
                 </div>
 
                 <div class="supporter-tier">
-                    <h2>Bronze Sponsor</h2>
-                    <ul class="supporter-names">
+                    <h2 class="notranslate">Bronze Sponsor</h2>
+                    <ul class="supporter-names notranslate">
                         <li>KATSUYA IHAMA</li>
                         <li>Michinori OHSHIRO</li>
                         <li>石田道人</li>
@@ -138,8 +177,8 @@
                 </div>
 
                 <div class="supporter-tier">
-                    <h2>Sponsor</h2>
-                    <ul class="supporter-names">
+                    <h2 class="notranslate">Sponsor</h2>
+                    <ul class="supporter-names notranslate">
                         <li>Fátima</li>
                         <li>Haruko SAKAEDANI</li>
                         <li>Keika Takeda</li>
@@ -178,8 +217,8 @@
                 </div>
 
                 <div class="supporter-tier">
-                    <h2>Supporters</h2>
-                    <ul class="supporter-names">
+                    <h2 class="notranslate">Supporters</h2>
+                    <ul class="supporter-names notranslate">
                         <li>aco</li>
                         <li>Atsushi Noguchi</li>
                         <li>DEGLIN F.</li>
@@ -267,8 +306,8 @@
                 </div>
 
                 <div class="supporter-tier">
-                    <h2>Overseas Supporters</h2>
-                    <ul class="supporter-names">
+                    <h2 class="notranslate">Overseas Supporters</h2>
+                    <ul class="supporter-names notranslate">
                         <li>Ayumi Imai</li>
                         <li>Danielle Németh</li>
                         <li>David Mihalyfy</li>
@@ -286,14 +325,11 @@
                 </div>
 
                 <div style="margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid rgba(255,255,255,0.15);">
-                    <p style="opacity: 0.85; font-size: 0.95rem;">
-                        お名前掲載希望者のみ掲載です。クラファン全体では総勢318名の方にご寄付いただきました。ご支援誠にありがとうございました。<br>
-                        Only the names of those who wished to be listed are included. In total, 318 people made donations to the crowdfunding campaign as a whole. We are sincerely grateful for your support.
-                    </p>
+                    <p style="opacity: 0.85; font-size: 0.95rem;" data-i18n-html="sup_bottom_note">Only the names of those who wished to be listed are included. In total, <strong style="font-size: 1.2em; font-weight: 800;">318</strong> people made donations to the crowdfunding campaign as a whole. We are sincerely grateful for your support.</p>
                     <p style="margin-top: 1.5rem; text-align: center;">
                         <a href="https://readyfor.jp/projects/CRE26-Tokyo" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; gap: 0.5rem; background: linear-gradient(135deg, #c0392b, #e74c3c); color: white; padding: 0.8rem 1.5rem; border-radius: 8px; text-decoration: none; font-weight: 600;">
                             <i class="fas fa-heart"></i>
-                            クラウドファンディングページ（READYFOR） / Crowdfunding Page on READYFOR
+                            <span data-i18n="sup_cf_btn">Crowdfunding Page on READYFOR</span>
                             <i class="fas fa-external-link-alt" style="font-size: 0.8em;"></i>
                         </a>
                     </p>
@@ -329,3 +365,4 @@
     <script src="js/main.js" defer></script>
 </body>
 </html>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
