@@ -552,6 +552,11 @@ footer { background: #ffffff; padding: 2rem 0 1rem; margin-top: 3rem; color: var
 .share-toast { position: fixed; bottom: 90px; left: 50%; transform: translateX(-50%) translateY(20px); background: rgba(20,20,30,0.95); color: #fff; padding: 0.8rem 1.4rem; border-radius: 50px; font-size: 0.9rem; box-shadow: 0 8px 30px rgba(0,0,0,0.4); opacity: 0; visibility: hidden; transition: all 0.3s ease; z-index: 9999; max-width: 90vw; text-align: center; }
 .share-toast.show { opacity: 1; visibility: visible; transform: translateX(-50%) translateY(0); }
 
+/* Top Share Bar */
+.top-share { display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 0.6rem; padding: 0.6rem 1rem; background: #ffffff; border-bottom: 1px solid rgba(0,0,0,0.08); }
+.top-share-label { font-size: 0.85rem; font-weight: 700; color: var(--text-secondary); margin-right: 0.2rem; }
+.top-share .share-btn { width: 38px; height: 38px; font-size: 0.95rem; }
+
 /* Scroll to top */
 .scroll-to-top { position: fixed; bottom: 1.5rem; right: 1.5rem; width: 40px; height: 40px; background: var(--brand-primary); color: white; border: none; border-radius: 50%; cursor: pointer; box-shadow: 0 4px 10px rgba(0,0,0,0.2); display: none; align-items: center; justify-content: center; font-size: 1rem; z-index: 99; transition: all 0.3s ease; }
 .scroll-to-top:hover { transform: translateY(-3px); background: var(--future-cyan); box-shadow: 0 0 20px var(--future-cyan); }

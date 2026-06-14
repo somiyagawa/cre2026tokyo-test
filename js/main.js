@@ -14,7 +14,6 @@ document.addEventListener('DOMContentLoaded', function() {
     initStickyHeader();
     initScrollToTop();
     initLanguageSwitcher();
-    initShareButtons();
     
     console.log('All modules loaded');
 });
