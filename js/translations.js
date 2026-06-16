@@ -1,5 +1,11 @@
 const translations = {
     "en": {
+        "nav_3rd": "3rd Circular",
+        "hero_dl_3rd": "Download 3rd Circular (PDF)",
+        "prog_intro_note": "All times are Japan Standard Time (JST). The programme is preliminary and subject to minor adjustment. Session rooms (A/B/C) run in parallel. The complete programme, presentation formats, and full details are in the 3rd Circular.",
+        "prog_dl_3rd": "Download the 3rd Circular (PDF)",
+        "prog_formats_h": "Presentation Formats",
+        "prog_formats_p": "Standard presentations are 20 minutes followed by 5 minutes of Q&A; short presentations are 10 minutes. Posters must be A0 portrait (1189 × 841 mm) and are shown in two sessions — A (core time 12 July) and B (core time 14 July).",
         "pc_nk_h": "Post-conference Workshop — Osaka",
         "pc_nk_name": "International Workshop — Papyrology & Codicology of the Nakanishi Collection (Greek, Demotic, Coptic)",
         "pc_nk_name_ja": "国立民族学博物館（民博）所蔵 中西コレクションのパピルス学・写本学",
@@ -942,6 +948,12 @@ const translations = {
         "reg_form_note": "Please complete the form only after you have made your payment. The form opens in a new tab via Google Forms.",
     },
     "ja": {
+        "nav_3rd": "第3サーキュラー",
+        "hero_dl_3rd": "第3サーキュラーをダウンロード（PDF）",
+        "prog_intro_note": "時刻はすべて日本標準時（JST）です。プログラムは暫定版であり、細部は変更となる場合があります。会場A・B・Cは並行して進行します。完全なプログラム・発表形式・詳細は第3サーキュラーをご覧ください。",
+        "prog_dl_3rd": "第3サーキュラーをダウンロード（PDF）",
+        "prog_formats_h": "発表形式",
+        "prog_formats_p": "通常発表は20分＋質疑5分、ショート発表は10分です。ポスターはA0縦（1189×841mm）で、2つのセッション（A：7月12日、B：7月14日）で掲示されます。",
         "pc_nk_h": "会議後ワークショップ — 大阪",
         "pc_nk_name": "International Workshop — Papyrology & Codicology of the Nakanishi Collection (Greek, Demotic, Coptic)",
         "pc_nk_name_ja": "国立民族学博物館（民博）所蔵 中西コレクションのパピルス学・写本学",
@@ -1884,6 +1896,12 @@ const translations = {
         "reg_form_note": "お支払いがお済みになってからフォームにご記入ください。フォームはGoogleフォームで新しいタブで開きます。",
     },
     "ar": {
+        "nav_3rd": "النشرة الثالثة",
+        "hero_dl_3rd": "تنزيل النشرة الثالثة (PDF)",
+        "prog_intro_note": "جميع الأوقات بتوقيت اليابان القياسي (JST). البرنامج مبدئي وقابل لتعديلات طفيفة. تُعقد القاعات (A/B/C) بالتوازي. يتوفّر البرنامج الكامل وصيغ العروض والتفاصيل في النشرة الثالثة.",
+        "prog_dl_3rd": "تنزيل النشرة الثالثة (PDF)",
+        "prog_formats_h": "صيغ العروض",
+        "prog_formats_p": "العروض القياسية مدتها ٢٠ دقيقة يليها ٥ دقائق للأسئلة؛ والعروض القصيرة ١٠ دقائق. يجب أن تكون الملصقات بحجم A0 عمودياً (١١٨٩ × ٨٤١ مم) وتُعرض في جلستين — A (الوقت الأساسي ١٢ يوليو) وB (الوقت الأساسي ١٤ يوليو).",
         "pc_nk_h": "ورشة ما بعد المؤتمر — أوساكا",
         "pc_nk_name": "International Workshop — Papyrology & Codicology of the Nakanishi Collection (Greek, Demotic, Coptic)",
         "pc_nk_name_ja": "国立民族学博物館（民博）所蔵 中西コレクションのパピルス学・写本学",
