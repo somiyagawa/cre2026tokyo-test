@@ -1,5 +1,11 @@
 const translations = {
     "en": {
+        "pc_ov_d1": "16 Jul · Thu",
+        "pc_ov_t1": "<strong>Post-conference Symposium — ISET 2026</strong><br>University of Tsukuba, Tokyo Campus · hybrid (online)",
+        "pc_ov_d2": "18 Jul · Sat",
+        "pc_ov_t2": "<strong>Workshop — Approaching Ancient Egypt</strong><br>Waseda University (Toyama Campus), Tokyo · in person",
+        "pc_ov_d3": "20–21 Jul",
+        "pc_ov_t3": "<strong>Workshop — Papyrology &amp; Codicology of the Nakanishi Collection</strong><br>National Museum of Ethnology (Minpaku), Osaka · hybrid / in person",
         "sch3_title": "From the 3rd Circular",
         "sch3_desc": "The full preliminary programme is now confirmed. Here are the highlights — the complete schedule is on the Program page and in the 3rd Circular.",
         "sch3_prog_t": "Full Preliminary Programme",
@@ -962,6 +968,12 @@ const translations = {
         "reg_form_note": "Please complete the form only after you have made your payment. The form opens in a new tab via Google Forms.",
     },
     "ja": {
+        "pc_ov_d1": "7月16日（木）",
+        "pc_ov_t1": "<strong>会議後シンポジウム — ISET 2026</strong><br>筑波大学 東京キャンパス・ハイブリッド（オンライン）",
+        "pc_ov_d2": "7月18日（土）",
+        "pc_ov_t2": "<strong>ワークショップ — 古代エジプトへのアプローチ</strong><br>早稲田大学（戸山キャンパス）、東京・対面",
+        "pc_ov_d3": "7月20〜21日",
+        "pc_ov_t3": "<strong>ワークショップ — 中西コレクションのパピルス学・写本学</strong><br>国立民族学博物館（民博）、大阪・ハイブリッド／対面",
         "sch3_title": "第3サーキュラーより",
         "sch3_desc": "完全な暫定プログラムが確定しました。主な見どころは以下のとおりです。詳細はプログラムページおよび第3サーキュラーをご覧ください。",
         "sch3_prog_t": "完全な暫定プログラム",
@@ -1924,6 +1936,12 @@ const translations = {
         "reg_form_note": "お支払いがお済みになってからフォームにご記入ください。フォームはGoogleフォームで新しいタブで開きます。",
     },
     "ar": {
+        "pc_ov_d1": "١٦ يوليو · الخميس",
+        "pc_ov_t1": "<strong>ندوة ما بعد المؤتمر — ISET 2026</strong><br>جامعة تسوكوبا، الحرم بطوكيو · حضوري وعبر الإنترنت",
+        "pc_ov_d2": "١٨ يوليو · السبت",
+        "pc_ov_t2": "<strong>ورشة — الاقتراب من مصر القديمة</strong><br>جامعة واسيدا (حرم توياما)، طوكيو · حضوري",
+        "pc_ov_d3": "٢٠–٢١ يوليو",
+        "pc_ov_t3": "<strong>ورشة — علم البرديات والمخطوطات لمجموعة ناكانيشي</strong><br>المتحف الوطني للإثنولوجيا (مينباكو)، أوساكا · حضوري وعبر الإنترنت",
         "sch3_title": "من النشرة الثالثة",
         "sch3_desc": "اكتمل البرنامج المبدئي الكامل. وفيما يلي أبرز محتوياته — ويتوفّر الجدول الكامل في صفحة البرنامج وفي النشرة الثالثة.",
         "sch3_prog_t": "البرنامج المبدئي الكامل",
