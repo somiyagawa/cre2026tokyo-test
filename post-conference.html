@@ -31,9 +31,9 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/i18n.css">
     <style>
-        .pc-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: start; }
-        .pc-event-card { padding: 2rem; }
-        .pc-event-card.pc-wide { grid-column: 1 / -1; }
+        .pc-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; align-items: start; }
+        .pc-event-card { padding: 1.6rem; }
+        .pc-event-card.pc-wide { grid-column: auto; }
         .pc-meta { list-style: none; padding: 0; margin: 1.2rem 0 0; }
         .pc-meta li { padding: 0.45rem 0; border-bottom: 1px solid rgba(255,255,255,0.1); display: flex; gap: 0.6rem; flex-wrap: wrap; }
         .pc-meta li strong { min-width: 6.5rem; }
@@ -44,7 +44,7 @@
         .pc-aff { font-weight: 400; font-size: 0.86em; opacity: 0.7; }
         .pc-row-session td { background: #16335c; color: #fff; font-weight: 700; text-align: center; }
         .pc-row-break td { background: #f5e6a8; color: #4a3b00; font-weight: 600; text-align: center; }
-        @media (max-width: 1024px) { .pc-grid { grid-template-columns: 1fr; } .pc-event-card { padding: 2.2rem; } }
+        @media (max-width: 1100px) { .pc-grid { grid-template-columns: 1fr; } .pc-event-card { padding: 2.2rem; } }
         @media (max-width: 600px) {
             .pc-program, .pc-program tbody, .pc-program tr, .pc-program td { display: block; width: auto; }
         }
@@ -211,7 +211,7 @@
                 </div>
 
                 <!-- ===== Workshop — Nakanishi Collection, Osaka (20-21 Jul) ===== -->
-                <div class="glass-card pc-event-card pc-wide">
+                <div class="glass-card pc-event-card">
                     <h2 data-i18n="pc_nk_h">Post-conference Workshop — Osaka</h2>
                     <p class="notranslate" data-i18n="pc_nk_name" style="font-weight: 600; opacity: 0.9;">International Workshop — Papyrology &amp; Codicology of the Nakanishi Collection (Greek, Demotic, Coptic)</p>
                     <p class="notranslate" data-i18n="pc_nk_name_ja" style="opacity: 0.8;">国立民族学博物館（民博）所蔵 中西コレクションのパピルス学・写本学</p>

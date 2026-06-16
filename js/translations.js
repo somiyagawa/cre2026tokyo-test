@@ -1,5 +1,10 @@
 const translations = {
     "en": {
+        "sc3_badge": "3RD CIRCULAR NOW AVAILABLE",
+        "sc3_eyebrow": "Third Circular",
+        "sc3_heading": "The Official Third Circular<br>is Now Published",
+        "sc3_body": "The Third Circular presents the full preliminary programme — over 150 papers across three parallel sessions, short presentations, two poster sessions, and four keynote lectures — together with the museum tours, conference dinner, excursion, presentation formats, registration, immigration & visas, and accommodation details.",
+        "sc3_btn_prog": "View the Full Programme →",
         "nav_3rd": "3rd Circular",
         "hero_dl_3rd": "Download 3rd Circular (PDF)",
         "prog_intro_note": "All times are Japan Standard Time (JST). The programme is preliminary and subject to minor adjustment. Session rooms (A/B/C) run in parallel. The complete programme, presentation formats, and full details are in the 3rd Circular.",
@@ -948,6 +953,11 @@ const translations = {
         "reg_form_note": "Please complete the form only after you have made your payment. The form opens in a new tab via Google Forms.",
     },
     "ja": {
+        "sc3_badge": "第3サーキュラー公開中",
+        "sc3_eyebrow": "第3サーキュラー",
+        "sc3_heading": "第3サーキュラーを<br>公開しました",
+        "sc3_body": "第3サーキュラーには、3会場並行の150件を超える研究発表、ショート発表、2つのポスターセッション、4つの基調講演に加え、博物館ツアー、大会ディナー、エクスカーション、発表形式、参加登録、入国・ビザ、宿泊に関する詳細が掲載されています。",
+        "sc3_btn_prog": "完全なプログラムを見る →",
         "nav_3rd": "第3サーキュラー",
         "hero_dl_3rd": "第3サーキュラーをダウンロード（PDF）",
         "prog_intro_note": "時刻はすべて日本標準時（JST）です。プログラムは暫定版であり、細部は変更となる場合があります。会場A・B・Cは並行して進行します。完全なプログラム・発表形式・詳細は第3サーキュラーをご覧ください。",
@@ -1896,6 +1906,11 @@ const translations = {
         "reg_form_note": "お支払いがお済みになってからフォームにご記入ください。フォームはGoogleフォームで新しいタブで開きます。",
     },
     "ar": {
+        "sc3_badge": "النشرة الثالثة متاحة الآن",
+        "sc3_eyebrow": "النشرة الثالثة",
+        "sc3_heading": "صدرت النشرة الثالثة<br>الرسمية الآن",
+        "sc3_body": "تقدّم النشرة الثالثة البرنامج المبدئي الكامل — أكثر من ١٥٠ بحثاً في ثلاث جلسات متوازية، وعروضاً قصيرة، وجلستَي ملصقات، وأربع محاضرات رئيسية — إضافةً إلى جولات المتاحف وعشاء المؤتمر والرحلة وصيغ العروض والتسجيل والهجرة والتأشيرات وتفاصيل الإقامة.",
+        "sc3_btn_prog": "عرض البرنامج الكامل ←",
         "nav_3rd": "النشرة الثالثة",
         "hero_dl_3rd": "تنزيل النشرة الثالثة (PDF)",
         "prog_intro_note": "جميع الأوقات بتوقيت اليابان القياسي (JST). البرنامج مبدئي وقابل لتعديلات طفيفة. تُعقد القاعات (A/B/C) بالتوازي. يتوفّر البرنامج الكامل وصيغ العروض والتفاصيل في النشرة الثالثة.",
