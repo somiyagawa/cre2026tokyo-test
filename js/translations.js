@@ -155,6 +155,9 @@ const translations = {
         "date_feb_apr": "Late Feb - 30 April 2026",
         "d_apr_t": "Early-bird Registration",
         "d_apr_d": "Register early to secure discounted rates.",
+        "date_jun_tc": "June 2026",
+        "d_tc_t": "Third Circular",
+        "d_tc_d": "Third Circular published with the full preliminary programme and final details.",
         "date_may_jun": "1 May - 30 June 2026",
         "d_jun_t": "Late Registration",
         "d_jun_d": "Final registration period at JPY 10,000.",
@@ -417,7 +420,7 @@ const translations = {
         "sc_body": "Detailed information on the organising & scientific committees, venue, preliminary programme, presentation formats, museum visits, conference dinner, excursion, registration, immigration & visas, travel advice, and accommodation is now available.",
         "sc_date": "11–15 July 2026",
         "sc_loc": "National Research Institute for Cultural Properties, Tokyo",
-        "sc_btn_dl": "Download 2nd Circular (PDF)",
+        "sc_btn_dl": "Download 3rd Circular (PDF)",
 
         // --- First Circular ---
         "fc_badge": "1ST CIRCULAR NOW AVAILABLE",
@@ -641,8 +644,8 @@ const translations = {
         "reg_sched_date1": "Late Feb 2026",
         "reg_sched_date2": "Late Feb - 30 Apr",
         "reg_sched_date3": "1 May - 30 June",
-        "reg_info_desc": "Early registration for CRE 2026 has now closed, and <strong>late registration is open</strong>. Full registration procedures and payment details are provided in the <strong>Second Circular</strong>.",
-        "reg_circular_dl": "<i class=\"fas fa-file-pdf\" style=\"margin-right: 0.5rem;\"></i>Download Second Circular (PDF)",
+        "reg_info_desc": "Early registration for CRE 2026 has now closed, and <strong>late registration is open</strong>. Full registration procedures and payment details are provided in the <strong>Third Circular</strong>.",
+        "reg_circular_dl": "<i class=\"fas fa-file-pdf\" style=\"margin-right: 0.5rem;\"></i>Download Third Circular (PDF)",
         "reg_fee_late_dinner": "② Late Registration + Conference Dinner",
         "reg_fee_late_dinner_price": "JPY 20,000",
         "reg_fee_late_exc": "③ Late Registration + Excursion",
@@ -819,16 +822,20 @@ const translations = {
         "prog_10min_title": "10-minute Short Presentations",
         "prog_poster_title": "Posters",
         "prog_coming_soon": "Coming Soon",
-        "prog_status_note": "Please note that information regarding session locations is provisional. Final details will be confirmed and published in the Second Circular and subsequent updates, once all arrangements have been finalised.",
+        "prog_status_note": "Please note that information regarding session locations is provisional. Final details will be confirmed and published in the Third Circular and subsequent updates, once all arrangements have been finalised.",
         "prog_sat_list": "<li>Registration</li><li>Opening</li><li>Parallel sessions</li><li>Coffee break</li><li>Keynote 1</li><li>Drinks reception</li>",
         "prog_sun_list": "<li>Parallel sessions</li><li>Coffee break</li><li>Parallel sessions</li><li>Lunch break</li><li>Parallel sessions</li><li>Coffee break</li><li>Poster Session</li><li>Keynote 2</li><li>Museum Tour</li>",
         "prog_mon_list": "<li>Parallel sessions</li><li>Coffee break</li><li>Parallel sessions</li><li>Lunch break</li><li>Parallel sessions</li><li>Coffee break</li><li>Parallel sessions</li><li>Keynote 3</li><li>Free/Travel time</li><li>Dinner</li>",
         "prog_tue_list": "<li>Parallel sessions</li><li>Coffee break</li><li>Parallel sessions</li><li>Lunch break</li><li>Poster Session</li><li>Keynote 4</li><li>Coffee break</li><li>Closing</li><li>CRE AGM</li>",
         "prog_wed_list": "<li>Excursion</li>",
-        "prog_20min_list": "<li>Standard presentations are 20-minutes followed by a 5-minute question and answer session.</li><li>At the end of each presentation, there will be a 5-minute break to allow for conference participants to move between rooms.</li><li>There will be four parallel sessions taking place, with each session lasting 1-2 hours, followed by a longer break.</li>",
+        "prog_20min_list": "<li>Standard presentations are 20-minutes followed by a 5-minute question and answer session.</li><li>At the end of each presentation, there will be a 5-minute break to allow for conference participants to move between rooms.</li><li>There will be three parallel sessions taking place, with each session lasting 1-2 hours, followed by a longer break.</li>",
         "prog_10min_list": "<li>Short presentations are 10-minutes long, and will take place during dedicated sessions.</li><li>These presentations will be presented in a series of six consecutive talks followed by a break.</li>",
         "prog_poster_list": "<li>Posters must be printed in A0 size, portrait orientation (1189 x 841 mm).</li><li>Posters must have a vertical orientation.</li><li>A poster must contain: presenter's name, affiliate institution, contact details.</li><li>Additional design choices are at the discretion of the presenters.</li>",
-        "prog_note": "<strong>Note:</strong> Information regarding session locations is provisional. Final details will be confirmed in the Second Circular.",
+        "prog_note": "<strong>Note:</strong> Information regarding session locations is provisional. Final details will be confirmed in the Third Circular.",
+        "prog_equip_h": "Presentation Files & Equipment",
+        "prog_equip_p": "Presenters are kindly requested to use their own device (laptop, tablet, or smartphone) whenever possible. All rooms are equipped with a projector connected via <strong>HDMI</strong>. Please test your connection during the break before your session. A venue PC is available as a backup — in that case, submit your files (original + PDF) to staff before the morning sessions or during the lunch break for afternoon sessions.",
+        "prog_poster_mount_h": "Poster Mounting",
+        "prog_poster_mount_p": "<strong>Session A:</strong> Mount Saturday, 11 July, 11:00–12:30<br><strong>Session B:</strong> Mount Monday, 13 July, 09:00–10:00<br>Mounting materials (tape) will be provided by the Organising Committee. Presenters must remove their own posters after each session.",
         "coming_soon": "Coming Soon",
 
         // --- Missing keys: Venue ---
@@ -848,7 +855,7 @@ const translations = {
         "reg_wise_qr_title": "<i class=\"fas fa-qrcode\" style=\"margin-right: 0.4rem; color: #2ecc71;\"></i>Or scan the QR code for your chosen package",
         "reg_wise_note": "* Please make sure to complete the transfer process after adding funds to your Wise account. Simply adding funds does not constitute a completed payment.",
         "reg_wise_note2": "* Please make sure to complete the transfer process after adding funds to your Wise account. Simply adding funds does not constitute a completed payment.",
-        "reg_wise_fallback": "<i class=\"fas fa-exclamation-circle\" style=\"color: #d4a017; margin-right: 0.4rem;\"></i><strong>If any of the Wise links or QR codes above do not work correctly,</strong> please consult the official <a href=\"CRE_Second_Circular.pdf\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color: var(--brand-primary); font-weight: 600; text-decoration: underline;\">2nd Circular (PDF)</a> — it contains the authoritative payment information and QR codes.",
+        "reg_wise_fallback": "<i class=\"fas fa-exclamation-circle\" style=\"color: #d4a017; margin-right: 0.4rem;\"></i><strong>If any of the Wise links or QR codes above do not work correctly,</strong> please consult the official <a href=\"CRE_Third_Circular.pdf\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color: var(--brand-primary); font-weight: 600; text-decoration: underline;\">3rd Circular (PDF)</a> — it contains the authoritative payment information and QR codes.",
         "reg_form_title": "<i class=\"fas fa-edit\" style=\"color: var(--brand-primary); margin-right: 0.5rem;\"></i>Register for CRE 26 Tokyo",
         "reg_form_btn": "<i class=\"fab fa-google\" style=\"margin-right: 0.5rem;\"></i>Open the Registration Form<i class=\"fas fa-external-link-alt\" style=\"margin-left: 0.5rem; font-size: 0.85em;\"></i>",
         "reg_ready_title": "Ready to Register?",
@@ -890,7 +897,7 @@ const translations = {
         "sch_exc_t": "Excursion: Kamakura & Enoshima",
         "sch_exc_d": "The post-conference excursion will take place on Wednesday, 15 July 2026, with a chartered bus to Kamakura — Japan's medieval capital, renowned for its Zen temples and the Great Buddha (Daibutsu) — followed by a visit to the coastal island of Enoshima. Arrival in Kamakura is planned for approximately 10:30, with free time to explore the town. The participation fee is JPY 8,000 and is not included in the conference registration.",
         "sch_exc_b": "Registration Details →",
-        "sch_cta": "<i class=\"fas fa-file-pdf\" style=\"margin-right: 0.5rem;\"></i>Read the Full 2nd Circular (PDF)",
+        "sch_cta": "<i class=\"fas fa-file-pdf\" style=\"margin-right: 0.5rem;\"></i>Read the Full 3rd Circular (PDF)",
 
         // --- Urgent Donation Appeal (index.html) ---
         "don_badge": "Urgent Appeal",
@@ -921,7 +928,7 @@ const translations = {
         "reg_exc_status": "<strong>Status:</strong> Optional, can be booked during registration",
 
         // --- Registration: Bank / Dinner / Museum details ---
-        "reg_bank_details": "<p style=\"margin: 0 0 0.5rem 0;\"><strong>Beneficiary Bank:</strong> MUFG BANK, LTD.</p><p style=\"margin: 0 0 0.5rem 0;\"><strong>Branch:</strong> Takatanobaba Branch</p><p style=\"margin: 0 0 0.5rem 0;\"><strong>Branch Address:</strong> 3-2-3, Takadanobaba, Shinjuku-ku, Tokyo, Japan</p><p style=\"margin: 0 0 0.5rem 0;\"><strong>SWIFT/BIC:</strong> BOTKJPJT (11-digit: BOTKJPJTXXX)</p><p style=\"margin: 0 0 0.5rem 0;\"><strong>Account Number:</strong> 053-2384351</p><p style=\"margin: 0 0 0.5rem 0;\"><strong>Account Name:</strong> CRE Japan Committee</p><p style=\"margin: 0;\"><strong>Account Address:</strong> 305 Connect-Midorino, 17-4, Midorino 2-chome, Tsukuba, Ibaraki, 305-0881, Japan</p>",
+        "reg_bank_details": "<p style=\"margin: 0 0 0.5rem 0;\"><strong>Beneficiary Bank:</strong> MUFG BANK, LTD.</p><p style=\"margin: 0 0 0.5rem 0;\"><strong>Branch:</strong> Takatanobaba Branch</p><p style=\"margin: 0 0 0.5rem 0;\"><strong>Branch Address:</strong> 3-2-3, Takadanobaba, Shinjuku-ku, Tokyo, Japan</p><p style=\"margin: 0 0 0.5rem 0;\"><strong>SWIFT/BIC:</strong> BOTKJPJT (11-digit: BOTKJPJTXXX)</p><p style=\"margin: 0 0 0.5rem 0;\"><strong>Account Number:</strong> 053-2384351</p><p style=\"margin: 0 0 0.5rem 0;\"><strong>Account Name:</strong> CRE Japan Committee Chairperson Tokihisa Higo</p><p style=\"margin: 0;\"><strong>Account Address:</strong> 305 Connect-Midorino, 17-4, Midorino 2-chome, Tsukuba, Ibaraki, 305-0881, Japan</p>",
         "reg_dinner_details": "<p style=\"margin: 0 0 0.75rem 0;\"><strong>Date &amp; Time:</strong> Monday, 13 July, 7:00pm–9:00pm</p><p style=\"margin: 0 0 0.75rem 0;\"><strong>Venue:</strong> MY Shokudo Dining &amp; Sakaba, 3F, TOKYO TORCH Terrace, 2-6-4 Otemachi, Chiyoda City, Tokyo 100-0004</p><p style=\"margin: 0 0 0.75rem 0;\"><strong>Participation Fee:</strong> JPY 10,000</p><p style=\"margin: 0 0 0.75rem 0;\"><strong>Details:</strong> Buffet-style dining with drinks included</p><p style=\"margin: 0 0 0.75rem 0;\"><strong>Access:</strong> From Ueno Station: Take JR Yamanote or Keihin-Tohoku Line to Tokyo Station (~6 min). Exit at Nihonbashi and walk to TOKYO TORCH Terrace (~5 min), located on the 3rd floor</p><p style=\"margin: 0;\"><strong>Status:</strong> Optional, can be booked during registration</p>",
         "reg_museum_details": "<p style=\"margin: 0 0 0.5rem 0;\"><strong>Venue:</strong> Ancient Orient Museum in Ikebukuro</p><p style=\"margin: 0 0 0.5rem 0;\"><strong>Date:</strong> Sunday, 12 July</p><p style=\"margin: 0 0 0.5rem 0;\"><strong>Cost:</strong> Included in registration fee (excluding transportation between venue and museum)</p><p style=\"margin: 0;\"><strong>Note:</strong> Advance registration required at conference venue</p>",
 
@@ -941,7 +948,7 @@ const translations = {
 
         // --- Venue / Support: additional keys ---
         "ven_map_btn": "Google Map →",
-        "supp_partners_t": "Partner Institutions",
+        "supp_partners_t": "Institutional Supporters",
         "supp_partners_soon": "More partner institutions coming soon.",
     
 
@@ -1129,6 +1136,9 @@ const translations = {
         "d_feb_d": "審査結果発表。早期登録開始。",
         "d_apr_t": "早期参加登録",
         "d_apr_d": "早期登録で割引料金が適用されます。",
+        "date_jun_tc": "2026年6月",
+        "d_tc_t": "第三サーキュラー",
+        "d_tc_d": "プログラム全体および最終詳細を含む第三サーキュラー公開。",
         "d_jun_t": "通常・後期登録",
         "d_jun_d": "最終登録期間。",
         "d_jul_t": "CRE 26 会議本番",
@@ -1392,7 +1402,7 @@ const translations = {
         "sc_body": "組織委員会・学術委員会、会場、暫定プログラム、発表形式、博物館見学、大会ディナー、エクスカーション、参加登録、出入国・ビザ、旅行情報、宿泊施設に関する詳細情報をご覧いただけます。",
         "sc_date": "2026年7月11日〜15日",
         "sc_loc": "東京文化財研究所",
-        "sc_btn_dl": "第2サーキュラーをダウンロード（PDF）",
+        "sc_btn_dl": "第3サーキュラーをダウンロード（PDF）",
 
         // --- First Circular ---
         "fc_badge": "第1サーキュラー公開中",
@@ -1616,8 +1626,8 @@ const translations = {
         "reg_sched_date1": "2026年2月下旬",
         "reg_sched_date2": "2月下旬〜4月30日",
         "reg_sched_date3": "5月1日〜6月30日",
-        "reg_info_desc": "CRE 2026の早期登録は締め切られ、<strong>通常登録（Late Registration）を受付中です</strong>。登録手続きおよび支払いの詳細は<strong>第二サーキュラー</strong>に記載されています。",
-        "reg_circular_dl": "<i class=\"fas fa-file-pdf\" style=\"margin-right: 0.5rem;\"></i>第二サーキュラーをダウンロード（PDF）",
+        "reg_info_desc": "CRE 2026の早期登録は締め切られ、<strong>通常登録（Late Registration）を受付中です</strong>。登録手続きおよび支払いの詳細は<strong>第三サーキュラー</strong>に記載されています。",
+        "reg_circular_dl": "<i class=\"fas fa-file-pdf\" style=\"margin-right: 0.5rem;\"></i>第三サーキュラーをダウンロード（PDF）",
         "reg_fee_late_dinner": "② 通常登録 ＋ 懇親会",
         "reg_fee_late_dinner_price": "20,000円",
         "reg_fee_late_exc": "③ 通常登録 ＋ 遠足",
@@ -1795,16 +1805,20 @@ const translations = {
         "prog_10min_title": "10分間ショートプレゼンテーション",
         "prog_poster_title": "ポスター発表",
         "prog_coming_soon": "近日公開",
-        "prog_status_note": "セッション会場に関する情報は暫定的なものです。最終的な詳細は、すべての手配が確定した後、第2サーキュラーおよびその後の更新で確認・公開されます。",
+        "prog_status_note": "セッション会場に関する情報は暫定的なものです。最終的な詳細は、すべての手配が確定した後、第3サーキュラーおよびその後の更新で確認・公開されます。",
         "prog_sat_list": "<li>受付</li><li>開会式</li><li>パラレルセッション</li><li>コーヒーブレイク</li><li>基調講演 1</li><li>レセプション</li>",
         "prog_sun_list": "<li>パラレルセッション</li><li>コーヒーブレイク</li><li>パラレルセッション</li><li>昼食休憩</li><li>パラレルセッション</li><li>コーヒーブレイク</li><li>ポスターセッション</li><li>基調講演 2</li><li>ミュージアムツアー</li>",
         "prog_mon_list": "<li>パラレルセッション</li><li>コーヒーブレイク</li><li>パラレルセッション</li><li>昼食休憩</li><li>パラレルセッション</li><li>コーヒーブレイク</li><li>パラレルセッション</li><li>基調講演 3</li><li>自由時間 / 移動時間</li><li>ディナー</li>",
         "prog_tue_list": "<li>パラレルセッション</li><li>コーヒーブレイク</li><li>パラレルセッション</li><li>昼食休憩</li><li>ポスターセッション</li><li>基調講演 4</li><li>コーヒーブレイク</li><li>閉会式</li><li>CRE 総会</li>",
         "prog_wed_list": "<li>エクスカーション</li>",
-        "prog_20min_list": "<li>標準発表は20分間で、その後5分間の質疑応答があります。</li><li>各発表の終了後、参加者が部屋を移動できるよう5分間の休憩があります。</li><li>4つのパラレルセッションが行われ、各セッションは1〜2時間続き、その後長めの休憩があります。</li>",
+        "prog_20min_list": "<li>標準発表は20分間で、その後5分間の質疑応答があります。</li><li>各発表の終了後、参加者が部屋を移動できるよう5分間の休憩があります。</li><li>3つのパラレルセッションが行われ、各セッションは1〜2時間続き、その後長めの休憩があります。</li>",
         "prog_10min_list": "<li>ショート発表は10分間で、専用のセッション中に行われます。</li><li>これらの発表は、6つの連続した発表の後に休憩を挟む形式で行われます。</li>",
         "prog_poster_list": "<li>ポスターはA0サイズ、縦向き（1189 × 841 mm）で印刷してください。</li><li>ポスターは縦向きでなければなりません。</li><li>ポスターには、発表者名、所属機関、連絡先を記載してください。</li><li>その他のデザインは発表者の裁量に委ねられます。</li>",
-        "prog_note": "<strong>注意:</strong> セッション会場に関する情報は暫定的なものです。最終的な詳細は第2サーキュラーで確認されます。",
+        "prog_note": "<strong>注意:</strong> セッション会場に関する情報は暫定的なものです。最終的な詳細は第3サーキュラーで確認されます。",
+        "prog_equip_h": "発表ファイルと機器",
+        "prog_equip_p": "発表者はできる限りご自身のデバイス（ノートPC、タブレット、スマートフォン）をご使用ください。各会場には<strong>HDMI</strong>接続のプロジェクターが設置されています。セッション前の休憩時間に接続テストを行ってください。会場PCもバックアップとして利用可能です。その場合は、午前のセッション開始前またはランチブレイク中にスタッフへファイル（原本＋PDF版）をご提出ください。",
+        "prog_poster_mount_h": "ポスター掲示",
+        "prog_poster_mount_p": "<strong>セッションA:</strong> 掲示 7月11日（土）11:00–12:30<br><strong>セッションB:</strong> 掲示 7月13日（月）09:00–10:00<br>掲示用の資材（テープ等）は組織委員会が用意します。各セッション終了後、発表者はご自身でポスターを撤去してください。",
 
         // --- 追加キー: 会場 ---
         "ven_wifi_t": "インターネット",
@@ -1823,7 +1837,7 @@ const translations = {
         "reg_wise_qr_title": "<i class=\"fas fa-qrcode\" style=\"margin-right: 0.4rem; color: #2ecc71;\"></i>またはご希望のパッケージのQRコードをスキャンしてください",
         "reg_wise_note": "※ Wiseアカウントへの入金だけでは支払い完了とはなりません。必ず送金手続きを完了してください。",
         "reg_wise_note2": "※ Wiseアカウントへの入金だけでは支払い完了とはなりません。必ず送金手続きを完了してください。",
-        "reg_wise_fallback": "<i class=\"fas fa-exclamation-circle\" style=\"color: #d4a017; margin-right: 0.4rem;\"></i><strong>上記のWiseリンクまたはQRコードが正常に動作しない場合は、</strong>公式の<a href=\"CRE_Second_Circular.pdf\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color: var(--brand-primary); font-weight: 600; text-decoration: underline;\">第2回サーキュラー（PDF）</a>をご参照ください。正確な支払い情報およびQRコードが記載されています。",
+        "reg_wise_fallback": "<i class=\"fas fa-exclamation-circle\" style=\"color: #d4a017; margin-right: 0.4rem;\"></i><strong>上記のWiseリンクまたはQRコードが正常に動作しない場合は、</strong>公式の<a href=\"CRE_Third_Circular.pdf\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color: var(--brand-primary); font-weight: 600; text-decoration: underline;\">第3サーキュラー（PDF）</a>をご参照ください。正確な支払い情報およびQRコードが記載されています。",
         "reg_form_title": "<i class=\"fas fa-edit\" style=\"color: var(--brand-primary); margin-right: 0.5rem;\"></i>CRE 26 東京大会 参加登録",
         "reg_form_btn": "<i class=\"fab fa-google\" style=\"margin-right: 0.5rem;\"></i>参加登録フォームを開く<i class=\"fas fa-external-link-alt\" style=\"margin-left: 0.5rem; font-size: 0.85em;\"></i>",
         "reg_ready_title": "ご登録の準備はよろしいですか？",
@@ -1865,7 +1879,7 @@ const translations = {
         "sch_exc_t": "エクスカーション：鎌倉・江の島",
         "sch_exc_d": "会議後のエクスカーションは2026年7月15日（水）に実施され、鎌倉・江の島への専用チャーターバスによる日帰り旅行となります。鎌倉は日本中世の政治的中心地として知られ、禅宗寺院群および鎌倉大仏（だいぶつ）で有名です。続いて江の島を訪れ、相模湾の海岸景観をお楽しみいただきます。鎌倉到着は10:30頃を予定しており、町内散策の自由時間も設けられています。参加費は8,000円で、学会参加登録料には含まれておりません。",
         "sch_exc_b": "参加登録の詳細 →",
-        "sch_cta": "<i class=\"fas fa-file-pdf\" style=\"margin-right: 0.5rem;\"></i>第2回サーキュラー全文（PDF）を読む",
+        "sch_cta": "<i class=\"fas fa-file-pdf\" style=\"margin-right: 0.5rem;\"></i>第3サーキュラー全文（PDF）を読む",
 
         // --- 寄付の緊急お願い (index.html) ---
         "don_badge": "緊急のお願い",
@@ -1916,7 +1930,7 @@ const translations = {
 
         // --- 会場／支援ページ：追加キー ---
         "ven_map_btn": "Google Map →",
-        "supp_partners_t": "パートナー機関",
+        "supp_partners_t": "支援機関",
         "supp_partners_soon": "パートナー機関は随時追加予定です。",
     
 
@@ -2107,6 +2121,9 @@ const translations = {
         "d_feb_d": "إعلان النتائج، وفتح باب التسجيل المبكر",
         "d_apr_t": "التسجيل المبكر",
         "d_apr_d": "فترة التسجيل المُبكرة بأسعار مخفضة",
+        "date_jun_tc": "يونيو ٢٠٢٦",
+        "d_tc_t": "النشرة الثالثة",
+        "d_tc_d": "نُشرت النشرة الثالثة مع البرنامج الأولي الكامل والتفاصيل النهائية.",
         "d_jun_t": "التسجيل المتأخر",
         "d_jun_d": "فترة التسجيل النهائية للمؤتمر",
         "d_jul_t": "مؤتمر CRE ٢٦",
@@ -2366,7 +2383,7 @@ const translations = {
         "sc_body": "تتوفر الآن معلومات تفصيلية حول مقر انعقاد المؤتمر، زيارة المتاحف، حفل عشاء المؤتمر، البرنامج المبدئي، أنماط العروض التقديمية، رسوم التسجيل، إجراءات صدور التأشيرة، و رحلة كاماكورا. 📅 ١١–١٥ يوليو ٢٠٢٦ 📍 وسط طوكيو",
         "sc_date": "١١–١٥ يوليو ٢٠٢٦",
         "sc_loc": "المعهد الوطني لأبحاث الممتلكات الثقافية، طوكيو",
-        "sc_btn_dl": "تحميل النشرة الثانية (PDF)",
+        "sc_btn_dl": "تحميل النشرة الثالثة (PDF)",
 
         // --- First Circular ---
         "fc_badge": "الإعلان التمهيدي الرسمي الأول متاح الآن",
@@ -2590,8 +2607,8 @@ const translations = {
         "reg_sched_date1": "أواخر فبراير ٢٠٢٦",
         "reg_sched_date2": "أواخر فبراير - ٣٠ أبريل",
         "reg_sched_date3": "١ مايو - ٣٠ يونيو",
-        "reg_info_desc": "أُغلق التسجيل المبكر لـ CRE ٢٠٢٦، و<strong>التسجيل المتأخر مفتوح الآن</strong>. تتوفر إجراءات التسجيل الكاملة وتفاصيل الدفع في <strong>النشرة الثانية</strong>.",
-        "reg_circular_dl": "<i class=\"fas fa-file-pdf\" style=\"margin-left: 0.5rem;\"></i>تنزيل النشرة الثانية (PDF)",
+        "reg_info_desc": "أُغلق التسجيل المبكر لـ CRE ٢٠٢٦، و<strong>التسجيل المتأخر مفتوح الآن</strong>. تتوفر إجراءات التسجيل الكاملة وتفاصيل الدفع في <strong>النشرة الثالثة</strong>.",
+        "reg_circular_dl": "<i class=\"fas fa-file-pdf\" style=\"margin-left: 0.5rem;\"></i>تنزيل النشرة الثالثة (PDF)",
         "reg_fee_late_dinner": "② التسجيل المتأخر + عشاء المؤتمر",
         "reg_fee_late_dinner_price": "٢٠,٠٠٠ ين",
         "reg_fee_late_exc": "③ التسجيل المتأخر + الرحلة",
@@ -2769,16 +2786,20 @@ const translations = {
         "prog_10min_title": "عروض قصيرة مدتها ١٠ دقائق",
         "prog_poster_title": "الملصقات",
         "prog_coming_soon": "قريباً",
-        "prog_status_note": "يرجى ملاحظة أن المعلومات المتعلقة بمواقع الجلسات مبدئية. سيتم تأكيد التفاصيل النهائية ونشرها في النشرة الثانية والتحديثات اللاحقة، بعد الانتهاء من جميع الترتيبات.",
+        "prog_status_note": "يرجى ملاحظة أن المعلومات المتعلقة بمواقع الجلسات مبدئية. سيتم تأكيد التفاصيل النهائية ونشرها في النشرة الثالثة والتحديثات اللاحقة، بعد الانتهاء من جميع الترتيبات.",
         "prog_sat_list": "<li>التسجيل</li><li>الافتتاح</li><li>جلسات متوازية</li><li>استراحة قهوة</li><li>المحاضرة الرئيسية ١</li><li>حفل استقبال</li>",
         "prog_sun_list": "<li>جلسات متوازية</li><li>استراحة قهوة</li><li>جلسات متوازية</li><li>استراحة غداء</li><li>جلسات متوازية</li><li>استراحة قهوة</li><li>جلسة الملصقات</li><li>المحاضرة الرئيسية ٢</li><li>جولة في المتحف</li>",
         "prog_mon_list": "<li>جلسات متوازية</li><li>استراحة قهوة</li><li>جلسات متوازية</li><li>استراحة غداء</li><li>جلسات متوازية</li><li>استراحة قهوة</li><li>جلسات متوازية</li><li>المحاضرة الرئيسية ٣</li><li>وقت حر / وقت السفر</li><li>العشاء</li>",
         "prog_tue_list": "<li>جلسات متوازية</li><li>استراحة قهوة</li><li>جلسات متوازية</li><li>استراحة غداء</li><li>جلسة الملصقات</li><li>المحاضرة الرئيسية ٤</li><li>استراحة قهوة</li><li>الختام</li><li>الاجتماع العام لـ CRE</li>",
         "prog_wed_list": "<li>رحلة ميدانية</li>",
-        "prog_20min_list": "<li>العروض التقديمية القياسية مدتها ٢٠ دقيقة تليها ٥ دقائق للأسئلة والأجوبة.</li><li>في نهاية كل عرض تقديمي، ستكون هناك استراحة مدتها ٥ دقائق للسماح للمشاركين بالتنقل بين القاعات.</li><li>ستقام أربع جلسات متوازية، تستمر كل جلسة من ساعة إلى ساعتين، تليها استراحة أطول.</li>",
+        "prog_20min_list": "<li>العروض التقديمية القياسية مدتها ٢٠ دقيقة تليها ٥ دقائق للأسئلة والأجوبة.</li><li>في نهاية كل عرض تقديمي، ستكون هناك استراحة مدتها ٥ دقائق للسماح للمشاركين بالتنقل بين القاعات.</li><li>ستقام ثلاث جلسات متوازية، تستمر كل جلسة من ساعة إلى ساعتين، تليها استراحة أطول.</li>",
         "prog_10min_list": "<li>العروض التقديمية القصيرة مدتها ١٠ دقائق، وستقام خلال جلسات مخصصة.</li><li>ستُقدم هذه العروض في سلسلة من ست محادثات متتالية تليها استراحة.</li>",
         "prog_poster_list": "<li>يجب طباعة الملصقات بحجم A0، بالاتجاه العمودي (١١٨٩ × ٨٤١ مم).</li><li>يجب أن تكون الملصقات بالاتجاه العمودي.</li><li>يجب أن يحتوي الملصق على: اسم المقدم، المؤسسة التابع لها، وبيانات الاتصال.</li><li>خيارات التصميم الإضافية متروكة لتقدير المقدمين.</li>",
-        "prog_note": "<strong>ملاحظة:</strong> المعلومات المتعلقة بمواقع الجلسات مبدئية. سيتم تأكيد التفاصيل النهائية في النشرة الثانية.",
+        "prog_note": "<strong>ملاحظة:</strong> المعلومات المتعلقة بمواقع الجلسات مبدئية. سيتم تأكيد التفاصيل النهائية في النشرة الثالثة.",
+        "prog_equip_h": "ملفات العرض والمعدات",
+        "prog_equip_p": "يُرجى من المقدمين استخدام أجهزتهم الخاصة (حاسوب محمول أو جهاز لوحي أو هاتف ذكي) كلما أمكن ذلك. جميع القاعات مجهزة بجهاز عرض متصل عبر <strong>HDMI</strong>. يُرجى اختبار الاتصال أثناء الاستراحة قبل جلستكم. يتوفر حاسوب القاعة كبديل احتياطي — في هذه الحالة، يُرجى تسليم ملفاتكم (الأصل + نسخة PDF) للموظفين قبل الجلسات الصباحية أو أثناء استراحة الغداء للجلسات المسائية.",
+        "prog_poster_mount_h": "تعليق الملصقات",
+        "prog_poster_mount_p": "<strong>الجلسة A:</strong> التعليق السبت ١١ يوليو، ١١:٠٠–١٢:٣٠<br><strong>الجلسة B:</strong> التعليق الاثنين ١٣ يوليو، ٠٩:٠٠–١٠:٠٠<br>ستوفر اللجنة المنظمة مواد التعليق (الشريط اللاصق). يجب على المقدمين إزالة ملصقاتهم بأنفسهم بعد كل جلسة.",
 
         // --- مفاتيح مفقودة: المكان ---
         "ven_wifi_t": "الإنترنت",
@@ -2797,7 +2818,7 @@ const translations = {
         "reg_wise_qr_title": "<i class=\"fas fa-qrcode\" style=\"margin-right: 0.4rem; color: #2ecc71;\"></i>أو امسح رمز QR الخاص بالباقة التي تختارها",
         "reg_wise_note": "* يرجى التأكد من إتمام عملية التحويل بعد إضافة الأموال إلى حسابك في Wise. مجرد إضافة الأموال لا يُعتبر دفعاً مكتملاً.",
         "reg_wise_note2": "* يرجى التأكد من إتمام عملية التحويل بعد إضافة الأموال إلى حسابك في Wise. مجرد إضافة الأموال لا يُعتبر دفعاً مكتملاً.",
-        "reg_wise_fallback": "<i class=\"fas fa-exclamation-circle\" style=\"color: #d4a017; margin-right: 0.4rem;\"></i><strong>إذا لم تعمل أيٌّ من روابط أو رموز QR الخاصة بـ Wise أعلاه بشكل صحيح،</strong> يرجى الرجوع إلى <a href=\"CRE_Second_Circular.pdf\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color: var(--brand-primary); font-weight: 600; text-decoration: underline;\">النشرة الثانية الرسمية (PDF)</a> — فهي تتضمن معلومات الدفع ورموز QR المعتمدة.",
+        "reg_wise_fallback": "<i class=\"fas fa-exclamation-circle\" style=\"color: #d4a017; margin-right: 0.4rem;\"></i><strong>إذا لم تعمل أيٌّ من روابط أو رموز QR الخاصة بـ Wise أعلاه بشكل صحيح،</strong> يرجى الرجوع إلى <a href=\"CRE_Third_Circular.pdf\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"color: var(--brand-primary); font-weight: 600; text-decoration: underline;\">النشرة الثالثة الرسمية (PDF)</a> — فهي تتضمن معلومات الدفع ورموز QR المعتمدة.",
         "reg_form_title": "<i class=\"fas fa-edit\" style=\"color: var(--brand-primary); margin-right: 0.5rem;\"></i>التسجيل في CRE ٢٦ طوكيو",
         "reg_form_btn": "<i class=\"fab fa-google\" style=\"margin-right: 0.5rem;\"></i>فتح استمارة التسجيل<i class=\"fas fa-external-link-alt\" style=\"margin-left: 0.5rem; font-size: 0.85em;\"></i>",
         "reg_ready_title": "هل أنت مستعدّ للتسجيل؟",
@@ -2839,7 +2860,7 @@ const translations = {
         "sch_exc_t": "الرحلة: كاماكورا وإينوشيما",
         "sch_exc_d": "ستُعقد الرحلة التي تلي المؤتمر يوم الأربعاء ١٥ يوليو ٢٠٢٦ على متن حافلة مستأجرة إلى كاماكورا — العاصمة اليابانية في العصر الوسيط والمشهورة بمعابدها الزنية وتمثال بوذا العظيم (داي‌بوتسو) — ثم إلى جزيرة إينوشيما الساحلية. يُتوقَّع الوصول إلى كاماكورا نحو الساعة ١٠:٣٠، مع توفير وقت حرّ لاستكشاف البلدة. رسوم المشاركة ٨,٠٠٠ ين ياباني وهي غير مشمولة في رسوم التسجيل في المؤتمر.",
         "sch_exc_b": "تفاصيل التسجيل ←",
-        "sch_cta": "<i class=\"fas fa-file-pdf\" style=\"margin-right: 0.5rem;\"></i>اقرأ النشرة الثانية الكاملة (PDF)",
+        "sch_cta": "<i class=\"fas fa-file-pdf\" style=\"margin-right: 0.5rem;\"></i>اقرأ النشرة الثالثة الكاملة (PDF)",
 
         // --- نداء التبرع العاجل (index.html) ---
         "don_badge": "نداء عاجل",
@@ -2890,7 +2911,7 @@ const translations = {
 
         // --- المكان / الدعم: مفاتيح إضافية ---
         "ven_map_btn": "خريطة غوغل ←",
-        "supp_partners_t": "المؤسسات الشريكة",
+        "supp_partners_t": "المؤسسات الداعمة",
         "supp_partners_soon": "سيتم إضافة المزيد من المؤسسات الشريكة قريباً.",
     
 
