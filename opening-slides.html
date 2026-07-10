@@ -178,6 +178,13 @@ h1,h2,h3{font-family:'Shippori Mincho B1','Inter',serif;font-weight:700;letter-s
 .acc-note b{color:#fff}
 .acc-note .sep{color:var(--brand-secondary);margin:0 .6rem}
 
+/* ---------- Numbers slide: donut + side stats ---------- */
+.num-split{display:flex;gap:1.4rem;align-items:stretch;justify-content:center;flex-wrap:wrap}
+.side-stats{display:flex;flex-direction:column;gap:1rem;justify-content:center}
+.side-stats .stat{flex:0 0 auto;padding:1.1rem 1.8rem;max-width:none}
+.side-stats .stat .num{font-size:clamp(1.9rem,3.6vw,3rem)}
+.side-stats .stat .lbl{font-size:clamp(.85rem,1.5vw,1.15rem);margin-top:.2rem}
+
 /* ---------- Post-conference events ---------- */
 .ev-grid{display:flex;gap:1.6rem;justify-content:center;flex-wrap:wrap}
 .ev{flex:1 1 300px;max-width:420px;padding:2rem 1.8rem;text-align:center}
@@ -283,9 +290,7 @@ h1,h2,h3{font-family:'Shippori Mincho B1','Inter',serif;font-weight:700;letter-s
     <section class="slide" id="s3">
         <div class="slide-inner">
             <div class="slide-head">
-                <span class="kicker rv">Organisers &amp; Supporters</span>
                 <h2 class="slide-title rv"><span class="red">12</span> Supporting Institutions</h2>
-                <p class="slide-sub rv">…and the 15-member CRE Japan Committee of early-career researchers</p>
             </div>
             <div class="glass logo-wall rv">
                 <div class="logo-grid" id="logoGrid">
@@ -303,65 +308,41 @@ h1,h2,h3{font-family:'Shippori Mincho B1','Inter',serif;font-weight:700;letter-s
                     <img class="tall" src="images/supporters/cht.png" alt="CHT">
                 </div>
             </div>
-            <p class="acc-note rv"><i class="fas fa-heart" style="color:var(--brand-primary)"></i>&nbsp; Crowdfunding: <b>¥5,689,000</b> from <b>318</b> supporters<span class="sep">·</span><b>189%</b> of the goal</p>
+            <p class="acc-note rv" style="font-size:clamp(1.4rem,3vw,2.3rem)"><i class="fas fa-heart" style="color:var(--brand-primary)"></i>&nbsp; Crowdfunding: <b>¥5,689,000</b> from <b>318</b> supporters</p>
         </div>
     </section>
 
     <!-- ============ 4. CRE 26 IN NUMBERS ============ -->
     <section class="slide" id="s4">
         <div class="slide-inner">
-            <div class="slide-head">
-                <span class="kicker rv">CRE 26 in Numbers</span>
-                <h2 class="slide-title rv">The World Answered</h2>
+            <div class="num-split">
+                <div class="glass donut-solo rv" style="margin:0;padding:1.6rem 2.2rem;gap:2.2rem">
+                    <div class="donut-wrap" style="width:min(38vh,320px)">
+                        <svg viewBox="0 0 200 200" data-donut="participants"></svg>
+                        <div class="donut-center"><span class="big">26</span><span class="sm">countries</span></div>
+                    </div>
+                    <ul class="legend" data-legend="participants"></ul>
+                </div>
+                <div class="side-stats">
+                    <div class="glass soft stat rv">
+                        <div class="num"><span data-count="301">0</span></div>
+                        <div class="lbl">Abstract Submissions<br>from 33 Countries &amp; Regions</div>
+                    </div>
+                    <div class="glass soft stat gold rv">
+                        <div class="num"><span data-count="143">0</span></div>
+                        <div class="lbl">Participants<br>from 26 Countries</div>
+                    </div>
+                    <div class="glass soft stat teal rv">
+                        <div class="num"><span data-count="99">0</span></div>
+                        <div class="lbl">Presenters<br>from 24 Countries</div>
+                    </div>
+                </div>
             </div>
-            <div class="stat-row">
-                <div class="glass soft stat rv">
-                    <div class="num"><span data-count="301">0</span></div>
-                    <div class="lbl">Abstract Submissions<br>from 33 Countries &amp; Regions</div>
-                </div>
-                <div class="glass soft stat gold rv">
-                    <div class="num"><span data-count="143">0</span></div>
-                    <div class="lbl">Participants<br>from 26 Countries</div>
-                </div>
-                <div class="glass soft stat teal rv">
-                    <div class="num"><span data-count="99">0</span></div>
-                    <div class="lbl">Presenters<br>from 24 Countries</div>
-                </div>
-            </div>
-            <p class="acc-note rv"><b>54</b> long<span class="sep">·</span><b>22</b> short<span class="sep">·</span><b>23</b> posters<span class="sep">·</span><b>4</b> keynotes</p>
         </div>
     </section>
 
-    <!-- ============ 5. AFTER THE CONFERENCE ============ -->
+    <!-- ============ 5. OPENING REMARKS — HIGO ============ -->
     <section class="slide" id="s5">
-        <div class="slide-inner">
-            <div class="slide-head">
-                <span class="kicker rv">The Journey Continues</span>
-                <h2 class="slide-title rv">After CRE 26 — <span class="red">3</span> More Events</h2>
-            </div>
-            <div class="ev-grid">
-                <div class="glass ev rv">
-                    <span class="date">16 July</span>
-                    <h3>ISET 2026<br>Symposium</h3>
-                    <p class="venue"><i class="fas fa-location-dot"></i>Univ. of Tsukuba, Tokyo Campus</p>
-                </div>
-                <div class="glass ev gold rv">
-                    <span class="date">18 July</span>
-                    <h3>Young Egyptologists Workshop</h3>
-                    <p class="venue"><i class="fas fa-location-dot"></i>Waseda University</p>
-                </div>
-                <div class="glass ev teal rv">
-                    <span class="date">20–21 July</span>
-                    <h3>Nakanishi Papyri Workshop</h3>
-                    <p class="venue"><i class="fas fa-location-dot"></i>Minpaku, Osaka</p>
-                </div>
-            </div>
-            <p class="acc-note rv"><i class="fas fa-bus" style="color:var(--brand-secondary)"></i>&nbsp; 15 July — excursion to Kamakura &amp; Enoshima</p>
-        </div>
-    </section>
-
-    <!-- ============ 6. OPENING REMARKS — HIGO ============ -->
-    <section class="slide" id="s6">
         <div class="slide-inner" style="max-width:1050px">
             <div class="glass speaker-card rv">
                 <p class="spk-kicker">Opening Remarks</p>
@@ -373,8 +354,8 @@ h1,h2,h3{font-family:'Shippori Mincho B1','Inter',serif;font-weight:700;letter-s
         </div>
     </section>
 
-    <!-- ============ 7. ADDRESS — PRESIDENT NAGATA ============ -->
-    <section class="slide" id="s7">
+    <!-- ============ 6. ADDRESS — PRESIDENT NAGATA ============ -->
+    <section class="slide" id="s6">
         <div class="slide-inner" style="max-width:1050px">
             <div class="glass speaker-card rv">
                 <p class="spk-kicker">Address from the Supporting Institutions</p>
@@ -382,6 +363,19 @@ h1,h2,h3{font-family:'Shippori Mincho B1','Inter',serif;font-weight:700;letter-s
                 <div class="spk-divider"></div>
                 <h2 class="spk-name">Prof. Kyosuke Nagata</h2>
                 <p class="spk-aff">President, University of Tsukuba · 筑波大学長 永田恭介</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ 7. ADDRESS — AMBASSADOR OF EGYPT ============ -->
+    <section class="slide" id="s7">
+        <div class="slide-inner" style="max-width:1100px">
+            <div class="glass speaker-card rv">
+                <p class="spk-kicker">Address from the Guest of Honour</p>
+                <p class="spk-jp">来賓挨拶</p>
+                <div class="spk-divider"></div>
+                <h2 class="spk-name" style="font-size:clamp(2.2rem,5.6vw,4.6rem)">H.E. Mr. Ragui Mohamed Mohamed ELETREBY</h2>
+                <p class="spk-aff">Ambassador Extraordinary and Plenipotentiary of the Arab Republic of Egypt<br>本邦駐箚エジプト・アラブ共和国大使 ラギィ・モハメド・モハメド・エルエトレビ 閣下</p>
             </div>
         </div>
     </section>
@@ -485,6 +479,38 @@ addEventListener('resize',resizeParticles);
     }
     requestAnimationFrame(drawParticles);
 })();
+
+/* ================= Donut: participants by country ================= */
+const PALETTE=['#bc002d','#D4AF37','#2C7A7B','#00c2d1','#7c3aed','#ef8354','#3b82f6','#84cc16','#e05297','#f59e0b','#94a3b8'];
+const DONUTS={
+    participants:{total:140,data:[['Japan',39],['Egypt',21],['Spain',10],['Italy',9],['USA',7],['China',7],['Germany',6],['France',6],['Australia',5],['UK',5],['Others (16)',25]]}
+};
+const SVGNS='http://www.w3.org/2000/svg';
+document.querySelectorAll('svg[data-donut]').forEach(svg=>{
+    const cfg=DONUTS[svg.dataset.donut];
+    let cum=0;
+    cfg.data.forEach(([name,val],i)=>{
+        const pct=val/cfg.total*100;
+        const c=document.createElementNS(SVGNS,'circle');
+        c.setAttribute('cx',100);c.setAttribute('cy',100);c.setAttribute('r',80);
+        c.setAttribute('pathLength',100);
+        c.setAttribute('stroke',PALETTE[i%PALETTE.length]);
+        c.classList.add('seg');
+        c.dataset.pct=pct;c.dataset.start=cum;
+        c.style.transitionDelay=(i*70)+'ms';
+        c.setAttribute('stroke-dasharray','0 100');
+        c.setAttribute('stroke-dashoffset',25);
+        svg.appendChild(c);
+        cum+=pct;
+    });
+    const legend=document.querySelector(`[data-legend="${svg.dataset.donut}"]`);
+    cfg.data.forEach(([name,val],i)=>{
+        const li=document.createElement('li');
+        li.style.animationDelay=(.5+i*.09)+'s';
+        li.innerHTML=`<span class="sw" style="background:${PALETTE[i%PALETTE.length]}"></span>${name}<span class="ct">${val}</span>`;
+        legend.appendChild(li);
+    });
+});
 
 /* stagger logo pops */
 document.querySelectorAll('#logoGrid img').forEach((img,i)=>{img.style.animationDelay=(.35+i*.1)+'s';});
