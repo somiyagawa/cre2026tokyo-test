@@ -173,6 +173,7 @@ h1,h2,h3{font-family:'Shippori Mincho B1','Inter',serif;font-weight:700;letter-s
 .legend li{display:flex;align-items:center;gap:.7rem;font-size:clamp(.95rem,1.8vw,1.35rem);font-weight:700;color:var(--text-secondary);list-style:none;min-width:260px;opacity:0;transform:translateX(24px)}
 .slide.active .legend li{animation:riseIn .6s var(--ease-out) forwards}
 .legend .sw{width:16px;height:16px;border-radius:4px;flex-shrink:0}
+.legend .rk{display:inline-block;min-width:1.6em;color:#8a6d1a;font-weight:900}
 .legend .ct{margin-left:auto;font-weight:900;color:var(--text-primary);padding-left:1.2rem}
 .acc-note{text-align:center;margin-top:2.6vh;color:#cbd5e1;font-weight:700;font-size:clamp(1.05rem,2.2vw,1.6rem)}
 .acc-note b{color:#fff}
@@ -341,8 +342,25 @@ h1,h2,h3{font-family:'Shippori Mincho B1','Inter',serif;font-weight:700;letter-s
         </div>
     </section>
 
-    <!-- ============ 5. OPENING REMARKS — HIGO ============ -->
+    <!-- ============ 5. PRESENTERS BY COUNTRY ============ -->
     <section class="slide" id="s5">
+        <div class="slide-inner">
+            <div class="slide-head">
+                <span class="kicker rv">On Stage</span>
+                <h2 class="slide-title rv"><span class="red">99</span> Presenters · <span class="gold">24</span> Countries</h2>
+            </div>
+            <div class="glass donut-solo rv">
+                <div class="donut-wrap">
+                    <svg viewBox="0 0 200 200" data-donut="presenters"></svg>
+                    <div class="donut-center"><span class="big">24</span><span class="sm">countries</span></div>
+                </div>
+                <ul class="legend" data-legend="presenters" data-ranked></ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ 6. OPENING REMARKS — HIGO ============ -->
+    <section class="slide" id="s6">
         <div class="slide-inner" style="max-width:1050px">
             <div class="glass speaker-card rv">
                 <p class="spk-kicker">Opening Remarks</p>
@@ -354,8 +372,8 @@ h1,h2,h3{font-family:'Shippori Mincho B1','Inter',serif;font-weight:700;letter-s
         </div>
     </section>
 
-    <!-- ============ 6. ADDRESS — PRESIDENT NAGATA ============ -->
-    <section class="slide" id="s6">
+    <!-- ============ 7. ADDRESS — PRESIDENT NAGATA ============ -->
+    <section class="slide" id="s7">
         <div class="slide-inner" style="max-width:1050px">
             <div class="glass speaker-card rv">
                 <p class="spk-kicker">Address from the Supporting Institutions</p>
@@ -367,8 +385,8 @@ h1,h2,h3{font-family:'Shippori Mincho B1','Inter',serif;font-weight:700;letter-s
         </div>
     </section>
 
-    <!-- ============ 7. ADDRESS — AMBASSADOR OF EGYPT ============ -->
-    <section class="slide" id="s7">
+    <!-- ============ 8. ADDRESS — AMBASSADOR OF EGYPT ============ -->
+    <section class="slide" id="s8">
         <div class="slide-inner" style="max-width:1100px">
             <div class="glass speaker-card rv">
                 <p class="spk-kicker">Address from the Guest of Honour</p>
@@ -380,8 +398,8 @@ h1,h2,h3{font-family:'Shippori Mincho B1','Inter',serif;font-weight:700;letter-s
         </div>
     </section>
 
-    <!-- ============ 8. ADDRESS — CRE PERMANENT COMMITTEE ============ -->
-    <section class="slide" id="s8">
+    <!-- ============ 9. ADDRESS — CRE PERMANENT COMMITTEE ============ -->
+    <section class="slide" id="s9">
         <div class="slide-inner" style="max-width:1050px">
             <div class="glass speaker-card rv">
                 <p class="spk-kicker">Greetings from the CRE Permanent Committee</p>
@@ -393,8 +411,8 @@ h1,h2,h3{font-family:'Shippori Mincho B1','Inter',serif;font-weight:700;letter-s
         </div>
     </section>
 
-    <!-- ============ 9. ANNOUNCEMENTS — YAMADA ============ -->
-    <section class="slide" id="s9">
+    <!-- ============ 10. ANNOUNCEMENTS — YAMADA ============ -->
+    <section class="slide" id="s10">
         <div class="slide-inner" style="max-width:1050px">
             <div class="glass speaker-card rv">
                 <p class="spk-kicker">Events &amp; Venue Information</p>
@@ -406,8 +424,8 @@ h1,h2,h3{font-family:'Shippori Mincho B1','Inter',serif;font-weight:700;letter-s
         </div>
     </section>
 
-    <!-- ============ 10. FINALE ============ -->
-    <section class="slide" id="s10">
+    <!-- ============ 11. FINALE ============ -->
+    <section class="slide" id="s11">
         <div class="slide-inner" style="max-width:1050px">
             <div class="glass fin-card rv">
                 <img src="images/cre-26-logo.png" alt="CRE 26 logo" style="width:clamp(90px,11vw,140px);animation:floatY 5s ease-in-out infinite">
@@ -420,7 +438,7 @@ h1,h2,h3{font-family:'Shippori Mincho B1','Inter',serif;font-weight:700;letter-s
 
 </div>
 
-<div id="pager">1 / 10</div>
+<div id="pager">1 / 11</div>
 <div id="dots"></div>
 <div id="navbtns">
     <button id="prev" aria-label="Previous slide"><i class="fas fa-chevron-left"></i></button>
@@ -483,7 +501,8 @@ addEventListener('resize',resizeParticles);
 /* ================= Donut: participants by country ================= */
 const PALETTE=['#bc002d','#D4AF37','#2C7A7B','#00c2d1','#7c3aed','#ef8354','#3b82f6','#84cc16','#e05297','#f59e0b','#94a3b8'];
 const DONUTS={
-    participants:{total:140,data:[['Japan',39],['Egypt',21],['Spain',10],['Italy',9],['USA',7],['China',7],['Germany',6],['France',6],['Australia',5],['UK',5],['Others (16)',25]]}
+    participants:{total:140,data:[['Japan',39],['Egypt',21],['Spain',10],['Italy',9],['USA',7],['China',7],['Germany',6],['France',6],['Australia',5],['UK',5],['Others (16)',25]]},
+    presenters:{total:99,data:[['Egypt',18],['Japan',16],['Italy',9],['Spain',6],['China',6],['USA',5],['Germany',5],['UK',5],['France',4],['Belgium',4],['Others (14)',21]]}
 };
 const SVGNS='http://www.w3.org/2000/svg';
 document.querySelectorAll('svg[data-donut]').forEach(svg=>{
@@ -504,10 +523,17 @@ document.querySelectorAll('svg[data-donut]').forEach(svg=>{
         cum+=pct;
     });
     const legend=document.querySelector(`[data-legend="${svg.dataset.donut}"]`);
+    const ranked=legend.hasAttribute('data-ranked');
+    let rank=0,prev=null;
     cfg.data.forEach(([name,val],i)=>{
         const li=document.createElement('li');
         li.style.animationDelay=(.5+i*.09)+'s';
-        li.innerHTML=`<span class="sw" style="background:${PALETTE[i%PALETTE.length]}"></span>${name}<span class="ct">${val}</span>`;
+        let label=name;
+        if(ranked&&!name.startsWith('Others')){
+            if(val!==prev){rank=i+1;prev=val;}
+            label=`<b class="rk">${rank}</b>${name}`;
+        }
+        li.innerHTML=`<span class="sw" style="background:${PALETTE[i%PALETTE.length]}"></span>${label}<span class="ct">${val}</span>`;
         legend.appendChild(li);
     });
 });
