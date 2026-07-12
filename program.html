@@ -243,6 +243,98 @@
     </footer>
 
     <button class="scroll-to-top" aria-label="Scroll to top"><i class="fas fa-chevron-up"></i></button>
+    <!-- Current-time indicator: red line on today's programme table (JST) -->
+    <style>
+        .prog-wrap { position: relative; }
+        #prog-now-line { position: absolute; display: none; border-top: 2px solid #e02424; z-index: 6; pointer-events: none; }
+        #prog-now-line::before { content: ""; position: absolute; left: -4px; top: -6px; width: 10px; height: 10px; border-radius: 50%; background: #e02424; }
+        #prog-now-line .prog-now-label { position: absolute; right: 4px; top: -21px; font-size: 0.72rem; font-weight: 700; color: #fff; background: #e02424; padding: 1px 8px; border-radius: 10px; }
+    </style>
+    <script>
+    (function () {
+        "use strict";
+        var DAY_DATES = ["2026-07-11", "2026-07-12", "2026-07-13", "2026-07-14", "2026-07-15"];
+        var line = null;
+
+        function jstNow() {
+            var d = new Date(Date.now() + (new Date().getTimezoneOffset() + 540) * 60000);
+            var p = function (n) { return ("0" + n).slice(-2); };
+            return {
+                date: d.getFullYear() + "-" + p(d.getMonth() + 1) + "-" + p(d.getDate()),
+                minutes: d.getHours() * 60 + d.getMinutes() + d.getSeconds() / 60,
+                label: p(d.getHours()) + ":" + p(d.getMinutes())
+            };
+        }
+
+        function parseTime(text) {
+            var m = text.trim().match(/^(\d{1,2}):(\d{2})(?:\s*[-–~]\s*(\d{1,2}):(\d{2}))?$/);
+            if (!m) return null;
+            return { start: +m[1] * 60 + +m[2], end: m[3] ? +m[3] * 60 + +m[4] : null };
+        }
+
+        function hide() { if (line) line.style.display = "none"; }
+
+        function update() {
+            var now = jstNow();
+            var headers = document.querySelectorAll("h3.prog-day");
+            var idx = DAY_DATES.indexOf(now.date);
+            var table = (idx >= 0 && headers[idx]) ? headers[idx].nextElementSibling : null;
+            if (!table || table.tagName !== "TABLE") return hide();
+
+            var segs = [], rows = table.rows, i, cell, t;
+            for (i = 0; i < rows.length; i++) {
+                cell = rows[i].querySelector(".prog-time");
+                if (!cell) continue;
+                t = parseTime(cell.textContent);
+                if (t) segs.push({ row: rows[i], start: t.start, end: t.end });
+            }
+            if (!segs.length) return hide();
+            for (i = 0; i < segs.length; i++) {
+                if (segs[i].end === null) {
+                    segs[i].end = (i + 1 < segs.length && segs[i + 1].start > segs[i].start)
+                        ? segs[i + 1].start : segs[i].start + 60;
+                }
+                if (segs[i].end <= segs[i].start) segs[i].end = segs[i].start + 5;
+            }
+            if (now.minutes < segs[0].start || now.minutes > segs[segs.length - 1].end) return hide();
+
+            var y = null, s;
+            for (i = 0; i < segs.length; i++) {
+                s = segs[i];
+                if (now.minutes < s.start) { y = table.offsetTop + s.row.offsetTop; break; }
+                if (now.minutes < s.end) {
+                    y = table.offsetTop + s.row.offsetTop
+                        + ((now.minutes - s.start) / (s.end - s.start)) * s.row.offsetHeight;
+                    break;
+                }
+            }
+            if (y === null) {
+                s = segs[segs.length - 1];
+                y = table.offsetTop + s.row.offsetTop + s.row.offsetHeight;
+            }
+
+            if (!line) {
+                line = document.createElement("div");
+                line.id = "prog-now-line";
+                line.setAttribute("aria-hidden", "true");
+                line.innerHTML = '<span class="prog-now-label notranslate"></span>';
+            }
+            var wrap = table.parentElement;
+            if (line.parentElement !== wrap) wrap.appendChild(line);
+            line.querySelector(".prog-now-label").textContent = now.label + " JST";
+            line.style.left = table.offsetLeft + "px";
+            line.style.width = table.offsetWidth + "px";
+            line.style.top = y + "px";
+            line.style.display = "block";
+        }
+
+        window.addEventListener("resize", update);
+        window.addEventListener("load", update);
+        document.addEventListener("visibilitychange", update);
+        setInterval(update, 30000);
+        update();
+    })();
+    </script>
     <script src="js/translations.js?v=2" defer></script>
     <script src="js/main.js?v=2" defer></script>
 </body>
