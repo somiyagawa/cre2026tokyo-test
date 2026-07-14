@@ -2516,7 +2516,7 @@ const translations = {
         "mus_shimonoseki_d": "مجموعة كينبيي تاكيوتشي التي جمعها في لندن خلال أواخر عصر ميجي.",
         "mus_visit_btn": "زيارة الموقع",
         "comm_chair": "(الرئيس)",
-        "comm_arabic_role": "د. فاتن كمال ( كتابة اسمي بالعربي) الترجمة العربية",
+        "comm_arabic_role": "الترجمة العربية",
 
         "comm_higo_aff": "جامعة تسوكوبا",
         "comm_miyagawa_aff": "جامعة تسوكوبا",
