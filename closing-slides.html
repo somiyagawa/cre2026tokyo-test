@@ -152,6 +152,14 @@ h1,h2,h3{font-family:'Shippori Mincho B1','Inter',serif;font-weight:700;letter-s
 .slide.active .logo-grid img{animation:popIn .65s var(--ease-out) forwards}
 .logo-grid img.tall{max-height:13vh}
 
+/* ---------- Committee grid ---------- */
+.team-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:.7rem 1.8rem;text-align:left}
+.team-grid .tm{display:flex;flex-direction:column}
+.team-grid .nm{font-weight:800;color:var(--text-primary);font-size:clamp(.95rem,1.75vw,1.3rem);line-height:1.25}
+.team-grid .af{color:#777;font-size:clamp(.7rem,1.25vw,.95rem);font-weight:600}
+.chair-chip{display:inline-block;background:var(--brand-primary);color:#fff;font-size:.6em;padding:.12em .7em;border-radius:50px;vertical-align:middle;margin-left:.35em;letter-spacing:.06em}
+@media (max-width:980px){.team-grid{grid-template-columns:repeat(2,1fr)}}
+
 /* ---------- Crowdfunding bar ---------- */
 .cf-bar-wrap{max-width:980px;margin:3.5vh auto 0;padding:1.8rem 2.4rem}
 .cf-bar-head{display:flex;justify-content:space-between;font-weight:800;font-size:clamp(1rem,1.9vw,1.4rem);color:var(--text-primary);margin-bottom:.7rem}
@@ -334,8 +342,38 @@ h1,h2,h3{font-family:'Shippori Mincho B1','Inter',serif;font-weight:700;letter-s
         </div>
     </section>
 
-    <!-- ============ 5. TOMORROW & BEYOND ============ -->
+    <!-- ============ 5. THE CRE JAPAN COMMITTEE ============ -->
     <section class="slide" id="s5">
+        <div class="slide-inner" style="max-width:1240px">
+            <div class="slide-head">
+                <span class="kicker rv">The Team Behind CRE 26</span>
+                <h2 class="slide-title rv">The <span class="red">CRE Japan</span> Committee</h2>
+            </div>
+            <div class="glass rv" style="padding:1.8rem 2.6rem">
+                <div class="team-grid">
+                    <div class="tm"><span class="nm">Tokihisa Higo <span class="chair-chip">Chair</span></span><span class="af">University of Tsukuba</span></div>
+                    <div class="tm"><span class="nm">So Miyagawa</span><span class="af">University of Tsukuba</span></div>
+                    <div class="tm"><span class="nm">Seria Takenouchi (Yamazaki)</span><span class="af">Waseda University</span></div>
+                    <div class="tm"><span class="nm">Taichi Kuronuma</span><span class="af">Tokyo Univ. of Foreign Studies</span></div>
+                    <div class="tm"><span class="nm">Keita Takenouchi</span><span class="af">Waseda University</span></div>
+                    <div class="tm"><span class="nm">Ayano Yamada</span><span class="af">TOBUNKEN</span></div>
+                    <div class="tm"><span class="nm">Marina Shimizu</span><span class="af">FU Berlin / Nagoya University</span></div>
+                    <div class="tm"><span class="nm">Mutsumi Okabe</span><span class="af">Kanazawa University</span></div>
+                    <div class="tm"><span class="nm">Mizuki Shindo</span><span class="af">Kanazawa University</span></div>
+                    <div class="tm"><span class="nm">Yuka Ito</span><span class="af">Okayama Orient Museum / Waseda</span></div>
+                    <div class="tm"><span class="nm">Ayame Miyamoto</span><span class="af">Hiroshima University</span></div>
+                    <div class="tm"><span class="nm">Miona Miyazaki</span><span class="af">Ohara Art Foundation / Waseda</span></div>
+                    <div class="tm"><span class="nm">Shinichi Kato</span><span class="af">University of Tsukuba</span></div>
+                    <div class="tm"><span class="nm">Haruko Kono</span><span class="af">Tokai University</span></div>
+                    <div class="tm"><span class="nm">Rikiya Sato</span><span class="af">Nagoya University</span></div>
+                </div>
+            </div>
+            <p class="acc-note rv">Arabic translation — <b>Dr. Faten Kamal</b><span class="sep">·</span>…and all our student staff &amp; volunteers</p>
+        </div>
+    </section>
+
+    <!-- ============ 6. TOMORROW & BEYOND ============ -->
+    <section class="slide" id="s6">
         <div class="slide-inner">
             <div class="slide-head">
                 <span class="kicker rv">The Journey Continues</span>
@@ -362,8 +400,8 @@ h1,h2,h3{font-family:'Shippori Mincho B1','Inter',serif;font-weight:700;letter-s
         </div>
     </section>
 
-    <!-- ============ 6. AGM ============ -->
-    <section class="slide" id="s6">
+    <!-- ============ 7. AGM ============ -->
+    <section class="slide" id="s7">
         <div class="slide-inner statement">
             <span class="kicker rv">Up Next — In This Room</span>
             <p class="giant rv" style="margin-top:3vh">CRE Annual<br><em>General Meeting</em></p>
@@ -371,8 +409,8 @@ h1,h2,h3{font-family:'Shippori Mincho B1','Inter',serif;font-weight:700;letter-s
         </div>
     </section>
 
-    <!-- ============ 7. FAREWELL ============ -->
-    <section class="slide" id="s7">
+    <!-- ============ 8. FAREWELL ============ -->
+    <section class="slide" id="s8">
         <div class="slide-inner" style="max-width:1050px">
             <div class="glass fin-card rv">
                 <img src="images/cre-26-logo.png" alt="CRE 26 logo" style="width:clamp(90px,11vw,140px);animation:floatY 5s ease-in-out infinite">
@@ -385,7 +423,7 @@ h1,h2,h3{font-family:'Shippori Mincho B1','Inter',serif;font-weight:700;letter-s
 
 </div>
 
-<div id="pager">1 / 7</div>
+<div id="pager">1 / 8</div>
 <div id="dots"></div>
 <div id="navbtns">
     <button id="prev" aria-label="Previous slide"><i class="fas fa-chevron-left"></i></button>
